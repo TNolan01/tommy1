@@ -1,108 +1,515 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# An Seo
+​
+<p align="center" width="100%"> 
+<img src="media/images/logo.png" alt="logo" width=""/>
+</p>
 
-Welcome TNolan01,
+<span style="font-weight:bold; font-size:16px">
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+[Tommy Williamson Landscape & Agri Supplies](https://tw-shop.herokuapp.com/) is an e-commerce website.</span> 
+<br>
+[This is an external link to An Seo](https://tw-shop.herokuapp.com/)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+For this purposes I have listed login at this link : [User Test Information](#user-test-information)
 
-## Gitpod Reminders
+<br>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+<span style="color:#56a832; font-weight:bold; font-size:16px">Origins of the project</span>
+<p> Text </p>
 
-`python3 -m http.server`
+<span style="color:#ebd80c; font-weight:bold; font-size:16px">A proposed solution.</span>
+<p> Text </p>
 
-A blue button should appear to click: _Make Public_,
+<br>
 
-Another blue button should appear to click: _Open Browser_.
+<p align="center" width="100%"> 
+<img src="media/read_me/multi_screen.png" alt="screen shots of site" width=""/>
+</p>
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+​
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Contents
+​
+- [Tommy Williamson Landscape & Agri Supplies](#contents)
+  - [Contents](#contents)
+  - [UX](#ux)
+    - [Project Goals](#project-goals)
+    - [Site Owner Goals](#site-owner-goals)
+    - [Site Visitor/User Goals](#site-visitoruser-goals)
+    - [User Stories](#user-stories)
+    - [User Requirements and Expectations](#user-requirements-and-expectations)
+      - [Requirements](#requirements)
+      - [Expectations](#expectations)
+    - [Design Choices](#design-choices)
+      - [Fonts](#fonts)
+      - [Colours](#colours)
+      - [Images](#images)
+      - [Agile Methodology](#agile-methodology)
+  - [Wireframes](#wireframes)
+    - [Site Layout](#site-layout)
+  - [Information Architecture](#information-architecture)
+  - [Technologies](#technologies)
+    - [Languages](#languages)
+    - [Libraries & Frameworks](#libraries--frameworks)
+    - [Tools](#tools)
+  - [Features](#features)
+    - [Implemented Features](#implemented-features)
+    - [Future Features](#future-features)
+  - [Testing](#testing)
+    - [User Test Information](#user-test-information)
+  - [Deployment](#deployment)
+    - [Final Deployment](#final-deployment)
+    - [Cloning](#cloning)
+  - [Credits](#credits)
+    - [Image editing](#image-editing)
+    - [Code ideas](#code-ideas)
+  
 
-To log into the Heroku toolbelt CLI:
+​
+---
+​
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## UX
+​
+### **Project Goals**
+​
+Text
+​
+### **Site Owner Goals**
+​
+- Text
+​
+<br>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### **Site Visitor/User Goals**
+​
+- Text
 
-------
+<br>
+- Site users will have the ability to...
+    
+    <ul>
 
-## Release History
+    <li>Text </li>
+    
+    </ul>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+​
+### **User Stories**
+​
+**Applies to all site users:**
+​
+- As a user, I am able .
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+​
+**Applies to a superuser (site owner):**
+​
+- As a user, I am able to...
+<ul>
+<li> </li>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+</ul>
+​<br>
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+[Back to content](#contents)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+---
+​
+### User Requirements and Expectations
+​
+#### **Requirements**
+​
+- Visually pleasant app design
+- Easy site navigation
+- Content laid out in a simple and clear way on both mobile and larger screens
+- Self-explanatory icons where text is absent
+​
+#### **Expectations**
+​
+- Easy to use interface.
+- Clear and easy to read data.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+​<br>
+[Back to content](#contents)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+---
+​
+### **Design Choices**
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+Text 
+​
+#### **Fonts**
+The main font I have chosen is the Lato font from Google Fonts.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+- *Main Font* 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+​  ```font-family: Lato font - from Google Fonts```
+<br>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+#### **Images**
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+Text
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+<p align="center" width="100%"> 
+<img src="media/images/logo.png" alt="logo for website" width=""/>
+</p>
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+<br>
+A Favicon was created and stored in the static directory.
+<br>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<p align="center" width="100%"> 
+<img src="media/read_me/favicon.png" alt="logo for website" width=""/>
+</p>
 
-------
+<br>
 
-## FAQ about the uptime script
+#### **Colors**
+The business uses red trucks for deliveries. This is a conscious branding exercise on their part. With all previous and current vechicles using the red and black color scheme.
 
-**Why have you added this script?**
+The existing principal color scheme for the business is red, black and white.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+<ol>
+<li>This will help keep the screen bright and 'clean'</li>
+<li>White offers a better contrast with the displayed information</li>
+</ol>
 
-**How will this affect me?**
+To break this white colour I have added two colors, a green and a yellow, to style some container and card items and create some divisions on the screen. 
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+<p align="center" width="100%"> 
+<img src="media/read_me/color_scheme.png" alt="color scheme" width=""/>
+</p>
+​
+Text
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<br>
+<br>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+#### **Agile Methodology**
 
-**So….?**
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+The design, development and testing of this application were tracked through a 
 
-**Can I opt out?**
+<br>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<p align="center" width="100%"> 
+<img src="media/read_me/project_sample.png" alt="sample of Kanban" width=""/>
+</p>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+<br>
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+[Back to content](#contents)
+​
+
+---
+## Wireframes
+​
+### **Site Layout**
+​The site layout and mock-ups sketches were drawn free hand with pen and paper. The design of the program lead me to believe that a dashboard layout would suit the application best. Once I had preliminary sketches I researched some Bootstrap layouts which would suit and immediately moved to screen designed layout.
+
+Preliminary wireframe sketches were made to create initial structure to the screen layout and the content.
+
+<br>
+
+
+<br>
+
+
+As the sketches were rendered on screen with Bootstrap there were changes to the UX design and layout. Further slight style changes were made early in the design process following some live testing.
+​
+
+[Back to content](#contents)
+​
+
+---
+​
+## Information Architecture
+​
+### **PostgreSQL Database**
+The backend database is a PostgreSQL Database hosted via Heroku. The database is built around .....
+#### **Models:**
+<ul>
+<li> </li>
+
+</ul>
+<br>
+
+
+<br>
+
+
+**Model 1**
+
+Text 
+
+**Model 2**
+
+Text
+
+[Future Features](#future-features).
+
+**Model 3**
+
+Text
+
+**Model 4**
+
+Text
+
+
+
+​
+[Back to content](#contents)
+​
+
+---
+​
+## Technologies
+​
+### Languages
+​
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Python](https://www.python.org/)
+​
+### Libraries & Frameworks
+​
+- [Django](https://www.djangoproject.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Font Awesome](https://fontawesome.com/)
+- [Favicon](https://favicon.io/)
+- [jQuery](https://jquery.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
+​
+### Tools
+​
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+- [Heroku](https://www.heroku.com/)
+
+[Back to content](#contents)
+
+---
+​
+## Features
+​
+The application uses a PostgreSQL database which contains the purpose designed models.
+​
+The site uses the Django and Bootstrap 
+
+### Implemented Features
+​
+- The site has **responsive design** when viewed on a mobile, tablet, and desktop.
+
+- **Easy navigation** to external sites, such as social media accounts.
+
+- T
+### Future Features
+
+
+[Back to content](#contents)
+​
+
+---
+​
+## Testing
+​
+## Functional Testing
+The testing and result of same are located in a separate file​.
+
+Testing results [here](TESTING.md)
+<br>​
+​
+
+## Validator Testing
+
+​
+### <span style="color:#56a832; font-weight:bold; font-size:20px">CSS</span>
+​
+CSS was tested using [W3C CSS Validation Tool](https://jigsaw.w3.org/css-validator/)
+​​<br>
+
+
+​
+### <span style="color:#ebd80c; font-weight:bold; font-size:16px">JavaScript</span>
+
+The script.js file was tested with [JSHint](https://jshint.com/) and showed no errors or warnings. 
+​<br>
+
+
+### <span style="color:#56a832; font-weight:bold; font-size:20px">HTML</span>
+​
+HTML files associated with this project were tested individually with [W3C Validator](https://validator.w3.org/) and showed no errors or warnings. 
+<br>
+
+
+### <span style="color:#edb80c; font-weight:bold; font-size:20px">Python</span>
+​
+I have tested Python code in this project with [PEP8](http://pep8online.com/). The only error located in some of the Python files are a number of <span style="color:#FF0000; font-weight:bold">E501</span> errors which are <span style="color:#FF0000; font-weight:bold">line too long (a line greater than 79 characters)</span>.
+
+I have decided not to alter the relevant lines to fit into 79-character restriction. 
+- Having researched the options there is some mention of the effects on Django.
+- I believe it would reduce of the readability of the code to chop lines.
+
+​<br>
+<p align="center" width="100%"> 
+<img src="media/testing/views_PEP8.png" alt="PEP8 test image" width=""/>
+</p>
+<br>
+
+
 
 ---
 
-Happy coding!
+### <span style="color:#ebd80c; font-weight:bold; font-size:16px">Light House Performance Testing</span>
+
+### Desktop Performance :
+<br>
+<p align="center" width="100%"> 
+<img src="media/testing/performance_desktop.png" alt="desktop test" width=""/>
+</p>
+<br>
+
+
+### Mobile Performance :
+<br>
+<p align="center" width="100%"> 
+<img src="media/testing/performance_mobile.png" alt="mobile test" width=""/>
+</p>
+<br>
+
+<br>
+<p align="center" width="100%"> 
+<img src="media/testing/performance_mobile.png" alt="mobile test" width=""/>
+</p>
+<br>
+
+<br>
+<p align="center" width="100%"> 
+<img src="media/read_me/mobile_phone.png" alt="mobile phone image" width=""/>
+</p>
+<br>
+
+[Back to content](#contents)
+​
+
+## User Test Information 
+
+In conjuction with creating a new 'visitor' login the following login information can be used to test the site.
+<br>
+
+
+<br>
+
+---
+​
+## Deployments
+​
+### Deployment:
+
+<br>
+
+Deployment of this project is carried out with Heroku, https://www.heroku.com. The deployment procedure is a follows.  
+<ol>
+<li>Log in to Heroku, creating a new account if you are not a current user.</li>
+<li>Click on the 'New' button in the top right corner and from the drop-down menu select 'Create new app'.</li>
+<li>Create an App name and select your Region from menu.</li>
+<li>Click the 'Create App' button.</li>
+<li>Click in resources and select Heroku Postgres as the project database.
+<li>You will now have a menu for your new app. From here click on the Settings Tab and in the Config Vars. Click Reveal Config Vars. <br>
+<ul>
+<li>add your Secret Key</li>
+<li>add PostgreSQL URL</li>
+<li>add PORT with value '8000'</li>
+<li>add a record - 'DISABLE_COLLECTSTATIC = 1'</li> 
+</ul>
+</li>
+
+<br>
+<p align ="center">
+<img title="heroku" alt="screen shot of Heroku app menu" src="media/read_me/config_vars.png"></p>
+<br>
+
+<li>Scroll down to the Buildpacks section. Click Add buildpack. From the menu select heroku/python and click Save Changes. </li>
+
+<br>
+<p align ="center">
+<img title="heroku" alt="screen shot of Heroku app menu" src="media/read_me/heroku_buildpack.png"></p>
+<br>
+
+<li>Return to menu at the top of the page and click on Deploy. Select Github as the deployment method.</li>
+<li>Confirm you want to connect to GitHub using your account credentials for Git. Once Heroku has access search for the relevant repository name and click the connect button.</li>
+<li>At the bottom of the deploy page select the preferred deployment type. You can use Manual Deploy which will deploy based on the current state of the selected Git branch. You can also Enable Automatic Deploys for automatic deployment when you push updates to Github selected branch.</li>
+</ol>
+<br>
+
+## Amazon AWS 
+
+
+
+## Final Deployment
+<ul> 
+<li>Create a runtime.txt file - 'python 3.8.13'</li>
+<li>Run the command - 'web: gunicorn "name of project".wsgi'</li>
+<li>In 'settings.py' change the DEBUG to 'DEBUG = False'</li>
+<li>In the Heroku dashboard for this app, navigate to 'settings' and delete the entry for DISABLE_COLLECTSTATIC</li>
+</ul>
+
+
+[Back to Contents](#contents) 
+<br>
+
+## Cloning:
+
+[Click here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+1. Log in to GitHub and locate the [GitHub Repository] https://github.com/TNolan01/tommy1
+2. Under the repository name, click "Code".
+3. To clone the repository using HTTPS. Under "HTTPS" copy the link.
+4. Go to your local terminal with git installed
+5. Change the current working directory to the location where you want the cloned directory to be created/located.
+6. Type `git clone` and then you paste in the URL you copied in Step 3.
+
+  ```
+  $ git clone https://github.com/TNolan01/tommy1
+  ```
+
+7. Press Enter. Your local clone will be created.
+
+<br>
+
+[Back to Contents](#contents) 
+<br>
+​
+
+---
+
+​
+## Credits
+​
+### **Images**
+​
+I have not used any images for this application.
+​
+### **Image editing**
+The logo I use was created with MS Paint with Favicon used to generate a Favicon icon.
+​
+### **Programming resources**
+Aside from the Code Institute content for this section I used the following resources.
+
+- [Stack Overflow](https://stackoverflow.com/)
+- [CodeMy.Com on YouTube](https://www.youtube.com/watch?v=HHx3tTQWUx0&list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy&index=2)
+- [Dennis Ivy](https://www.youtube.com/watch?v=tUqUdu0Sjyc&t=1469s)
+
+<br>
+
+[Back to content](#contents)
+​
+
+---
+​

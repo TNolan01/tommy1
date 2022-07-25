@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    background: url('/media/cover_photo.jpg') no-repeat center center fixed;
+    /* background: url('/media/cover_photo.jpg') no-repeat center center fixed; */
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: rgb(253, 245, 245);
     font-family: 'Lato';
 }
 
@@ -52,9 +52,16 @@ body {
     color: #000 !important;
 }
 
-.border-black {
-    border: 1px solid black !important;
+.border-red {
+    border: 2px solid rgb(207, 8, 8) !important;
 }
+
+/* Nav Bar  */
+
+.nav-item {
+    font-size: 1.5em;
+}
+
 
 /*  Media Queries */
 

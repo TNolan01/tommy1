@@ -1,0 +1,34 @@
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light style="background-color: #fff;">
+    <div class="container-fluid">
+        <img src="/media/little_logo.png" alt="image of logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{} ">Fencing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{}">Paving</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{}">Agri</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="{}">Hardware</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{}">Tools</a>
+                    </li>
+                </ul>
+            </div>
+        {% comment %} <span class="logged-user">User: {{request.user}}</span>  <!--display current user login name-->
+        <span class="log-out-link"><a href="{}">Logout</a></span> {% endcomment %}
+          
+    </div>
+</nav>
