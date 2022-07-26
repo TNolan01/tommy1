@@ -3,11 +3,10 @@ html {
 }
 
 body {
-    /* background: url('/media/cover_photo.jpg') no-repeat center center fixed; */
-    background-size: cover;
     height: calc(100vh - 164px);
     color: rgb(253, 245, 245);
     font-family: 'Lato';
+    margin: 0;
 }
 
 /* Bulma for fontawesome icons */
@@ -52,14 +51,49 @@ body {
     color: #000 !important;
 }
 
+.text-red {
+    color: rgb(207, 8, 8) !important;
+}
+
+
+
 .border-red {
     border: 2px solid rgb(207, 8, 8) !important;
 }
 
 /* Nav Bar  */
+.navbar {
+    background-color: #fff !important;
+}
 
 .nav-item {
-    font-size: 1.5em;
+    padding-right: 1.5em;
+} 
+
+#accountnav {
+    background-color: black !important;
+}
+
+/* Index Page */
+.card-deck {
+    padding-top: 2.0em;
+}
+
+/* Background image on index.html */
+.bgImgCenter{
+    background-image: url('/media/index_hmtl_image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background: cover !important;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding-top: 2em;
 }
 
 
@@ -84,5 +118,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
     }
 }
