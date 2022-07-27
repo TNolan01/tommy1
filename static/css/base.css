@@ -56,7 +56,6 @@ body {
 }
 
 
-
 .border-red {
     border: 2px solid rgb(207, 8, 8) !important;
 }
@@ -70,6 +69,10 @@ body {
     padding-right: 1.5em;
 } 
 
+.navbar-nav a:hover{  
+    color: rgb(207, 8, 8) !important;
+}
+
 #accountnav {
     background-color: black !important;
 }
@@ -77,6 +80,10 @@ body {
 /* Index Page */
 .card-deck {
     padding-top: 2.0em;
+}
+
+.specials {
+    max-height: 200px;
 }
 
 /* Background image on index.html */
@@ -129,5 +136,19 @@ body {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .search-bar {
+        margin-top: 2em;
+    }
+
+    .logo-font {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .logo-font {
+        font-size: 20px;
     }
 }
