@@ -1,12 +1,8 @@
-html {
-    height: 100%;
-}
 
 body {
-    height: calc(100vh - 164px);
-    color: rgb(253, 245, 245);
+    color: white;
     font-family: 'Lato';
-    margin: 0;
+    padding-bottom: 10rem;
 }
 
 /* Bulma for fontawesome icons */
@@ -82,16 +78,25 @@ body {
     padding-top: 2.0em;
 }
 
-.specials {
-    max-height: 200px;
+.card-border:hover {
+    border-color: rgb(207, 8, 8) !important;
+    border-style: 4px solid !important;
 }
+
+.card {
+    margin-top: 2rem;
+    min-width: 18rem;
+    margin-bottom: 2rem;
+}
+
 
 /* Background image on index.html */
 .bgImgCenter{
     background-image: url('/media/index_hmtl_image.png');
-    background-repeat: no-repeat;
+    background-repeat: repeat; 
     background-position: center;
     background: cover !important;
+    background-size: 100% 100%; 
     position: relative;
     z-index: -1;
     width: 100%;
