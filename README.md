@@ -1,14 +1,17 @@
-# An Seo
+# E-commerce Site of Hardware and Landscaping Supplies Business
+
 ​
 <p align="center" width="100%"> 
-<img src="media/images/logo.png" alt="logo" width=""/>
+<img src="media/little_logo.png" alt="logo" width=""/>
 </p>
 
-<span style="font-weight:bold; font-size:16px">
+<span style="font-weight:bold; font-size:16px">Project Brief</span>
+<p> This project is for the design and deployment of a functional E-commerce website for a business which supplies materials, hardware and tools primarily in the areas of Agriculture, Landscaping and construction.</p>
 
-[Tommy Williamson Landscape & Agri Supplies](https://tw-shop.herokuapp.com/) is an e-commerce website.</span> 
-<br>
-[This is an external link to An Seo](https://tw-shop.herokuapp.com/)
+
+
+
+[This is an external link to the site](https://tw-shop.herokuapp.com/)
 
 For this purposes I have listed login at this link : [User Test Information](#user-test-information)
 
@@ -36,8 +39,6 @@ For this purposes I have listed login at this link : [User Test Information](#us
   - [Contents](#contents)
   - [UX](#ux)
     - [Project Goals](#project-goals)
-    - [Site Owner Goals](#site-owner-goals)
-    - [Site Visitor/User Goals](#site-visitoruser-goals)
     - [User Stories](#user-stories)
     - [User Requirements and Expectations](#user-requirements-and-expectations)
       - [Requirements](#requirements)
@@ -57,6 +58,8 @@ For this purposes I have listed login at this link : [User Test Information](#us
   - [Features](#features)
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
+  - [Development](#development)
+    - [bUg5 & (F)ixes](#bugs--fixes)
   - [Testing](#testing)
     - [User Test Information](#user-test-information)
   - [Deployment](#deployment)
@@ -77,40 +80,36 @@ For this purposes I have listed login at this link : [User Test Information](#us
 ​
 Text
 ​
-### **Site Owner Goals**
-​
-- Text
-​
-<br>
-
-### **Site Visitor/User Goals**
-​
-- Text
-
-<br>
-- Site users will have the ability to...
-    
-    <ul>
-
-    <li>Text </li>
-    
-    </ul>
-
-​
 ### **User Stories**
-​
-**Applies to all site users:**
-​
-- As a user, I am able .
+<p>The project was designed using the concepts of the Agile approach. A project was opened on Github and linked to the repository.</p>
 
-​
-**Applies to a superuser (site owner):**
-​
-- As a user, I am able to...
-<ul>
-<li> </li>
+USER STORIES:​
+<p>I have attached a link to the User Stories and their status.</p>
 
-</ul>
+[Link to User Stories](readme_docs/user_stories/User%20Stories.pdf)
+
+|GitHub Link |	Issue Type |	Description |	Tested |	Completed |
+|------------|-------------|--------------|--------|------------|    
+|https://github.com/TNolan01/tommy1/issues/1| 	USER STORY |	As a shopper I can register and new account with login features.|		
+|https://github.com/TNolan01/tommy1/issues/2| USER STORY	| As a shopper I can view a list of products for sale.	|	
+|https://github.com/TNolan01/tommy1/issues/3|	USER STORY |	As a shopper I can sort and view products via categories to easily find what I am looking for.|		
+|https://github.com/TNolan01/tommy1/issues/4|	USER STORY	| As a shopper I can register and new account with login features. |		
+|https://github.com/TNolan01/tommy1/issues/5|	USER STORY	| As a shopper I can purchase items I have put in my basket.|		
+|https://github.com/TNolan01/tommy1/issues/6|	USER STORY	 | As a shopper I can review my order before completing my purchase. |		
+|https://github.com/TNolan01/tommy1/issues/7|	USER STORY	| As a shopper I will receive an email to confirm my purchase. |		
+|https://github.com/TNolan01/tommy1/issues/8|	USER STORY | As a shopper I can sign up to receive details of special offers.|		
+|https://github.com/TNolan01/tommy1/issues/9|	USER STORY |As a shopper I can browse the site of phone, tablet, and desktop screens.|		
+|https://github.com/TNolan01/tommy1/issues/10| USER STORY |	As a visitor I can view and navigate the site with ease.|		
+|https://github.com/TNolan01/tommy1/issues/11|	USER STORY |	As a site user I can see notification messages so I know the site is aware of the actions I have taken and these actions are confirmed.|		
+|https://github.com/TNolan01/tommy1/issues/12|	USER STORY |	As a returning user the site will remember my address for fast checkout.		
+|https://github.com/TNolan01/tommy1/issues/13|	USER STORY |As the site owner I can edit and update the details of products and prices.		
+|https://github.com/TNolan01/tommy1/issues/14|	USER STORY	|As the site owner I can remove a product or products which are no longer available.		
+|https://github.com/TNolan01/tommy1/issues/15|	USER STORY	|As the site owner I can add new product(s) to the site.		
+
+
+
+
+
 ​<br>
 
 [Back to content](#contents)
@@ -190,8 +189,9 @@ Text
 #### **Agile Methodology**
 
 
-The design, development and testing of this application were tracked through a 
+The design, development and testing of this application were tracked through a Kanban board in a created GitHub project.
 
+[Link to Kanban Board](https://github.com/users/TNolan01/projects/5)
 <br>
 
 <p align="center" width="100%"> 
@@ -208,18 +208,14 @@ The design, development and testing of this application were tracked through a
 ## Wireframes
 ​
 ### **Site Layout**
-​The site layout and mock-ups sketches were drawn free hand with pen and paper. The design of the program lead me to believe that a dashboard layout would suit the application best. Once I had preliminary sketches I researched some Bootstrap layouts which would suit and immediately moved to screen designed layout.
 
-Preliminary wireframe sketches were made to create initial structure to the screen layout and the content.
-
-<br>
-
+<p>The initial layout for the site was layout with wireframes created in Balsamiq. These images can be viewed via the link below.</p>
 
 <br>
 
+<p> When the wireframes were rendered on screen with Bootstrap, HTML and CSS there were slight changes to the UX design and layout. As the development process continued further style changes were made in the screen layout. The layout was altered in line with some live testing.
 
-As the sketches were rendered on screen with Bootstrap there were changes to the UX design and layout. Further slight style changes were made early in the design process following some live testing.
-​
+​[Link to Wire Frames](readme_docs/wireframes/Wire_Frames.pdf
 
 [Back to content](#contents)
 ​
@@ -290,7 +286,12 @@ Text
 ​
 - [Git](https://git-scm.com/)
 - [GitHub](https://github.com/)
+- [Balsamiq](https://balsamiq.com/) - Wireframe tool
+
+### Deployment
+
 - [Heroku](https://www.heroku.com/)
+- [AWS, Amazon Web Services](https://aws.amazon.com)
 
 [Back to content](#contents)
 
@@ -309,7 +310,8 @@ The site uses the Django and Bootstrap
 - **Easy navigation** to external sites, such as social media accounts.
 
 - T
-### Future Features
+
+## Future Features
 
 
 [Back to content](#contents)
@@ -317,6 +319,18 @@ The site uses the Django and Bootstrap
 
 ---
 ​
+## Development
+
+<p>In this section I deal with some of the bugs and errors encountered during the development process. If the issue was sucessfully fixed I have included details of that fix.</p>
+
+## Bugs & Fixes
+
+### Issue No.1
+
+
+
+---
+
 ## Testing
 ​
 ## Functional Testing
@@ -401,6 +415,9 @@ I have decided not to alter the relevant lines to fit into 79-character restrict
 ## User Test Information 
 
 In conjuction with creating a new 'visitor' login the following login information can be used to test the site.
+
+[Link to User Stories](readme_docs/user_stories/User%20Stories.pdf)
+
 <br>
 
 
