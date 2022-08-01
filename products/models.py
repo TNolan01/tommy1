@@ -3,18 +3,24 @@ from django.db import models
 # Models relating to the products
 
 class Category(models.Model):
-    name = models.CharField(max_length=100)
-    trade_name = models.CharField(max_length=100, null=True, blank=True)
+        class Meta:
+            verbose_name_plural = 'Categories'
     
-    def __str__(self):
-        return self.name
+        name = models.CharField(max_length=100)
+        trade_name = models.CharField(max_length=100, null=True, blank=True)
+        
+        def __str__(self):
+            return self.name
 
-    def get_trade_name(self):
-        return self.trade_name
+        def get_trade_name(self):
+            return self.trade_name
 
 
 class ProductMeasurement(models.Model):
     sell_quantity = models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.sell_quantity
     
     
 class Product(models.Model):
@@ -30,4 +36,4 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
     
     def __str__(self):
-        return self.name
+        return self.product_name
