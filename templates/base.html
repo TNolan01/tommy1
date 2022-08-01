@@ -17,6 +17,11 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
+        <link rel="manifest" href="/media/site.webmanifest">
     {% endblock %}
 
     {% block extra_css %}
@@ -108,6 +113,7 @@
     {% block postloadjs %}
     {% endblock %}
 
-    {% include general_templates/footer.html %}
+    {% include 'general_templates/footer.html' %}
+
   </body>
 </html>
