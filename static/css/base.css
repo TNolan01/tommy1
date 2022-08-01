@@ -94,7 +94,8 @@ body {
 
 /* Background image on index.html */
 .bgImgCenter{
-    background-image: url('/media/index_hmtl_image.png');
+    /* background-image: url('/media/index_hmtl_image.png'); */
+    background-image: url({{ MEDIA_URL}}/site_images/index_hmtl_image.png);
     background-repeat: repeat; 
     background-position: center;
     background: cover !important;
