@@ -1,6 +1,6 @@
 
 body {
-    /* color: white; */
+    color: white; 
     font-family: 'Lato';
     padding-bottom: 4rem;
     height: 100%;
@@ -52,7 +52,6 @@ body {
     color: rgb(207, 8, 8) !important;
 }
 
-
 .border-red {
     border: 2px solid rgb(207, 8, 8) !important;
 }
@@ -75,15 +74,12 @@ body {
 }
 
 /* Index Page */
-.card-deck {
-    padding-top: 2.0em;
-    
-}
 
 .card {
     margin-top: 2rem;
-    min-width: 20rem;
-    max-width: 25rem;
+    max-width: 20rem !important;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 2rem;
     border-color: #fff !important; 
     border-style: 2px, solid !important;
@@ -91,42 +87,32 @@ body {
 
 .card:hover {
     border-color: rgb(207, 8, 8) !important;
-    border-style: 20px, solid !important;
+    border-style: solid !important;
+    border-width: 3px !important;
 }
 
 
 /* Product Pages */
-.des_header {
+.des-header {
     color: green;
     font-weight: 800;
 }
 
-.des_text {
+.des-text {
     font-size: 14px;
 }
 
+.product-card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-color: black !important; 
+    border-style: 2px, solid !important;
+    max-width: 20rem !important;
+    margin-left: auto;
+    margin-right: auto;
 
-/* Background image on index.html */
-.bgImgCenter{
-    /* background-image: url('/media/index_hmtl_image.png'); */
-    background-image: url('https://tw-shop.s3.eu-west-1.amazonaws.com/media/site_images/index_hmtl_image.png');
-    background-repeat: repeat; 
-    background-position: center;
-    background: cover !important;
-    /* background-size: 100% 100%;  */
-    position: relative;
-    /* z-index: -1; */
-    width: 100%;
-    /* min-height: 100vh;
-    max-height: 100%;  */
-    top: 0;
-    left: 0;
-    margin: 0 auto;
-    padding-top: 2em;
-    padding-bottom: 10rem;
-    width: 100%;
-  
 }
+
 
 
 /*  Media Queries */

@@ -3,96 +3,86 @@
 
 {% block content %}
 
-{% comment %} 
-<div class="bgImgCenter container-fluid h-100 text-black"> {% endcomment %}
-
-<div class="bgImgCenter container-fluid h-100 text-black">
+<div class="container-fluid h-100 text-black">
     <div class="jumbotron border-red">
         <h1 class="display-4">Check out our latest offers!</h1>
         <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
         <a class="btn btn-success btn-lg" href="products" role="button">See Offers</a>
     </div>
     <!--Main card section of home page to allow user navigate to particular products sections -->
-    <div class="card-deck text-black mb-2">
-        <div class="card card-border">
-            <a href="products"> <img class="card-img" src="{{ MEDIA_URL }}/site_images/fence_picket.png" alt="Image of fence panel"> </a>
-            <div class="card-body">
-                <h5 class="card-title">Fencing Products</h5>
-                <p class="card-text">We carry and manufacture a wide range of fencing panels and related products.</p>
-           </div>
-        </div>
-        <div class="card card-border">
-            {% comment %} <img class="card-img" src="https://tw-shop.s3.eu-west-1.amazonaws.com/media/paving.png" alt="Image of paving"> {% endcomment %}
-            <img class="card-img" src="{{ MEDIA_URL }}/site_images/paving.png" alt="Image of paving blocks">
-            <div class="card-body">
-                <h5 class="card-title">Paving</h5>
-                <p class="card-text">We follow the lastest trends in paving and hardscaping supplies. Our yard carrys all stock of paving brick, slabs and natural flag stones. </p>
+    <div class="container-fluid product text-black mb-2">
+        <div class="row">
+            <div class="card card-border">
+                <a href="products"> <img class="card-img" src="{{ MEDIA_URL }}/site_images/fence_picket.png" alt="Image of fence panel"> </a>
+                <div class="card-body">
+                    <h5 class="card-title">Fencing Products</h5>
+                    <p class="card-text">We carry and manufacture a wide range of fencing panels and related products.</p>
             </div>
-        </div>
-        <div class="card card-border">
-            {% comment %} <img class="card-img" src="https://tw-shop.s3.eu-west-1.amazonaws.com/media/tractor.png" alt="Image of a tractor"> {% endcomment %}
-            <img class="card-img" src="{{ MEDIA_URL }}/site_images/tractor.png" alt="Image of a tractor">
-            <div class="card-body">
-                <h5 class="card-title">Agri Products</h5>
-                <p class="card-text">We sell and deliver a complete range of agri/farming clothing, tools, consumables and much more.</p>
             </div>
-        </div>
-        <div class="card card-border">
-            {% comment %} <img class="card-img" src="https://tw-shop.s3.eu-west-1.amazonaws.com/media/timber_boards.png" alt="Image of timber board"> {% endcomment %}
-            <img class="card-img" src="{{ MEDIA_URL }}/site_images/timber_boards.png" alt="Image of a timber boards">
-            <div class="card-body">
-                <h5 class="card-title">Timber Products</h5>
-                <p class="card-text">From our base in Wexford we hold a large stock of timber and pressure treated products.</p>
+            <div class="card card-border">
+                <img class="card-img" src="{{ MEDIA_URL }}/site_images/paving.png" alt="Image of paving blocks">
+                <div class="card-body">
+                    <h5 class="card-title">Paving</h5>
+                    <p class="card-text">We follow the lastest trends in paving and hardscaping supplies. Our yard carrys all stock of paving brick, slabs and natural flag stones. </p>
+                </div>
             </div>
-        </div>
-        <div class="card card-border">
-            {% comment %} <img class="card-img" src="https://tw-shop.s3.eu-west-1.amazonaws.com/media/paint.png" alt="Image of a paint can"> {% endcomment %}
-            <img class="card-img" src="{{ MEDIA_URL }}/site_images/paint.png" alt="Image of a paint can with brush"> 
-            <div class="card-body">
-                <h5 class="card-title">Paints & Decoration</h5>
-                <p class="card-text">We supply a large range of paints, stains and perservatives including the tools to apply them.</p>
+            <div class="card card-border">
+                <img class="card-img" src="{{ MEDIA_URL }}/site_images/tractor.png" alt="Image of a tractor">
+                <div class="card-body">
+                    <h5 class="card-title">Agri Products</h5>
+                    <p class="card-text">We sell and deliver a complete range of agri/farming clothing, tools, consumables and much more.</p>
+                </div>
             </div>
-        </div>
-        <div class="card card-border">
-            {% comment %} <img class="card-img" src="https://tw-shop.s3.eu-west-1.amazonaws.com/media/gate.png" alt="Image of a gate"> {% endcomment %}
-            <img class="card-img" src="{{ MEDIA_URL }}/site_images/gate.png" alt="Image of a gate">
-            <div class="card-body">
-                <h5 class="card-title">Gates</h5>
-                <p class="card-text">We sell a wide range of timber gates along with the necessary hardware.</p>
+            <div class="card card-border">
+                <img class="card-img" src="{{ MEDIA_URL }}/site_images/timber_boards.png" alt="Image of a timber boards">
+                <div class="card-body">
+                    <h5 class="card-title">Timber Products</h5>
+                    <p class="card-text">From our base in Wexford we hold a large stock of timber and pressure treated products.</p>
+                </div>
             </div>
-        </div>
-        <div class="card card-border">
-            {% comment %} <img class="card-img" src="https://tw-shop.s3.eu-west-1.amazonaws.com/media/1ton_bag_other.png" alt="Image of 1 ton bag"> {% endcomment %}
-            <img class="card-img" src="{{ MEDIA_URL }}/site_images/1ton_bag_other.png" alt="Image of a 1 ton bag"> 
-            <div class="card-body">
-                <h5 class="card-title">Decorative Stone</h5>
-                <p class="card-text">We supply and deliver all quantities of decorative stone for use in wide range of landscaping applications.</p>
+            <div class="card card-border">
+                <img class="card-img" src="{{ MEDIA_URL }}/site_images/paint.png" alt="Image of a paint can with brush"> 
+                <div class="card-body">
+                    <h5 class="card-title">Paints & Decoration</h5>
+                    <p class="card-text">We supply a large range of paints, stains and perservatives including the tools to apply them.</p>
+                </div>
             </div>
-        </div>
-        <div class="card card-border">
-            {% comment %} <img class="card-img" src="https://tw-shop.s3.eu-west-1.amazonaws.com/media/bench.png" alt="Image of a Bench"> {% endcomment %}
-            <img class="card-img" src="{{ MEDIA_URL }}/site_images/bench.png" alt="Image of a bench">
-            <div class="card-body">
-                <h5 class="card-title">Outdoor Furniture</h5>
-                <p class="card-text">We supply many styles of sustainable timber furniture, practical seats and benches and decoration arches and pergolas to suit all types of garden. </p>
+            <div class="card card-border">
+                <img class="card-img" src="{{ MEDIA_URL }}/site_images/gate.png" alt="Image of a gate">
+                <div class="card-body">
+                    <h5 class="card-title">Gates</h5>
+                    <p class="card-text">We sell a wide range of timber gates along with the necessary hardware.</p>
+                </div>
             </div>
-        </div>
-        <div class="card card-border">
-            {% comment %} <img class="card-img" src="https://tw-shop.s3.eu-west-1.amazonaws.com/media/hardware.png" alt="Image of hardware items"> {% endcomment %}
-            <img class="card-img" src="{{ MEDIA_URL }}/site_images/hardware.png" alt="Image of hardware">
-            <div class="card-body">
-                <h5 class="card-title">Hardware</h5>
-                <p class="card-text">Our store stocks all types of hardware, fixtures and fixings</p>
+            <div class="card card-border">
+                <img class="card-img" src="{{ MEDIA_URL }}/site_images/1ton_bag_other.png" alt="Image of a 1 ton bag"> 
+                <div class="card-body">
+                    <h5 class="card-title">Decorative Stone</h5>
+                    <p class="card-text">We supply and deliver all quantities of decorative stone for use in wide range of landscaping applications.</p>
+                </div>
             </div>
-        </div>
-        <div class="card card-border">
-            {% comment %} <img class="card-img" src="https://tw-shop.s3.eu-west-1.amazonaws.com/media/power_tools.png" alt="Image of a power tool"> {% endcomment %}
-            <img class="card-img" src="{{ MEDIA_URL }}/site_images/power_tools.png" alt="Image of power tool">
-            <div class="card-body">
-                <h5 class="card-title">Tools</h5>
-                <p class="card-text">I've got the power...tool! On top of our large selection of gardening, construction and hand tools we also carry the full range of Makita LXT and Milwaukee M Series cordless power tools.</p>
+            <div class="card card-border">
+                <img class="card-img" src="{{ MEDIA_URL }}/site_images/bench.png" alt="Image of a bench">
+                <div class="card-body">
+                    <h5 class="card-title">Outdoor Furniture</h5>
+                    <p class="card-text">We supply many styles of sustainable timber furniture, practical seats and benches and decoration arches and pergolas to suit all types of garden. </p>
+                </div>
             </div>
-        </div>
+            <div class="card card-border">
+                <img class="card-img" src="{{ MEDIA_URL }}/site_images/hardware.png" alt="Image of hardware">
+                <div class="card-body">
+                    <h5 class="card-title">Hardware</h5>
+                    <p class="card-text">Our store stocks all types of hardware, fixtures and fixings</p>
+                </div>
+            </div>
+            <div class="card card-border">
+                <img class="card-img" src="{{ MEDIA_URL }}/site_images/power_tools.png" alt="Image of power tool">
+                <div class="card-body">
+                    <h5 class="card-title">Tools</h5>
+                    <p class="card-text">I've got the power...tool! On top of our large selection of gardening, construction and hand tools we also carry the full range of Makita LXT and Milwaukee M Series cordless power tools.</p>
+                </div>
+            </div>
+        </div>    
     </div>
 
 
