@@ -165,6 +165,9 @@ A Favicon icon pack was created using my drawing of the one of the companies del
 
 <br>
 
+<p>The logos on the Home page were created by me using free clipart images frame with a black border and all sized 280 x 200 pixels ( W x H ).</p>
+
+
 #### **Colors**
 The business uses these red trucks for deliveries. This is a conscious branding exercise on their part. With all previous and current vechicles using the same red and black color scheme.
 

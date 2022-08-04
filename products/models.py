@@ -27,6 +27,7 @@ class Product(models.Model):
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     product_name = models.CharField(max_length=254)
+    simple_description = models.TextField(default=None, null=True, blank=True)
     product_description = models.TextField()
     sell_quantity = models.ForeignKey('ProductMeasurement', null=True, blank=True, on_delete=models.SET_NULL)
     price = models.DecimalField(max_digits=6, decimal_places=2)
