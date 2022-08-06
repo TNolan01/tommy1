@@ -19,17 +19,17 @@
         {% for product in products %}
             <div class="product-card card text-black">
                 {% if product.image %}
-                <a href="">
-                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.product_name }}">
                 </a>
                 {% else %}
-                <a href="">
+                <a href="{% url 'product_detail' product.id %}">
                     <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.product_name }}">
                 </a>
                 {% endif %}
                 <div class="card-body pb-0">
                     <p class="mb-0 des-header">{{ product.product_name }}</p>
-                    <p class="mb-0 des-text">{{ product.product_description }}</p>
+                    <p class="mb-0 des-text">{{ product.simple_description }}</p>
                 </div>
                 <div class="card-footer bg-white pt-0 border-0 text-left">
                     <div class="row">
