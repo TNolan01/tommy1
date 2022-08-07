@@ -23,16 +23,16 @@
                   </button>
                   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Special Offers</a>
-                    <a class="dropdown-item" href="#">Paving & Kerbing</a>
-                    <a class="dropdown-item" href="/products/">Fencing</a>
-                    <a class="dropdown-item" href="#">Decorative Stone</a>
-                    <a class="dropdown-item" href="#">Agri</a>
-                    <a class="dropdown-item" href="#">Gates</a>
-                    <a class="dropdown-item" href="#">Outdoor Furniture</a>
-                    <a class="dropdown-item" href="#">Hardware</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Paving">Paving & Kerbing</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Fencing Products">Fencing</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Stone">Decorative Stone</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Agri">Agri</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Gates">Gates</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Outdoor Furniture">Outdoor Furniture</a>
+                    <a class="dropdown-item" href="{% url 'products' %}?category=Power Tools">Power Tools</a>
                   </div>
               </div>
-              <form class="d-flex search-bar" method="GET" action="">
+              <form class="d-flex search-bar" method="GET" action="{% url 'products' %}">
                   <input class="form-control border border-red rounded-0" type="text" name="q" placeholder="Search our site">
                       <div class="input-group-append">
                           <button class="form-control btn btn-black border border-red rounded-0" type="submit">
