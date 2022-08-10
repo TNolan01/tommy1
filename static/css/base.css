@@ -107,6 +107,16 @@ body {
 
 
 /* Product Pages */
+.fa-bolt-lightning {
+    color :rgb(207, 8, 8);
+}
+
+.category_link_text {
+    color :rgb(207, 8, 8;);
+    font-weight :bold;
+}
+
+
 .des-header {
     color: green;
     font-weight: 800;

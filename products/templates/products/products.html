@@ -8,10 +8,42 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font text-black">{{ product.category }}</h2>
+            {% for category in product_cats %}
+            <h2 class="logo-font text-black">{{ category.name }}</h2>
+            {% endfor %}                
             <hr class="w-50 mb-1">
         </div>
     </div>
+    <div class="product-container col-10 offset-1">
+        <div class="row mt-1 mb-2">
+            <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                <div class="sort-select-wrapper w-50">
+                    <select id="sort-selector" class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                        <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                        <option value="price.asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                        <option value="price.desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                        <option value="star_rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                        <option value="star_rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option> 
+                        <option value="product_name.asc" {% if current_sorting == 'product_name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                        <option value="product_name.desc" {% if current_sorting == 'product_name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                        <option value="category.asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+                        <option value="category.desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-md-first">
+                <p class="text-muted mt-3 text-center text-md-left">
+                    {% if search_term or current_categories or current_sorting != 'None_None' %}
+                        <span class="small"><a href="{% url 'products' %}">Products Home</a> | </span>
+                    {% endif %}
+                    {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                </p>
+            </div>
+        </div>
+
+
+
+
 </div>
     
 <div class="product-container container-fluid">
@@ -42,6 +74,16 @@
                             {% endif %}
                         </div>
                         <div class="col">
+                            {% if product.category %}
+                            <p class="small mt-1 mb-0">
+                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                {{ product.category.name }}
+                                </a>
+                            </p>
+                            {% endif %}
+                        </div>
+
+                        <div class="col">
                             <p>{{ product.sell_quantity }}</p>
                         </div>
                     </div>
@@ -53,6 +95,43 @@
     </div>
 </div>
 
+{% endblock %}
 
 
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript">
+		$('.btt-link').click(function(e) {
+			window.scrollTo(0,0)
+		})
+	</script>
+
+    <!--Script for product sort function-->
+    <script type="text/javascript">
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split(".")[0];
+                var direction = selectedVal.split(".")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+
+
+
+
+        })
+    </script>
 {% endblock %}
