@@ -70,6 +70,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth', 
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.media', # for AWS Media Folder link
+                'basket.contexts.basket_contents', # for contents of shopping basket
             ],
         },
     },
@@ -179,3 +180,7 @@ if 'USE_AWS' in os.environ:
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+#variables for delivery charges
+FREE_DELIVERY_THRESHOLD = 75
+STANDARD_DELIVERY_PERCENTAGE = 5
