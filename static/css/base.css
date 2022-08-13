@@ -4,8 +4,6 @@ body {
     font-family: 'Lato';
     padding-bottom: 4rem;
     height: 100%;
-    background: rgb(189,188,196);
-    background: linear-gradient(289deg, rgba(189,188,196,1) 0%, rgba(20,20,22,1) 63%, rgba(209,212,226,1) 91%);
 }
 
 /* Carousel */
