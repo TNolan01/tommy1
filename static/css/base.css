@@ -61,6 +61,7 @@ body {
 
 .text-black {
     color: #000 !important;
+    font-weight: bold;
 }
 
 .text-red {
@@ -146,6 +147,13 @@ body {
     margin-right: auto;
 
 }
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
 
 /* Product Details Page */
 .text-special {
