@@ -168,7 +168,11 @@ body {
     border: 1px solid black;
 }
 
-
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 /* Blink effect of text */
 .blink {
