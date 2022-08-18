@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     
     # Other apps
     'storages',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -55,6 +56,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'tommy1.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 TEMPLATES = [
     {
@@ -73,6 +76,10 @@ TEMPLATES = [
                 'django.template.context_processors.media', # for AWS Media Folder link
                 'basket.contexts.basket_contents', # for contents of shopping basket
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
