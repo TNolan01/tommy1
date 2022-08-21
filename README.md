@@ -286,6 +286,7 @@ Text
 - [Bootstrap](https://getbootstrap.com/)
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 - [Pillow](https://pypi.org/project/Pillow/)
+- [Stripe](https://stripe.com/ie)
 ​
 ### Tools
 ​

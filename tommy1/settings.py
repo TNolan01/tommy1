@@ -194,3 +194,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #variables for delivery charges
 FREE_DELIVERY_THRESHOLD = 75
 STANDARD_DELIVERY_PERCENTAGE = 5
+#stripe settings
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY','')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY','')
+STRIPE_CURRENCY = 'eur'
