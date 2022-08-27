@@ -1,4 +1,8 @@
 from django.http import HttpResponse
+from .models import Order, OrderLineItem
+import json
+import time
+
 
 """ For Stripe Webhooks"""
 
@@ -20,7 +24,7 @@ class StripeWH_Handler:
         
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
-        invoice_total = round(intent.data.charges[0].amount/100, 2)
+        invoice_total = round(intent.charges.data[0].amount/100, 2)
         
         #handle empty field values on address
         for field, value in shipping_details.address.items():
@@ -41,7 +45,7 @@ class StripeWH_Handler:
                     street_address1__iexact=shipping_details.address.line1,
                     street_address2__iexact=shipping_details.address.line2,
                     county__iexact=shipping_details.address.state,
-                    grand_total=grand_total,
+                    invoice_total=invoice_total,
                     original_basket=basket,
                     stripe_pid=pid,
                 )
@@ -52,7 +56,7 @@ class StripeWH_Handler:
                 time.sleep(1)
         if order_exists:
             return HttpResponse(
-                content=f'Webhook received: {event["type"]} | SUCCESS: Verified order already in database',
+                content=f'Webhook received: {event["type"]} | SUCCESS: Order already in database',
                 status=200)
         else:
             order = None
