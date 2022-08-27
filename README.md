@@ -330,9 +330,11 @@ The site uses the Django and Bootstrap
 <p>In this section I deal with some of the bugs and errors encountered during the development process. If the issue was sucessfully fixed I have included details of that fix.</p>
 
 ## Bugs & Fixes
+<p>This section consists of issues I had during development which took me 60 minutes approximately to identify and sort.</p>
 
 ### Issue No.1
-
+<h4>Web Hooks and Stripe:</h4>
+<p>During the setup of the Stripe webhooks I was initially not able to get 'intent' details back and printed to the terminal. After some investigation I discovered that this was because Port 8000 was set to Private and not Public as was required. Once this was created the transaction information was printed to the terminal.</p>
 
 
 ---
