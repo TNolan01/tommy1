@@ -1,4 +1,4 @@
-import uuid
+import random
 from datetime import datetime
 from django.db import models
 from django.db.models import Sum
@@ -28,13 +28,15 @@ class Order(models.Model):
 
     # private method - order number generator
     def _generate_order_number(self):
-        d = date_time = now.strftime("%m/%d/%Y %H:%M:%S")
-        disallowed_characters = "/:"
-        for character in disallowed_characters:
-            order_number = d.replace(character, "")
-        return order_number
+        now = datetime.now()
+        d = now.strftime("%m/%d/%Y")
+        h = date_time = now.strftime("%H")
+        random_number = str(random.randint(1000, 9999 - 1))
+        order_number =(f'{d}{h}-{random_number}')
+        order_num = order_number.translate({ord('/'): None})
+        return order_num
 
-    
+
     def update_total(self):
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
@@ -43,6 +45,7 @@ class Order(models.Model):
             self.delivery_cost = 0
         self.invoice_total = self.order_total + self.delivery_cost
         self.save()
+
 
     # overide default save method
     def save(self, *args, **kwargs):
