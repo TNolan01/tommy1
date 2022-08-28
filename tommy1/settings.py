@@ -194,9 +194,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #variables for delivery charges
 FREE_DELIVERY_THRESHOLD = 75
-STANDARD_DELIVERY_PERCENTAGE = 5
+STANDARD_DELIVERY_PERCENTAGE = 10
 #stripe settings
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY','')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY','')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET','')
 STRIPE_CURRENCY = 'eur'
+
+#email 
+DEFAULT_FROM_EMAIL = 'sales@tw-shop.com'

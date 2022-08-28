@@ -1,0 +1,24 @@
+Hello {{ order.full_name }},
+
+Thank you for your business. This is an email to confirm your order.
+
+Order Information:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: €{{ order.order_total }}
+Delivery: €{{ order.delivery_cost }}
+Grand Total: €{{ order.grand_total }}
+
+Delivery Information:
+Your order will be shipped to 
+{{ order.street_address1 }} 
+{{ order.town_or_city }}, 
+{{ order.country }}.
+
+Your contact phone number is {{ order.phone_number }}.
+
+If you have any queries or any of the information regarding your order is incorrect please feel free to contact us at {{ contact_email }}.
+
+Many Thanks.
