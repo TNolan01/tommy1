@@ -1,5 +1,5 @@
 import uuid
-
+from datetime import datetime
 from django.db import models
 from django.db.models import Sum
 from django.conf import settings
@@ -28,7 +28,11 @@ class Order(models.Model):
 
     # private method - order number generator
     def _generate_order_number(self):
-        return uuid.uuid4().hex.upper()
+        d = date_time = now.strftime("%m/%d/%Y %H:%M:%S")
+        disallowed_characters = "/:"
+        for character in disallowed_characters:
+            order_number = d.replace(character, "")
+        return order_number
 
     
     def update_total(self):
