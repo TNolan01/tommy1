@@ -69,10 +69,50 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 # Product admin search
+# Add a new product
 def add_product(request):
-    form = ProductForm()
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            product = form.save()
+            form.save()
+            messages.success(request,'Product added')
+            return redirect(reverse('product_detail', args=[product_id]))
+        else:
+            messages.error(request,'Product not added, please check form')
+    else:
+        form = ProductForm()
     template = 'products/add_product.html'
     context = {
         'form': form,
     }
     return render(request, template, context)
+
+# Edit an existing product
+def edit_product(request, product_id):
+    product= get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Product updated')
+            return redirect(reverse('product_detail', args=[product_id]))
+        else:
+            messages.error(request, 'Product details did not update, please check form')
+    else:
+        form = ProductForm(instance=product)
+        messages.info(request, f'Edit product : {product.name}')
+    template = 'products/edit_product.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
+    return render(request, template, context)
+
+# Delete an existing product
+def edit_product(request, product_id):
+    product= get_object_or_404(Product, pk=product_id)
+    product.delete()
+    messages.success(request, 'Product deleted')
+    return redirect(reverse('products'))
+     
