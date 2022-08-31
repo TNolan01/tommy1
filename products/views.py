@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q  # For search function
 from django.db.models.functions import Lower # For product sort via name
 from .models import Product, Category
-
+from .forms import ProductForm
 
 # Renders the all products page
 def all_products(request):
@@ -37,7 +37,7 @@ def all_products(request):
             categories = Category.objects.filter(name__in=categories)
             
             
-        #query for nav search function    
+        # query for nav search function    
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -67,3 +67,12 @@ def product_detail(request, product_id):
     }
     
     return render(request, 'products/product_detail.html', context)
+
+# Product admin search
+def add_product(request):
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+    return render(request, template, context)
