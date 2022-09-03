@@ -77,7 +77,7 @@ def add_product(request):
             product = form.save()
             form.save()
             messages.success(request,'Product added')
-            return redirect(reverse('product_detail', args=[product_id]))
+            return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request,'Product not added, please check form')
     else:
@@ -101,7 +101,7 @@ def edit_product(request, product_id):
             messages.error(request, 'Product details did not update, please check form')
     else:
         form = ProductForm(instance=product)
-        messages.info(request, f'Edit product : {product.name}')
+        messages.info(request, f'Edit product : {product.product_name}')
     template = 'products/edit_product.html'
     context = {
         'form': form,
@@ -110,9 +110,11 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 # Delete an existing product
-def edit_product(request, product_id):
+def delete_product(request, product_id):
     product= get_object_or_404(Product, pk=product_id)
-    product.delete()
-    messages.success(request, 'Product deleted')
-    return redirect(reverse('products'))
-     
+    if request.method == 'POST':
+        product.delete()
+        messages.success(request, 'Product deleted')
+        # return redirect(reverse('products'))
+        return redirect('products')
+    return render(request, 'products/delete_product.html')

@@ -73,8 +73,10 @@
                                         </button>
                                     </div>
                                     <div>
+                                        {% if request.user.is_superuser %}
                                         <a href="{% url 'edit_product' product.id %}">Edit</a>
                                         <a href="{% url 'delete_product' product.id %}">Delete</a>
+                                        {% endif %}
                                     </div>
                                 </div>
                             </div>
