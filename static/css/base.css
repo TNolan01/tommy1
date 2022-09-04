@@ -235,9 +235,21 @@ body {
     height: 100%;
 }
 
+/* 404 Page */
 
+.error-container {
+    color: white;
+    background-color: #000;
+    text-align: center;
+    border: 3px;
+    border-color: rgb(207, 8, 8) !important;
+}
 
-
+.error-font {
+    font-size: 10em;
+    color: white;
+    font-weight: bold
+}
 
 
 
