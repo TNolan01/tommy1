@@ -127,16 +127,6 @@ body {
     font-weight :bold;
 }
 
-
-/* .des-header {
-    color: green;
-    font-weight: 800;
-}
-
-.des-text {
-    font-size: 14px;
-} */
-
 .product-card {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -251,8 +241,17 @@ body {
     font-weight: bold
 }
 
+/* Contact Us Page */
 
+.spacer-bar {
+    background-color : white;
+    height : 32px;
+}
 
+.map-section {
+    border : 2px solid black
+}
+ 
 
 /* Blink effect of text */
 .blink {
