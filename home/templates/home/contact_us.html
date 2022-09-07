@@ -10,7 +10,7 @@
     </div>
 </div>
 
-
+<!--Contact info-->
 <div class="container">
     <div class="container">
         <div class="row contact-details">
@@ -49,9 +49,9 @@
                 </a>           
 
             </div>
-        
+            <!--Form for Contact Us-->
             <div class="col-contact-form col-sm col-6">
-                <form action="#">
+                <form action="#" form method="POST">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <input class="btn btn-black btn-block" type="submit" value="Submit">
@@ -60,10 +60,11 @@
         </div>  
     </div>
     <!--subscribe to newsletter button-->
-    <div class="mt-4">
-        <a href="{% url 'subscribe' %}" class="btn btn-primary btn-block active blink" role="button" aria-pressed="true">Subscribe to our newsletter!</a>
+  
+    <div class="rainbow">
+        <a href="{% url 'subscribe' %}" class="btn-block btn-black rounded btn" role="button" aria-pressed="true">Subscribe to our newsletter!</a> 
     </div>
-
+ 
     <div class="spacer-bar">
         <span class="blank-spacer"></span>
     </div>

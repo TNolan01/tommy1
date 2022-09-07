@@ -1,0 +1,404 @@
+body {
+    /* color: white;  */
+    font-family: 'Lato';
+    padding-bottom: 4rem;
+    height: 100%;
+}
+
+/* Carousel */
+.carousel .carousel-item {
+    height: 300px;
+}
+
+.carousel-item img {
+    max-height: 300px !important;
+    /* object-fit: contain;  */
+}  
+
+.text-white {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* Bulma for fontawesome icons */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: black;
+    color: white;
+    min-width: 260px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: #000 !important;
+    font-weight: bold;
+}
+
+.text-red {
+    color: rgb(207, 8, 8) !important;
+}
+
+.border-red {
+    border: 2px solid rgb(207, 8, 8) !important;
+}
+
+/* Nav Bar  */
+.navbar {
+    background-color: #fff !important;
+}
+
+.nav-item {
+    padding-right: 1.5em;
+} 
+
+.navbar-nav a:hover{  
+    color: rgb(207, 8, 8) !important;
+}
+
+#accountnav {
+    background-color: black !important;
+}
+
+/* Index Page */
+
+.card {
+    margin-top: 2rem;
+    max-width: 20rem !important;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    border-color: #fff !important; 
+    border-style: 2px, solid !important;
+}
+
+.card:hover {
+    border-color: rgb(207, 8, 8) !important;
+    border-style: solid !important;
+    border-width: 3px !important;
+}
+
+/* Carousel */
+/* .carousel .carousel-show {
+    height: 250px;
+} */
+
+.carousel-show img {
+    max-height: 250px !important;
+    object-fit: contain;  
+}  
+
+/* Product Pages */
+.fa-bolt-lightning {
+    color :rgb(207, 8, 8);
+}
+
+.category_link_text {
+    color :rgb(207, 8, 8);
+    font-weight :bold;
+}
+
+.product-card {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-color: black !important; 
+    border-style: 2px, solid !important;
+    max-width: 20rem !important;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+
+/* Product Details Page */
+.text-special {
+    color: rgb(207, 8, 8) !important;
+    font-weight: bold !important;
+}
+
+/* Shopping Basket  */
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
+
+.bag-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Stripe Payment Stylings */
+
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus,
+.stripe-style-input:focus,
+.stripe-style-input:active {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+
+.fieldset-label {
+    position: relative;
+    right: .5rem;
+}
+
+#payment-form .form-control,
+#card-element {
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* Checkout page */
+
+#loading-overlay {
+	display: none;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(23, 162, 184, .85);
+    z-index: 9999;
+}
+
+.loading-spinner {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100%;
+}
+
+/* 404 Page */
+
+.error-container {
+    color: white;
+    background-color: #000;
+    text-align: center;
+    border: 3px;
+    border-color: rgb(207, 8, 8) !important;
+}
+
+.error-font {
+    font-size: 10em;
+    color: white;
+    font-weight: bold
+}
+
+/* Contact Us Page */
+
+.spacer-bar {
+    background-color : white;
+    height : 32px;
+}
+
+.map-section {
+    border : 2px solid black
+}
+
+/* Subscribe button effect */
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(1turn);
+	}
+}
+
+.rainbow {
+	position: relative;
+	z-index: 0;
+	// height: 2em;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 2rem;
+    margin: 1em;
+
+    	
+	&::before {
+		content: '';
+		position: absolute;
+		z-index: -2;
+		left: -50%;
+		top: -50%;
+		width: 200%;
+		height: 200%;
+		background-color: #504e4e;
+		background-repeat: no-repeat;
+		background-size: 50% 50%, 50% 50%;
+		background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+		background-image: linear-gradient(#ba1209, #ba1209), linear-gradient(#e6d8d8, #e6d8d8), linear-gradient(#d53e33, #d53e33), linear-gradient(#ff1606, #ff1606);
+		animation: rotate 8s linear infinite;
+	}
+	
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		left: 6px;
+		top: 6px;
+		width: calc(100% - 12px);
+		height: calc(100% - 12px);
+		background: white;
+		border-radius: 5px;
+	}
+}
+
+
+
+
+/* Blink effect of text */
+.blink {
+    animation: blink 1s steps(1, end) infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* Auth / Signup */
+
+
+
+/*  Media Queries */
+
+/* Larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+
+}
+
+/* Size cards on larger screens */
+@media (min-width: 1440px) {
+    .card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 20rem;
+    }
+    
+}
+
+
+/* Fixed top navbar only on medium and upwards */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+    .card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 20rem;
+    }
+
+}
+
+@media (min-width: 809px) {
+    .card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 20rem;
+    }
+} 
+    
+
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    
+    .search-bar {
+        margin-top: 2em;
+    }
+
+    .logo-font {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .card {
+        margin-top: 2rem;
+        min-width: 12rem;
+        margin-bottom: 2rem;
+    }
+    
+    
+}
+
+
+@media (max-width: 574px) {
+    .logo-font {
+        font-size: 20px;
+    }
+    
+}
