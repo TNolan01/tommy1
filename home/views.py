@@ -12,6 +12,7 @@ def index(request):
     
     return render(request, 'home/index.html')
 
+
 # Renders contact us page
 def contact_us(request):
     if request.method == 'GET':
@@ -48,3 +49,8 @@ def subscribe(request):
 
     return render(request, 'home/subscribe_email.html', context)
 
+
+# Renders gallery - inspiration page
+def gallery(request):
+    
+    return render(request, 'home/gallery.html')

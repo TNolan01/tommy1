@@ -48,6 +48,8 @@ For this purposes I have listed login at this link : [User Test Information](#us
       - [Colours](#colours)
       - [Images](#images)
       - [Agile Methodology](#agile-methodology)
+  - [Marketing Strategy](#marketing-strategy)
+    - [SEO](#seo---search-engine-optimization)
   - [Wireframes](#wireframes)
     - [Site Layout](#site-layout)
   - [Information Architecture](#information-architecture)
@@ -207,6 +209,14 @@ The design, development and testing of this application were tracked through a K
 
 [Back to content](#contents)
 ​
+## Marketing Strategy
+
+### SEO - Search Engine Optimization
+
+#### Keyword Research
+
+
+
 
 ---
 ## Wireframes
