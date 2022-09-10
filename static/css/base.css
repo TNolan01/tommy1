@@ -1,32 +1,15 @@
-.body {
-  /* color: white;  */
-  font-family: "Lato";
-  padding-bottom: 4rem;
+body {
+  font-family: "Lato", serif;
+  background-color: #bdbfc0;
   height: 100%;
+  margin: 0;
 }
 
-/* Carousel */
-.carousel .carousel-item {
-  height: 300px;
-}
-
-.carousel-item img {
-  max-height: 300px !important;
-  /* object-fit: contain;  */
-}
-
-.text-white {
-  color: white !important;
-  font-weight: bold;
-}
-
-/* Bulma for fontawesome icons */
-.icon {
-  align-items: center;
-  display: inline-flex;
-  justify-content: center;
-  height: 1.5rem;
-  width: 1.5rem;
+/* General ****************************/
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .logo-font {
@@ -73,9 +56,40 @@
   border: 2px solid rgb(207, 8, 8) !important;
 }
 
-/* Nav Bar  */
+.text-white {
+  color: white !important;
+  font-weight: bold;
+}
+
+/* Carousel */
+.carousel .carousel-item {
+  height: 300px;
+}
+
+.carousel-item img {
+  max-height: 300px !important;
+  /* object-fit: contain;  */
+}
+
+/* Bulma for fontawesome icons */
+.icon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Nav Bar, Nav Bar, Nav Bar */
 .navbar {
   background-color: #fff !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0;
+}
+
+.removecaret.dropdown-toggle::after {
+  display: none;
 }
 
 .nav-item {
@@ -86,11 +100,21 @@
   color: rgb(207, 8, 8) !important;
 }
 
-#accountnav {
-  background-color: black !important;
+/* Footer, Footer, Footer, Footer */
+.footer-block {
+  background: black;
+  opacity: 0.6;
+  color: white;
+  width: 100vw;
+  bottom: 0;
+  margin-top: 2rem;
 }
 
-/* Index Page */
+.footer a {
+  color: white;
+}
+
+/* Index Page, Index Page, Index Page, Index Page, Index Page, Index Page*/
 .card {
   margin-top: 2rem;
   max-width: 20rem !important;
@@ -107,17 +131,13 @@
   border-width: 3px !important;
 }
 
-/* Carousel */
-/* .carousel .carousel-show {
-    height: 250px;
-} */
 .carousel-show img {
   max-height: 250px !important;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-/* Product Pages */
+/* Product Pages, Product Pages, Product Pages, Product Pages, Product Pages, Product Pages*/
 .fa-bolt-lightning {
   color: rgb(207, 8, 8);
 }
@@ -143,13 +163,13 @@
   cursor: pointer;
 }
 
-/* Product Details Page */
+/* Product Details Page, Product Details Page, Product Details Page */
 .text-special {
   color: rgb(207, 8, 8) !important;
   font-weight: bold !important;
 }
 
-/* Shopping Basket  */
+/* Shopping Basket, Shopping Basket, Shopping Basket, Shopping Basket*/
 .btn-outline-black {
   background: white;
   color: black !important;
@@ -162,7 +182,7 @@
   overflow-y: auto;
 }
 
-/* Stripe Payment Stylings */
+/* Stripe Payment Stylings, Stripe Payment Stylings, Stripe Payment Stylings, */
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -208,7 +228,7 @@
   border: 1px solid #000;
 }
 
-/* Checkout page */
+/* Checkout page, Checkout page, Checkout page, Checkout page, Checkout page, Checkout page */
 #loading-overlay {
   display: none;
   position: fixed;
@@ -228,7 +248,7 @@
   height: 100%;
 }
 
-/* 404 Page */
+/* 404 Page, 404 Page, 404 Page, 404 Page, 404 Page, 404 Page */
 .error-container {
   color: white;
   background-color: #000;
@@ -243,9 +263,8 @@
   font-weight: bold;
 }
 
-/* Contact Us Page */
+/* Contact Us Page, Contact Us Page, Contact Us Page, Contact Us Page   */
 .spacer-bar {
-  background-color: white;
   height: 32px;
 }
 
@@ -305,10 +324,11 @@
   border-radius: 5px;
 }
 
-/* Gallery */
+/* Gallery, Gallery, Gallery, Gallery, Gallery Page, Gallery Page */
 .gallery-block {
   padding-bottom: 60px;
   padding-top: 60px;
+  background-image: url(https://tw-shop.s3.eu-west-1.amazonaws.com/media/backgrounds/gallery_background.png);
 }
 
 .gallery-block .image {
@@ -418,7 +438,7 @@
   }
 }
 /* Auth / Signup */
-/*  Media Queries */
+/*  Media Queries, Media Queries, Media Queries, Media Queries, Media Queries, Media Queries*/
 /* Larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
