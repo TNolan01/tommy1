@@ -1,10 +1,12 @@
 body {
     font-family: 'Lato', serif; 
-    background-color: #bdbfc0;
+    background-color: white;
     // padding-bottom: 4rem;
     height: 100%;
+    min-height: 100%;
     margin: 0;
 }
+
 
 /* General ****************************/
 .title {
@@ -61,15 +63,35 @@ body {
 }
 
 
-/* Carousel */
-.carousel .carousel-item {
-    height: 300px;
+/* Carousel, Carousel, Carousel, Carousel*/
+.carousel {
+    margin-bottom: 1rem;
 }
 
-.carousel-item img {
-    max-height: 300px !important;
-    /* object-fit: contain;  */
-}  
+.carousel-control-next, .carousel-control-prev {
+    background: 0 0;
+    border: 0;
+}
+
+.carousel-caption {
+bottom: 3rem;
+z-index: 10;
+box-shadow: inset 30rem 30rem 30rem rgb(0 0 0 / 75%);
+padding: 1rem;
+border-radius: 30px;
+}
+
+.carousel-item {
+height: 25rem;
+}
+
+.carousel-item > img {
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+height: 25rem;
+}
 
 
 /* Bulma for fontawesome icons */
@@ -80,7 +102,6 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
-
 
 
 /* Nav Bar, Nav Bar, Nav Bar */
@@ -103,6 +124,7 @@ body {
     color: rgb(207, 8, 8) !important;
 }
 
+
 /* Footer, Footer, Footer, Footer */
 .footer-block {
     background: black;
@@ -111,6 +133,9 @@ body {
     width: 100vw;
     bottom: 0;
     margin-top: 2rem;
+    clear: both;
+    position: relative;
+    margin-top: -10px;    
 }
 
 .footer a {
@@ -121,12 +146,15 @@ body {
 /* Index Page, Index Page, Index Page, Index Page, Index Page, Index Page*/
 .card {
     margin-top: 2rem;
-    max-width: 20rem !important;
+    // max-width: 25rem !important;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
-    border-color: #fff !important; 
+    border-color: black !important; 
     border-style: 2px, solid !important;
+    height: 300px;
+    width : 250px;
+    
 }
 
 .card:hover {
@@ -135,12 +163,24 @@ body {
     border-width: 3px !important;
 }
 
+.card-img {
+    height: 300px;
+    width: auto;
+    max-width: 100%;
+}
 
+.card-img-overlay {
+    background-color: rgba(#000, 0.3);
+}
 
-.carousel-show img {
-    max-height: 250px !important;
-    object-fit: contain;  
-}  
+.product-box {
+    background-image: url(https://tw-shop.s3.eu-west-1.amazonaws.com/media/backgrounds/index_background.svg) !important;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat !important;
+}
+
 
 /* Product Pages, Product Pages, Product Pages, Product Pages, Product Pages, Product Pages*/
 .fa-bolt-lightning {
@@ -160,7 +200,7 @@ body {
     max-width: 20rem !important;
     margin-left: auto;
     margin-right: auto;
-
+    
 }
 
 .btt-link,
@@ -169,11 +209,13 @@ body {
     cursor: pointer;
 }
 
+
 /* Product Details Page, Product Details Page, Product Details Page */
 .text-special {
     color: rgb(207, 8, 8) !important;
     font-weight: bold !important;
 }
+
 
 /* Shopping Basket, Shopping Basket, Shopping Basket, Shopping Basket*/
 .btn-outline-black {
@@ -189,7 +231,6 @@ body {
 }
 
 /* Stripe Payment Stylings, Stripe Payment Stylings, Stripe Payment Stylings, */
-
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
@@ -248,6 +289,7 @@ body {
     height: 100%;
 }
 
+
 /* 404 Page, 404 Page, 404 Page, 404 Page, 404 Page, 404 Page */
 .error-container {
     color: white;
@@ -263,6 +305,7 @@ body {
     font-weight: bold
 }
 
+
 /* Contact Us Page, Contact Us Page, Contact Us Page, Contact Us Page   */
 .spacer-bar {
     height : 32px;
@@ -271,6 +314,7 @@ body {
 .map-section {
     border : 2px solid black
 }
+
 
 /* Subscribe button effect */
 *, *::before, *::after {
@@ -321,11 +365,17 @@ body {
 	}
 }
 
+
 /* Gallery, Gallery, Gallery, Gallery, Gallery Page, Gallery Page */
 .gallery-heading {
-
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 4rem;
 }
 
+.gallery-text {
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 2rem;
+}
 
 .gallery-block {
     padding-bottom: 60px;
@@ -457,7 +507,6 @@ body {
     
 }
 
-
 /* Fixed top navbar only on medium and upwards */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -467,23 +516,22 @@ body {
         left: 0;
         z-index: 1030;
     }
-    .card {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 20rem;
-    }
+    // .card {
+    //     margin-top: 2rem;
+    //     margin-bottom: 2rem;
+    //     width: 20rem;
+    // }
 
 }
 
-@media (min-width: 809px) {
-    .card {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 20rem;
-    }
-} 
+// @media (min-width: 809px) {
+//     .card {
+//         margin-top: 2rem;
+//         margin-bottom: 2rem;
+//         width: 20rem;
+//     }
+// } 
     
-
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     
@@ -496,20 +544,22 @@ body {
     }
 }
 
-@media (max-width: 700px) {
-    .card {
-        margin-top: 2rem;
-        min-width: 12rem;
-        margin-bottom: 2rem;
-    }
-    
-    
-}
-
-
 @media (max-width: 574px) {
     .logo-font {
         font-size: 20px;
     }
     
+}
+
+/* Carousel media queries */
+@media (min-width: 768px) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+    .carousel-caption {
+        display: block;
+    }
+
 }

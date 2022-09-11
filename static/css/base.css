@@ -1,7 +1,8 @@
 body {
   font-family: "Lato", serif;
-  background-color: #bdbfc0;
+  background-color: white;
   height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -61,14 +62,34 @@ body {
   font-weight: bold;
 }
 
-/* Carousel */
-.carousel .carousel-item {
-  height: 300px;
+/* Carousel, Carousel, Carousel, Carousel*/
+.carousel {
+  margin-bottom: 1rem;
 }
 
-.carousel-item img {
-  max-height: 300px !important;
-  /* object-fit: contain;  */
+.carousel-control-next, .carousel-control-prev {
+  background: 0 0;
+  border: 0;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  box-shadow: inset 30rem 30rem 30rem rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.carousel-item {
+  height: 20rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 20rem;
 }
 
 /* Bulma for fontawesome icons */
@@ -108,6 +129,9 @@ body {
   width: 100vw;
   bottom: 0;
   margin-top: 2rem;
+  clear: both;
+  position: relative;
+  margin-top: -10px;
 }
 
 .footer a {
@@ -121,7 +145,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
-  border-color: #fff !important;
+  border-color: black !important;
   border-style: 2px, solid !important;
 }
 
@@ -131,10 +155,12 @@ body {
   border-width: 3px !important;
 }
 
-.carousel-show img {
-  max-height: 250px !important;
-  -o-object-fit: contain;
-     object-fit: contain;
+.product-box {
+  background-image: url(https://tw-shop.s3.eu-west-1.amazonaws.com/media/backgrounds/index_background.svg) !important;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat !important;
 }
 
 /* Product Pages, Product Pages, Product Pages, Product Pages, Product Pages, Product Pages*/
@@ -325,6 +351,16 @@ body {
 }
 
 /* Gallery, Gallery, Gallery, Gallery, Gallery Page, Gallery Page */
+.gallery-heading {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 4rem;
+}
+
+.gallery-text {
+  font-family: "Gloria Hallelujah", cursive;
+  font-size: 2rem;
+}
+
 .gallery-block {
   padding-bottom: 60px;
   padding-top: 60px;
@@ -494,5 +530,16 @@ body {
 @media (max-width: 574px) {
   .logo-font {
     font-size: 20px;
+  }
+}
+/* Carousel media queries */
+@media (min-width: 768px) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .carousel-caption {
+    display: block;
   }
 }/*# sourceMappingURL=base.css.map */
