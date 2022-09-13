@@ -81,7 +81,7 @@ body {
 }
 
 .carousel-item {
-  height: 20rem;
+  height: 25rem;
 }
 
 .carousel-item > img {
@@ -89,7 +89,7 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 20rem;
+  height: 25rem;
 }
 
 /* Bulma for fontawesome icons */
@@ -141,18 +141,28 @@ body {
 /* Index Page, Index Page, Index Page, Index Page, Index Page, Index Page*/
 .card {
   margin-top: 2rem;
-  max-width: 20rem !important;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 2rem;
   border-color: black !important;
   border-style: 2px, solid !important;
+  width: 250px;
 }
 
 .card:hover {
   border-color: rgb(207, 8, 8) !important;
   border-style: solid !important;
   border-width: 3px !important;
+}
+
+.card-img {
+  height: 300px;
+  width: auto;
+  max-width: 100%;
+}
+
+.card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .product-box {
@@ -296,6 +306,19 @@ body {
 
 .map-section {
   border: 2px solid black;
+}
+
+.today {
+  color: rgb(207, 8, 8);
+}
+
+.table-shadow {
+  border-radius: 4px;
+  margin: 10px;
+  box-shadow: 0 0 10px black;
+  padding: 0 10px 0 10px;
+  overflow: hidden;
+  display: inline-block;
 }
 
 /* Subscribe button effect */
@@ -518,13 +541,6 @@ body {
   }
   .logo-font {
     font-size: 30px;
-  }
-}
-@media (max-width: 700px) {
-  .card {
-    margin-top: 2rem;
-    min-width: 12rem;
-    margin-bottom: 2rem;
   }
 }
 @media (max-width: 574px) {

@@ -152,10 +152,9 @@ height: 25rem;
     margin-bottom: 2rem;
     border-color: black !important; 
     border-style: 2px, solid !important;
-    height: 300px;
     width : 250px;
-    
 }
+
 
 .card:hover {
     border-color: rgb(207, 8, 8) !important;
@@ -200,7 +199,7 @@ height: 25rem;
     max-width: 20rem !important;
     margin-left: auto;
     margin-right: auto;
-    
+        
 }
 
 .btt-link,
@@ -208,6 +207,7 @@ height: 25rem;
 .remove-item {
     cursor: pointer;
 }
+
 
 
 /* Product Details Page, Product Details Page, Product Details Page */
@@ -313,6 +313,19 @@ height: 25rem;
 
 .map-section {
     border : 2px solid black
+}
+
+.today {
+    color: rgb(207, 8, 8);
+}
+
+.table-shadow {
+    border-radius:4px;
+    margin:10px;
+    box-shadow: 0 0 10px black;
+    padding:0 10px 0 10px;
+    overflow: hidden;
+    display: inline-block;
 }
 
 
@@ -516,21 +529,21 @@ height: 25rem;
         left: 0;
         z-index: 1030;
     }
-    // .card {
-    //     margin-top: 2rem;
-    //     margin-bottom: 2rem;
-    //     width: 20rem;
-    // }
+    .card {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        width: 20rem;
+    }
 
 }
 
-// @media (min-width: 809px) {
-//     .card {
-//         margin-top: 2rem;
-//         margin-bottom: 2rem;
-//         width: 20rem;
-//     }
-// } 
+@media (min-width: 809px) {
+     .card {
+         margin-top: 2rem;
+         margin-bottom: 2rem;
+         width: 20rem;
+     }
+} 
     
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
@@ -563,3 +576,4 @@ height: 25rem;
     }
 
 }
+

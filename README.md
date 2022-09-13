@@ -698,6 +698,7 @@ Aside from the Code Institute content for this section I used the following reso
 - [Stack Overflow](https://stackoverflow.com/)
 - [CodeMy.Com on YouTube](https://www.youtube.com/watch?v=HHx3tTQWUx0&list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy&index=2)
 - [Dennis Ivy](https://www.youtube.com/watch?v=tUqUdu0Sjyc&t=1469s)
+- [Ben Goddard(Codepen)](https://codepen.io/bengoddard)
 
 <br>
 
