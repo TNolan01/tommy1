@@ -104,7 +104,10 @@ body {
 /* Supplier Slider, Supplier Slider, Supplier Slider, Supplier Slider */
 .supplier-wrapper {
   width: 100%;
-  padding-top: 20px;
+  margin-bottom: 5rem;
+  max-height: 14rem;
+  padding-top: 2rem;
+  padding-bottom: 20rem;
   text-align: center;
 }
 
@@ -120,6 +123,11 @@ body {
 .slick-slide img {
   width: 100%;
   border: 2px solid #fff;
+}
+
+.brand-img {
+  max-height: 14rem;
+  margin-bottom: 4rem;
 }
 
 .supplier-wrapper .slick-dots li button:before {

@@ -1,4 +1,6 @@
-<div class="supplier-wrapper" style="background: black;">    
+<div class="supplier-wrapper" style="background: black;">
+    <div class="">
+        <h2 class="title">Suppliers</h2>    
     <div class="supplier-slider">
         <div class="brand-block">
             <a class="">
@@ -59,5 +61,39 @@
     </div>
 </div>
     
- 
+<script>
+    $(document).ready(function(){
+        $('.supplier-slider').slick({
+        slidesToShow: 6,
+        centerMode: true,
+        arrows: false,
+        autoplay: true,
+        
+        responsive: [{
+      
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              infinite: true
+            }
+      
+          }, {
+      
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+            }
+      
+          }, {
+      
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 2,
+            }
+      
+          }]
+        });
+    });
+
+</script>
     

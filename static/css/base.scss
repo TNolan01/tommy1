@@ -74,23 +74,23 @@ body {
 }
 
 .carousel-caption {
-bottom: 3rem;
-z-index: 10;
-box-shadow: inset 30rem 30rem 30rem rgb(0 0 0 / 75%);
-padding: 1rem;
-border-radius: 30px;
+    bottom: 3rem;
+    z-index: 10;
+    box-shadow: inset 30rem 30rem 30rem rgb(0 0 0 / 75%);
+    padding: 1rem;
+    border-radius: 30px;
 }
 
 .carousel-item {
-height: 25rem;
+    height: 25rem;
 }
 
 .carousel-item > img {
-position: absolute;
-top: 0;
-left: 0;
-min-width: 100%;
-height: 25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 25rem;
 }
 
 /* Text Carousel, Text Carousel, Text Carousel, Text Carousel */
@@ -104,32 +104,38 @@ height: 25rem;
 }
 
 /* Supplier Slider, Supplier Slider, Supplier Slider, Supplier Slider */
-.supplier-wrapper{
+.supplier-wrapper {
     width:100%;
-    padding-top: 20px;
+    margin-bottom: 5rem;
+    max-height: 14rem;
+    padding-top: 2rem;
+    padding-bottom: 20rem;
     text-align:center;
-  }
-//   h2{
-//     font-family:sans-serif;
-//     color:#fff;
-//   }
-  .supplier-slide{
+}
+
+.supplier-slide {
     width:90%;
     margin:0px auto;
-  }
-  .slick-slide{
+}
+
+.slick-slide {
     margin:10px;
-  }
-  .slick-slide img{
+}
+
+.slick-slide img {
     width:100%;
     border: 2px solid #fff;
-  }
-  .supplier-wrapper .slick-dots li button:before {
+}
+
+.brand-img {
+    max-height: 14rem;
+    margin-bottom: 4rem;
+}
+
+.supplier-wrapper .slick-dots li button:before {
     font-size:20px;
     color:white;
-  }
-
-
+}
 
 
 /* Bulma for fontawesome icons */
@@ -245,7 +251,6 @@ height: 25rem;
 .remove-item {
     cursor: pointer;
 }
-
 
 
 /* Product Details Page, Product Details Page, Product Details Page */
@@ -432,44 +437,44 @@ height: 25rem;
     padding-bottom: 60px;
     padding-top: 60px;
     background-image: url(https://tw-shop.s3.eu-west-1.amazonaws.com/media/backgrounds/gallery_background.png);
-  }
+}
 
 .gallery-block .image {
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
-  }
+}
 
   
-  .gallery-block .heading {
+.gallery-block .heading {
       margin-bottom: 50px;
       text-align: center;
-  }
+}
   
-  .gallery-block .heading h2 {
+.gallery-block .heading h2 {
       font-weight: bold;
       font-size: 1.4rem;
       text-transform: uppercase;
-  }
+}
   
-  .gallery-block.compact-gallery .item {
+.gallery-block.compact-gallery .item {
     overflow: hidden;
     margin-bottom: 0;
     background: black;
     opacity: 1;
-  }
+}
   
-  .gallery-block.compact-gallery .item .image {
+.gallery-block.compact-gallery .item .image {
     transition: 0.8s ease;
-  }
+}
   
-  .gallery-block.compact-gallery .item .info {
+.gallery-block.compact-gallery .item .info {
     position: relative;
       display: inline-block;
-  }
+}
   
-  .gallery-block.compact-gallery .item .description {
+.gallery-block.compact-gallery .item .description {
     display: grid;
       position: absolute;
       bottom: 0;
@@ -487,20 +492,20 @@ height: 25rem;
       text-align: center;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
       background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
-  }
+}
   
-  .gallery-block.compact-gallery .item .description .description-heading {
+.gallery-block.compact-gallery .item .description .description-heading {
     font-size: 1em;
     font-weight: bold;
-  }
+}
   
-  .gallery-block.compact-gallery .item .description .description-body {
+.gallery-block.compact-gallery .item .description .description-body {
     font-size: 0.8em;
     margin-top: 10px;
     font-weight: 300;
-  }
+}
   
-  @media (min-width: 576px) {
+@media (min-width: 576px) {
   
     .gallery-block.compact-gallery .item .description {
       opacity: 0; 
@@ -514,13 +519,13 @@ height: 25rem;
       transform: scale(1.3);
       opacity: 0.7; 
     }
-  }
+}
   
 
 /* Blink effect of text */
 .blink {
     animation: blink 1s steps(1, end) infinite;
-  }
+}
   
   @keyframes blink {
     0% {
@@ -532,7 +537,7 @@ height: 25rem;
     100% {
       opacity: 1;
     }
-  }
+}
 
 /* Auth / Signup */
 
