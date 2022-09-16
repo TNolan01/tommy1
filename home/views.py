@@ -4,8 +4,10 @@ from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse, HttpResponseRedirect
-from .forms import ContactForm
-
+from .forms import ContactForm, TextSliderForm
+from .models import TextSlider
+from django.views.generic.edit import CreateView, DeleteView, UpdateView
+from django.urls import reverse_lazy
 
 # Renders home page
 def index(request):
@@ -54,3 +56,15 @@ def subscribe(request):
 def gallery(request):
     
     return render(request, 'home/gallery.html')
+
+
+# Class view for updating index.html text slider
+class SliderCreateView(UpdateView):
+    model = TextSlider
+    form_class = TextSliderForm
+    template_name = 'main/create_club.html'
+    success_url = reverse_lazy('dashboard')
+
+    def get_object(self, queryset=None):
+        obj = Club.objects.filter()[0]
+        return obj

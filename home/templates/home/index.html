@@ -3,8 +3,9 @@
 
 {% block content %}
 <!--Carousel-->
-
 {% include 'general_templates/carousel.html' %} 
+<!--Text Carousel-->
+{% include 'general_templates/text_carousel.html' %} 
 
 <section class="product-box">
     <div class="container-fluid product-box text-black mb-2">
@@ -103,14 +104,26 @@
     </div> 
 
 </section>
-
-
+<!--Text Carousel-->
+{% include 'general_templates/supplier_slider.html' %} 
 
 
 <script>
 $('.carousel').carousel()
 interval: 1500
 </script> 
+
+
+<script>
+$(document).ready(function(){
+    $('.supplier-slider').slick({
+    slidesToShow: 5,
+    centerMode: true,
+    arrows: false,
+    autoplay: true,
+    });
+  });
+</script>
 
 {% endblock %}
 

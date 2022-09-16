@@ -62,7 +62,7 @@ body {
   font-weight: bold;
 }
 
-/* Carousel, Carousel, Carousel, Carousel*/
+/* Picture Carousel, Picture Carousel, Picture Carousel, Picture Carousel*/
 .carousel {
   margin-bottom: 1rem;
 }
@@ -90,6 +90,41 @@ body {
   left: 0;
   min-width: 100%;
   height: 25rem;
+}
+
+/* Text Carousel, Text Carousel, Text Carousel, Text Carousel */
+.carousel-text {
+  margin-top: 1em !important;
+  background-color: red !important;
+  height: 100px !important;
+  width: 100% !important;
+  color: white;
+}
+
+/* Supplier Slider, Supplier Slider, Supplier Slider, Supplier Slider */
+.supplier-wrapper {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.supplier-slide {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.slick-slide {
+  margin: 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+  border: 2px solid #fff;
+}
+
+.supplier-wrapper .slick-dots li button:before {
+  font-size: 20px;
+  color: white;
 }
 
 /* Bulma for fontawesome icons */
