@@ -11,8 +11,11 @@ from django.urls import reverse_lazy
 
 # Renders home page
 def index(request):
-    
-    return render(request, 'home/index.html')
+    slider = TextSlider.objects.filter()[0]
+    context = {
+        'slider': slider
+    }
+    return render(request, 'home/index.html', context)
 
 
 # Renders contact us page
@@ -62,9 +65,9 @@ def gallery(request):
 class SliderCreateView(UpdateView):
     model = TextSlider
     form_class = TextSliderForm
-    template_name = 'main/create_club.html'
-    success_url = reverse_lazy('dashboard')
+    template_name = 'home/slider_form.html'
+    success_url = reverse_lazy('home')
 
     def get_object(self, queryset=None):
-        obj = Club.objects.filter()[0]
+        obj = TextSlider.objects.filter()[0]
         return obj
