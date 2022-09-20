@@ -31,7 +31,7 @@
                 <a class="dropdown-item" href="{% url 'products' %}?category=Outdoor Furniture">Outdoor Furniture</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=Power Tools">Power Tools</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="{% url 'special_offers' %}">Special Offers</a>
             </div>
             </li>
             <!--Account section-->
@@ -70,7 +70,7 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" method="GET" action="{% url 'products' %}">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" name="q" aria-label="Search">
                 <button class="btn btn-outline-dark my-2 mr-2 my-sm-0" type="submit">
                     <span class="icon">
                         <i class="fas fa-search"></i>

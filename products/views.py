@@ -44,7 +44,7 @@ def all_products(request):
                 messages.error(request,"Please enter search query.")
                 return redirect(reverse('products'))
             
-            queries = Q(product_name__icontains=query) | Q(product_description__icontains=query)
+            queries = Q(product_name__icontains=query) | Q(product_description__icontains=query) | Q(simple_description__icontains=query)
             products = products.filter(queries)    
     
     current_sorting = f'{sort}_{direction}'
@@ -118,3 +118,14 @@ def delete_product(request, product_id):
         # return redirect(reverse('products'))
         return redirect('products')
     return render(request, 'products/delete_product.html')
+
+# Renders the special offers page
+def special_offers(request):
+    products = Product.objects.filter(special_offer=True)
+    name = 'Special Offers'
+    context = { 
+        'products': products,
+        'name': name,
+    }
+
+    return render(request, 'products/products.html', context)

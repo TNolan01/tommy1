@@ -1,7 +1,6 @@
 body {
     font-family: 'Lato', serif; 
     background-color: white;
-    // padding-bottom: 4rem;
     height: 100%;
     min-height: 100%;
     margin: 0;
@@ -85,6 +84,11 @@ body {
     height: 25rem;
 }
 
+.carousel-header {
+    font-size: 3em;
+    font-family: 'Nunito', sans-serif;
+}
+
 .carousel-item > img {
     position: absolute;
     top: 0;
@@ -100,8 +104,12 @@ body {
     height: 100px !important;
     width: 100% !important;
     color: white;
-}
+}   
 
+.carousel-text-caption {
+    padding-left: 2em;
+    padding-right: 2em;
+}
 
 /* Supplier Slider, Supplier Slider, Supplier Slider, Supplier Slider */
 .supplier-wrapper {
