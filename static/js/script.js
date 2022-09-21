@@ -1,4 +1,5 @@
 /*jshint esversion: 6 */
+/*Adapted fron https://codepen.io/bengoddard*/
 
 function openToday (){
     var currentDate = new Date();

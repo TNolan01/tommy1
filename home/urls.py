@@ -4,7 +4,6 @@ from . import views
 urlpatterns = [
     path('', views.index, name='home'),
     path('contact_us', views.contact_us, name='contact_us'),
-    path('subscribe', views.subscribe, name='subscribe'),
     path('gallery', views.gallery, name='gallery'),
     path('SliderCreateView', views.SliderCreateView.as_view(), name='slider_create_view'),
 ]

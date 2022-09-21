@@ -41,18 +41,18 @@ def contact_us(request):
     return render(request, 'home/contact_us.html', {'form': form})
 
 
-def subscribe(request):
-    if request.method == 'POST':
-        form = CustomerForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Thank you for signing up!') 
-            return redirect('/')
-    else:
-        form = CustomerForm()
-    context = {'form': form}
+# def subscribe(request):
+#     if request.method == 'POST':
+#         form = CustomerForm(request.POST)
+#         if form.is_valid():
+#             form.save()
+#             messages.success(request, 'Thank you for signing up!') 
+#             return redirect('/')
+#     else:
+#         form = CustomerForm()
+#     context = {'form': form}
 
-    return render(request, 'home/subscribe_email.html', context)
+#     return render(request, 'home/subscribe_email.html', context)
 
 
 # Renders gallery - inspiration page

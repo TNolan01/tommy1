@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<!--Unsubsribe Email Page -->
+
+<div class="container mt-4 mb-4">
+    <h3>Unsubscribe to our newsletter</h3>
+    <hr>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+
+        <input class="btn btn-black" type="submit" value="Unsubscribe">
+        <a class="btn btn-outline-black rounded-0" href="{% url 'contact_us' %}">Cancel</a>
+    </form>
+</div>
+        
+    
+
+
+{% endblock %}
+
