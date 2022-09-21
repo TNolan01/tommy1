@@ -111,7 +111,7 @@
 
     <!--subscribe to newsletter button-->
     <div class="rainbow">
-        <a href="" class="btn-block btn-black rounded btn" role="button" aria-pressed="true">Subscribe to our newsletter!</a> 
+        <a href="{% url 'marketing_signup' %}" class="btn-block btn-black rounded btn" role="button" aria-pressed="true">Subscribe to our newsletter!</a> 
     </div>
  
     <div class="spacer-bar">
@@ -131,7 +131,11 @@
             </iframe>
         </div>
     </div>  
-    
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col text-center"><a href="{% url 'marketing_unsubscribe'%}">Unsubscribe from newsletter</a></div>
+        </div>
+    </div>
 </div>
 
 

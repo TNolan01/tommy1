@@ -10,6 +10,7 @@
     <hr>
     <form method="POST">
         {% csrf_token %}
+        {% comment %} {{ form.email }} {% endcomment %}
         {{ form|crispy }}
 
         <input class="btn btn-black" type="submit" value="Unsubscribe">

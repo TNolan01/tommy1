@@ -8,12 +8,11 @@ class CustomerForm(forms.ModelForm):
         model = Customer
         fields = ['name', 'email',]
 
-    def clean_email(self):
-        email = self.cleaned_data['email']
-        if Customer.objects.filter(email=email).exists():
-            raise forms.ValidationError('This email already exists.')
-        return email
-
+    # def clean_email(self):
+    #     email = self.cleaned_data['email']
+    #     if Customer.objects.filter(email=email).exists():
+    #         raise forms.ValidationError('This email already exists.')
+    #     return email
 
 class SalesEmailForm(forms.ModelForm):
     class Meta:
@@ -21,3 +20,7 @@ class SalesEmailForm(forms.ModelForm):
         fields = '__all__'
 
 
+class UnsubscribeForm(forms.ModelForm):
+    class Meta:
+        model = Customer
+        fields = ['email',]
