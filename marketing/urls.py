@@ -6,4 +6,5 @@ urlpatterns = [
     path('marketing_unsubscribe/', views.marketing_unsubscribe, name='marketing_unsubscribe'),
     path('newsletter/', views.newsletter, name='newsletter'),
     path('email_list/', views.email_list, name='email_list'),
+    path('remove_subscriber/<int:customer_id>/', views.remove_subscriber, name='remove_subscriber'),   
 ]

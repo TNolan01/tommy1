@@ -16,6 +16,7 @@
             <th scope="col">Name</th>
             <th scope="col">Email</th>
             <th scope="col">Date</th>
+            <th scope="col">Remove?</th>
           </tr>
         </thead>
         <tbody>
@@ -25,7 +26,9 @@
             <td>{{ customer.name }}</td>
             <td>{{ customer.email }}</td>
             <td>{{ customer.subscribed_date }}</td>
+            <td><a href="{% url 'remove_subscriber' customer.id %}">Delete</a></td>
         {% endfor %}
+        
         </tr>
         </tbody>
       </table>
