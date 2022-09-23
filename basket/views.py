@@ -3,7 +3,6 @@ from django.contrib import messages
 from products.models import Product
 
 # Renders shopping basket
-
 def view_basket(request):
     
     return render(request, 'basket/basket.html')

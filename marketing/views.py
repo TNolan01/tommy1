@@ -63,20 +63,19 @@ def send_newsletter(request):
         return redirect(reverse('/'))
 
     newsletter = Product.objects.filter(special_offer=True)
-
-    customers =  customers = Customer.objects.all()
+    customers = Customer.objects.all()
 
     for customer in customers:
         email = subscriber.email
         subject = render_to_string(
-                'newsletter/newsletter_emails/newsletter_email_subject.txt',
-                {'faq_latest_question': faq_latest_question,
-                 'subscriber': subscriber})
+                'marketing/marketing_email/newsletter_email_subject.txt',
+                {'newsletter': newsletter,
+                 'customers': customers})
 
         body = render_to_string(
-            'newsletter/newsletter_emails/newsletter_email_body.txt',
-            {'faq_latest_question': faq_latest_question,
-             'subscriber': subscriber,
+            'marketing/marketing_email/newsletter_email_body.txt',
+            {'newsletter': newsletter,
+             'customers': customers,
              'contact_email': settings.DEFAULT_FROM_EMAIL})
 
         if subject and body and email:
@@ -97,11 +96,11 @@ def send_newsletter(request):
                        subscribers')
     return HttpResponseRedirect('/questions/')
 
+
 def remove_subscriber(request, customer_id):
     subscriber = get_object_or_404(Customer, pk=customer_id)
     if request.method == 'POST':
         subscriber.delete()
         messages.success(request, 'Subscriber deleted')
-        # return redirect(reverse('products'))
         return redirect('email_list')
     return render(request, 'marketing/remove_subscriber.html')

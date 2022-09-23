@@ -1,0 +1,17 @@
+Hello {{ customer.name }}!
+
+Please visit our site to get the latest on our special offers.
+{% for item in newsletter %}
+
+{{ item.product_name}} {{ item.simple_description }} {{ item.price }}
+
+{% endfor %}
+
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Many Thanks,
+
+Tommy Williamson
+If you wish to unsubscribe from further communication please follow the link below to your profile and click Unsubscribe. 
+https://tw-shop.herokuapp.com/contact_us
