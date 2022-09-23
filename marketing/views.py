@@ -1,10 +1,13 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from .forms import CustomerForm, SalesEmailForm, UnsubscribeForm
 from .models import Customer, SalesEmail 
 from products.models import Product
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from django.core.mail import BadHeaderError, send_mail
+from django.template.loader import render_to_string
+from django.conf import settings
 
 def marketing_signup(request):
     form = CustomerForm(request.POST or None)
@@ -66,7 +69,7 @@ def send_newsletter(request):
     customers = Customer.objects.all()
 
     for customer in customers:
-        email = subscriber.email
+        email = customer.email
         subject = render_to_string(
                 'marketing/marketing_email/newsletter_email_subject.txt',
                 {'newsletter': newsletter,
@@ -91,10 +94,10 @@ def send_newsletter(request):
         else:
             return HttpResponse('Make sure all fields are entered and valid.')
 
-    messages.success(request,
+    messages.info(request,
                      f'Newsletter sent to {customers.count()}\
                        subscribers')
-    return HttpResponseRedirect('/questions/')
+    return HttpResponseRedirect('/')
 
 
 def remove_subscriber(request, customer_id):
