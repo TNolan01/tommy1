@@ -10,6 +10,7 @@
             <h2 class="text-black">Basket</h2>
         </div>
     </div>
+    <hr>
 
     <div class="row">
         <div class="col">
@@ -109,10 +110,11 @@
       
 
             {% else %}
-                <h3 class="text-black"> The basket is currently empty </h3>
+                <h4 class="text-black"> The basket is currently empty </h4>
                 <hr>
                 <a href="{% url 'products' %}">
-                    <h4 class="text-black">Return to products page</h4>
+                     
+                    <h5 class="btn btn-black rounded-0 text-uppercase mt-5">Return to products page</h5>
                 </a>
             {% endif %}
         </div>

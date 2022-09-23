@@ -104,11 +104,17 @@ body {
   height: 100px !important;
   width: 100% !important;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
-.carousel-text-caption {
-  padding-left: 2em;
-  padding-right: 2em;
+.carousel-text h4 {
+  font-family: "Nunito", sans-serif;
+}
+
+.carousel-text p {
+  font-size: 20px !important;
 }
 
 /* Supplier Slider, Supplier Slider, Supplier Slider, Supplier Slider */

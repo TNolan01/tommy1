@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
 from .forms import CustomerForm, SalesEmailForm, UnsubscribeForm
-from .models import Customer, SalesEmail
+from .models import Customer, SalesEmail 
+from products.models import Product
 
 def marketing_signup(request):
     form = CustomerForm(request.POST or None)
@@ -32,3 +33,19 @@ def marketing_unsubscribe(request):
         'form': form,
     }
     return render(request, 'marketing/unsubscribe_email.html', context)
+
+def newsletter(request):
+    products = Product.objects.filter(special_offer=True)
+        
+    context = {
+        'products': products,
+    }
+    return render(request, 'marketing/newsletter.html', context)
+
+def email_list(request):
+    customers = Customer.objects.all()
+        
+    context = {
+        'customers': customers,
+    }
+    return render(request, 'marketing/email_list.html', context)

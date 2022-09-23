@@ -46,6 +46,8 @@
                         {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                             <a href="{% url 'slider_create_view' %}" class="dropdown-item">Update Site Banner</a>
+                            <a href="{% url 'newsletter' %}" class="dropdown-item">Newsletter</a>
+                            <a href="{% url 'email_list' %}" class="dropdown-item">Email List</a>
                         {% endif %}
                         <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                         <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
