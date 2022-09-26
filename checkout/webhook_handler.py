@@ -56,9 +56,9 @@ class StripeWH_Handler:
 
         #update user profile
         profile = None
-        username = intent.metadata.user.username
-        if username != 'Anonymous':
-            profile.default_profile = UserProfile.objects.get(user__username=username)
+        username = intent.metadata.username        
+        if username != 'AnonymousUser':
+            profile = UserProfile.objects.get(user__username=username)
             if save_info:
                 profile.default_phone_number = shipping_details.phone
                 profile.default_country = shipping_details.address.country
