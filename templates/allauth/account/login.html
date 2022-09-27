@@ -6,10 +6,9 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<div class="container mb-4>"
-  <div class="container profile-header">
+<div class="container mb-4 all_auth_header">
     <h1>{% trans "Sign In" %}</h1>
-  </div>
+</div>
   {% get_providers as socialaccount_providers %}
 
   {% if socialaccount_providers %}

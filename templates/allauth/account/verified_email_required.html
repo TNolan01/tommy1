@@ -5,9 +5,10 @@
 {% block head_title %}{% trans "Verify Your E-mail Address" %}{% endblock %}
 
 {% block content %}
-<div class="container mb-4">
+<div class="container mb-4 all_auth_header">
     <h1>{% trans "Verify Your E-mail Address" %}</h1>
-
+</div>
+<div div class="container mx-10 mb-4" style="text-align:center;">
     {% url 'account_email' as email_url %}
 
     <p>{% blocktrans %}This part of the site requires us to verify that
