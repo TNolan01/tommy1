@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse, HttpResponseRedirect
 from django.contrib import messages
-from .forms import CustomerForm, SalesEmailForm, UnsubscribeForm
-from .models import Customer, SalesEmail 
+from .forms import CustomerForm, UnsubscribeForm
+from .models import Customer, 
 from products.models import Product
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
