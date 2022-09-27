@@ -29,11 +29,11 @@
                     <small class="text-muted">No Rating</small>
                 {% endif %}
                     <h6 class="text-black mt-2">Description</h6>
-                    <p class="mt-3 text-black">{{ product.product_description }}</p>
+                    <p class="mt-3">{{ product.product_description }}</p>
                 {% if product.special_offer %}
                     <p class="text-special blink">This item is on special offer</p>
                 {% else %}
-                    <h4 class="text-black">Best Price Promise.</h4>
+                    <h4 class="text-attention">Best Price Promise.</h4>
                 {% endif %}
                 {% if product.category %}
                 <p class="small mt-3 mb-0">

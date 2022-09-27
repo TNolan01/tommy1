@@ -265,6 +265,12 @@ body {
   font-weight: bold !important;
 }
 
+.text-attention {
+  color: #000 !important;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
+}
+
 /* Shopping Basket, Shopping Basket, Shopping Basket, Shopping Basket*/
 .btn-outline-black {
   background: white;
@@ -357,6 +363,24 @@ body {
   font-size: 10em;
   color: white;
   font-weight: bold;
+}
+
+/* Profile Page, Profile Page, Profile Page, Profile Page */
+.profile-form label {
+  font-weight: bold;
+}
+
+/* All Auth, All Auth, All Auth, All Auth */
+.all_auth_header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.all_auth_header h1 {
+  color: #000 !important;
+  font-weight: bold;
+  font-family: "Nunito", sans-serif;
 }
 
 /* Contact Us Page, Contact Us Page, Contact Us Page, Contact Us Page   */
@@ -569,7 +593,7 @@ body {
   .card {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 20rem;
+    width: 24rem;
   }
 }
 /* Fixed top navbar only on medium and upwards */
