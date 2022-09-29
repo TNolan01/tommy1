@@ -9,19 +9,16 @@
 <p> This project is for the design and deployment of a functional E-commerce website for a business which supplies materials, hardware and tools primarily in the areas of Agriculture, Landscaping and construction.</p>
 
 
-
-
 [This is an external link to the site](https://tw-shop.herokuapp.com/)
 
-For this purposes I have listed login at this link : [User Test Information](#user-test-information)
 
 <br>
 
-<span style="color:#56a832; font-weight:bold; font-size:16px">Origins of the project</span>
-<p> Text </p>
+<span style= "font-weight:bold; font-size:16px">Origins of the project</span>
+<p> The business has an established traditional bricks and mortar store but is looking to enter the E-commerce space to offset the potential impacts of a slow down in the construction sector related to potential recession and new enviromental rules relating to certain products that they currently sell. </p>
 
-<span style="color:#ebd80c; font-weight:bold; font-size:16px">A proposed solution.</span>
-<p> Text </p>
+<span style="font-weight:bold; font-size:16px">A proposed solution.</span>
+<p>The proposed plan is to design an E-commerce solution and marketing strategy to attract and retain new customers.</p>
 
 <br>
 
@@ -30,8 +27,6 @@ For this purposes I have listed login at this link : [User Test Information](#us
 </p>
 
 
-
-​
 
 ## Contents
 ​
@@ -80,7 +75,7 @@ For this purposes I have listed login at this link : [User Test Information](#us
 ​
 ### **Project Goals**
 ​
-Text
+<p>Development of a fully functional E-commerce site taking into account User Stories originating from the Agile design process.</p>
 ​
 ### **User Stories**
 <p>The project was designed using the concepts of the Agile approach. A project was opened on Github and linked to the repository.</p>
@@ -109,9 +104,6 @@ USER STORIES:​
 |https://github.com/TNolan01/tommy1/issues/15|	USER STORY	|As the site owner I can add new product(s) to the site.		
 
 
-
-
-
 ​<br>
 
 [Back to content](#contents)
@@ -123,14 +115,16 @@ USER STORIES:​
 #### **Requirements**
 ​
 - Visually pleasant site design and layout.
-- Easy site navigation
-- Content laid out in a simple and clear way on both mobile and larger screens
-- Self-explanatory icons where text is absent
+- Easy site navigation.
+- Content laid out in a simple and clear way on both mobile and larger screens.
+- Self-explanatory icons where text is absent.
+- Abilty to purchase products.
 ​
 #### **Expectations**
 ​
 - Easy to use interface.
 - Clear and easy to read data.
+- E-commerce functionality.
 
 ​<br>
 [Back to content](#contents)
@@ -139,25 +133,37 @@ USER STORIES:​
 ​
 ### **Design Choices**
 
-Text 
+<p> In this section I set out some of the design choices I made for the front end of the project </p>
 ​
+
 #### **Fonts**
-The main font I have chosen is the Lato font from Google Fonts.
+I used three different fonts from the Google Fonts library.
 
-- *Main Font* 
 
-​  ```font-family: Lato font - from Google Fonts```
+​```font-family: Lato font - from Google Fonts``` <br>
+```font-family: Nunito font - from Google Fonts``` <br>
+```font-family: Gloria Halleujah font - from Google Fonts``` <br>
+
+<br>
+<p align="center" width="100%"> 
+<img src="readme_docs/images/project_fonts.png" alt="fonts for site" width=""/>
+</p>
+<br>
+<p>Lato was used as the primary font with Nunito used on Carousel items and areas where intention was to break text statements or questions where the site users attention was required to confirm an action, such as the All_Auth templates.</p> 
+
+
 <br>
 
 #### **Images**
-There is logo image
+<p>The business has an existing logo image. I have incorporated this into the site header but ideally I would like to design a new logo.</p> 
+<br>
 
 <p align="center" width="100%"> 
-<img src="media/own_logo.png" alt="logo for website" width=""/>
+<img src="readme_docs/images/company_logo.jpg" alt="logo for business" width=""/>
 </p>
 
 <br>
-A Favicon icon pack was created using my drawing of the one of the companies delivery trucks as inspiration.
+<p>A Favicon icon package was created using my drawing of the one of the companies delivery trucks as inspiration. The business has always used the same color scheme on its vechicles and as such they are an identifiable symbol of the business.</p> 
 
 <br>
 
@@ -167,11 +173,9 @@ A Favicon icon pack was created using my drawing of the one of the companies del
 
 <br>
 
-<p>The logos on the Home page were created by me using free clipart images frame with a black border and all sized 280 x 200 pixels ( W x H ).</p>
-
-
-#### **Colors**
-The business uses these red trucks for deliveries. This is a conscious branding exercise on their part. With all previous and current vechicles using the same red and black color scheme.
+#### **Color Scheme**
+<p>The front-end is styled inline with an existing color scheme which they employ across uniforms and the vechicles. My intial design thought process was leading towards a palette of greens and whites.</p>
+<p></p>
 
 I am looking at a principal color scheme for the site of red, black and white.
 
