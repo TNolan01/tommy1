@@ -14,11 +14,11 @@
 
 <br>
 
-<span style= "font-weight:bold; font-size:16px">Origins of the project</span>
+<span style= "font-weight:bold; font-size:16px">Origins Of The Project</span>
 <p> The business has an established traditional bricks and mortar store but is looking to enter the E-commerce space to offset the potential impacts of a slow down in the construction sector related to potential recession and new enviromental rules relating to certain products that they currently sell. </p>
 
-<span style="font-weight:bold; font-size:16px">A proposed solution.</span>
-<p>The proposed plan is to design an E-commerce solution and marketing strategy to attract and retain new customers.</p>
+<span style="font-weight:bold; font-size:16px">A Proposed Solution</span>
+<p>The proposed plan is to design an E-commerce solution and marketing strategy to attract and retain new customers with direct to customer sales and marketing.</p>
 
 <br>
 
@@ -76,6 +76,7 @@
 ### **Project Goals**
 ​
 <p>Development of a fully functional E-commerce site taking into account User Stories originating from the Agile design process.</p>
+
 ​
 ### **User Stories**
 <p>The project was designed using the concepts of the Agile approach. A project was opened on Github and linked to the repository.</p>
@@ -83,25 +84,26 @@
 USER STORIES:​
 <p>I have attached a link to the User Stories and their status.</p>
 
-[Link to User Stories](readme_docs/user_stories/User%20Stories.pdf)
+[Link to Kanban Board](https://github.com/users/TNolan01/projects/5)
 
 |GitHub Link |	Issue Type |	Description |	Tested |	Completed |
 |------------|-------------|--------------|--------|------------|    
-|https://github.com/TNolan01/tommy1/issues/1| 	USER STORY |	As a shopper I can register and new account with login features.|		
-|https://github.com/TNolan01/tommy1/issues/2| USER STORY	| As a shopper I can view a list of products for sale.	|	
-|https://github.com/TNolan01/tommy1/issues/3|	USER STORY |	As a shopper I can sort and view products via categories to easily find what I am looking for.|		
-|https://github.com/TNolan01/tommy1/issues/4|	USER STORY	| As a shopper I can register and new account with login features. |		
-|https://github.com/TNolan01/tommy1/issues/5|	USER STORY	| As a shopper I can purchase items I have put in my basket.|		
-|https://github.com/TNolan01/tommy1/issues/6|	USER STORY	 | As a shopper I can review my order before completing my purchase. |		
-|https://github.com/TNolan01/tommy1/issues/7|	USER STORY	| As a shopper I will receive an email to confirm my purchase. |		
-|https://github.com/TNolan01/tommy1/issues/8|	USER STORY | As a shopper I can sign up to receive details of special offers.|		
-|https://github.com/TNolan01/tommy1/issues/9|	USER STORY |As a shopper I can browse the site of phone, tablet, and desktop screens.|		
-|https://github.com/TNolan01/tommy1/issues/10| USER STORY |	As a visitor I can view and navigate the site with ease.|		
+|https://github.com/TNolan01/tommy1/issues/1| 	USER STORY |	As a shopper I can register and new account with login features.| Test# 10 | Passed 30-Sept-22 |
+|https://github.com/TNolan01/tommy1/issues/2| USER STORY	| As a shopper I can view a list of products for sale.	|	Test# 12 | Passed 30-Sept-22 |
+|https://github.com/TNolan01/tommy1/issues/3|	USER STORY |	As a shopper I can sort and view products via categories to easily find what I am looking for.| Test# 12 | Passed 30-Sept-22 |	
+|https://github.com/TNolan01/tommy1/issues/4|	USER STORY	| As a shopper I can add and remove items from my basket.	| Test# 13 | Passed 30-Sept-22 |
+|https://github.com/TNolan01/tommy1/issues/5|	USER STORY	| As a shopper I can purchase items I have put in my basket.|	Test# 11 | Passed 30-Sept-22 |	
+|https://github.com/TNolan01/tommy1/issues/6|	USER STORY	 | As a shopper I can review my order before completing my purchase.| Test# 7 | Passed 03-Sept-22 |		
+|https://github.com/TNolan01/tommy1/issues/7|	USER STORY	| As a shopper I will receive an email to confirm my purchase. | Test# 11 | Passed 30-Sept-22 |		
+|https://github.com/TNolan01/tommy1/issues/8|	USER STORY | As a shopper I can sign up to receive details of special offers.| Test# 8 | Passed 30-Sept-22 |		
+|https://github.com/TNolan01/tommy1/issues/9|	USER STORY |As a shopper I can browse the site of phone, tablet, and desktop screens.| General | Passed |		
+|https://github.com/TNolan01/tommy1/issues/10| USER STORY |	As a visitor I can view and navigate the site with ease.| General | Passed |			
 |https://github.com/TNolan01/tommy1/issues/11|	USER STORY |	As a site user I can see notification messages so I know the site is aware of the actions I have taken and these actions are confirmed.|		
-|https://github.com/TNolan01/tommy1/issues/12|	USER STORY |	As a returning user the site will remember my address for fast checkout.		
-|https://github.com/TNolan01/tommy1/issues/13|	USER STORY |As the site owner I can edit and update the details of products and prices.		
-|https://github.com/TNolan01/tommy1/issues/14|	USER STORY	|As the site owner I can remove a product or products which are no longer available.		
-|https://github.com/TNolan01/tommy1/issues/15|	USER STORY	|As the site owner I can add new product(s) to the site.		
+|https://github.com/TNolan01/tommy1/issues/12|	USER STORY |	As a returning user the site will remember my address for fast checkout. |		
+|https://github.com/TNolan01/tommy1/issues/13|	USER STORY |As the site owner I can edit and update the details of products and prices. |		
+|https://github.com/TNolan01/tommy1/issues/14|	USER STORY	|As the site owner I can remove a product or products which are no longer available. |		
+|https://github.com/TNolan01/tommy1/issues/15|	USER STORY	|As the site owner I can add new product(s) to the site. |
+|https://github.com/TNolan01/tommy1/issues/16| USER STORY | As a  shopper I can review my order before completing my purchase. |	
 
 
 ​<br>
@@ -110,7 +112,7 @@ USER STORIES:​
 
 ---
 ​
-### User Requirements and Expectations
+### **User Requirements and Expectations**
 ​
 #### **Requirements**
 ​
@@ -125,6 +127,7 @@ USER STORIES:​
 - Easy to use interface.
 - Clear and easy to read data.
 - E-commerce functionality.
+- Build and contact/marketing database of customers.
 
 ​<br>
 [Back to content](#contents)
@@ -198,8 +201,9 @@ I used three different fonts from the Google Fonts library.
 
 #### **Agile Methodology**
 
-The design, development and testing of this application were tracked through a Kanban board in a created GitHub project.
+<p>The design, development and testing of this application were tracked through a Kanban board in a created GitHub project. Details of the User Stories can be found in the UX section and the link to the Kanban board below.</p>
 
+[User Stories](#user-stories) - see details of each User Story.
 [Link to Kanban Board](https://github.com/users/TNolan01/projects/5)
 <br>
 
@@ -211,14 +215,49 @@ The design, development and testing of this application were tracked through a K
 
 
 [Back to content](#contents)
+
+___
 ​
+
 ## Marketing Strategy
 
 ### SEO - Search Engine Optimization
 
-#### Keyword Research
+<p>As part of the SEO for this site I have compiled a list of keywords. These keywords have been included in the site header under the meta tag 'keywords'. A '<title>' has also been included on the base.html with the text <strong>Tommy Williamson Landscape & Agri Supplies</strong>.</p>
+<p>To further help search function I am using descriptive text on the product images, in addition where possible I have descriptive text on anchor tag elements.</p>
 
-
+#### Keyword Research:
+<p>List of keywords was compiled and included in the site header. In addition, a simple title elemet was add to the base.html</p> 
+<ul>
+<li>Tommy Williamson Landscaping and Gardening Supplies</li>
+<li>Arches</li>
+<li>Pegolas</li> 
+<li>Bark Mulch</li> 
+<li>Composted Top Soil</li> 
+<li>Farm Fencing Stakes</li> 
+<li>Garden Sprays</li> 
+<li>Gates</li> 
+<li>Farm Gates</li> 
+<li>Timber Wooden Gates</li> 
+<li>Ground Cover</li> 
+<li>Lawn Seed</li> 
+<li>Light Hardware</li> 
+<li>Manure</li> 
+<li>Play Equipment</li> 
+<li>Post & Rail Fencing</li> 
+<li>Railway Sleepers</li> 
+<li>Stone Cobble</li>
+<li>Brick</li> 
+<li>Stone</li> 
+<li>Decorative Stone</li> 
+<li>Stone Natural Paving</li> 
+<li>Timber</li> 
+<li>Decking Timber</li> 
+<li>Kiln Dried</li> 
+<li>Treated Timber Stakes</li> 
+<li>Timber Panels</li> 
+<li>Fencing Boards</li> 
+<li>Wire</li>
 
 
 ---
