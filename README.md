@@ -2,7 +2,7 @@
 
 ​
 <p align="center" width="100%"> 
-<img src="media/little_logo.png" alt="logo" width=""/>
+<img src="readme_docs/images/ecommerce_image.png" alt="project image" width=""/>
 </p>
 
 <span style="font-weight:bold; font-size:16px">Project Brief</span>
@@ -23,7 +23,7 @@
 <br>
 
 <p align="center" width="100%"> 
-<img src="media/read_me/multi_screen.png" alt="screen shots of site" width=""/>
+<img src="readme_docs/images/screenshot.png" alt="screen shot of site" width=""/>
 </p>
 
 
@@ -168,36 +168,35 @@ I used three different fonts from the Google Fonts library.
 <br>
 
 <p align="center" width="100%"> 
-<img src="media/android-chrome-192x192.png" alt="logo for website" width=""/>
+<img src="media/favicon/android-chrome-192x192.png" alt="logo for website" width=""/>
 </p>
 
 <br>
 
 #### **Color Scheme**
-<p>The front-end is styled inline with an existing color scheme which they employ across uniforms and the vechicles. My intial design thought process was leading towards a palette of greens and whites.</p>
-<p></p>
+<p>The front-end is styled inline with an existing color scheme which they employ across company uniforms and the vechicles. My intial design process was leaning towards a palette of greens and whites to create a light, bright and natural color scheme, following a meeting with the business owner it was preferable to them that their existing color scheme was carried into the site. </p>
+<p>I worked with principal color scheme for the site of red, black and white. Having researched E-commerce platforms operating in a similar market I found that this scheme was popular and contrasted well with the products.</p>
 
-I am looking at a principal color scheme for the site of red, black and white.
+**White #FFFFFF**
+<p>White is the primary background color. I have used a collage of garden plans and garden layout sketches with a low opacity as background on some pages which helps create depth to the pages. The collage consists of images from Pinterest that I edited and altered with an image editing application.</p>
+<p>
 
-White as the primary background color.
-<ol>
-<li>This will help keep the screen bright and 'clean'</li>
-<li>White offers a better contrast with the displayed information</li>
-</ol>
+**Black #000000**
+<p>I use black and white on the styling of the buttons and as strong bold on text elements.</p>
 
-To break this white colour I have added two colors, a green and a yellow, to style some container and card items and create some divisions on the screen. 
+**Red #CF0808 and #FF0000**
+<p>I have used two reds, I have a standard bright red, #FF0000, and flatter and darker red, #CF0808. The latter is the red which best matches the color that the business had been using in its branding and is a more toned down red and does not invoke the as much 'danger' and the #FF0000.</p>
+<p>The brighter red, #FF0000, is only used a background color on a text carousel feature on the home page. Its primary function here to attract attention.</p>
+<p>While the color red has plenty of energy and is an extremely sucessful color for many brands such as Coca Cola, McDonalds and Ferrari there are some psycological issues with it as color. Red is often the color of warnings and danger and so I have limited its use as hover activation color on the nav-bar and as a then border around the product category tiles which activates on a hover function as visual indication.</p>
+<br>
 
 <p align="center" width="100%"> 
-<img src="media/read_me/color_scheme.png" alt="color scheme" width=""/>
+<img src="readme_docs/images/colour_scheme.png" alt="color scheme" width=""/>
 </p>
 ​
-Text
-
-<br>
 <br>
 
 #### **Agile Methodology**
-
 
 The design, development and testing of this application were tracked through a Kanban board in a created GitHub project.
 
@@ -205,7 +204,7 @@ The design, development and testing of this application were tracked through a K
 <br>
 
 <p align="center" width="100%"> 
-<img src="media/read_me/project_sample.png" alt="sample of Kanban" width=""/>
+<img src="readme_docs/images/kanban_sample.png" alt="sample of Kanban" width=""/>
 </p>
 
 <br>
@@ -243,8 +242,10 @@ The design, development and testing of this application were tracked through a K
 ## Information Architecture
 ​
 ### **PostgreSQL Database**
-The backend database is a PostgreSQL Database hosted via Heroku. The database is built around .....
-#### **Models:**
+The backend database is a PostgreSQL Database hosted via Heroku. The database is built around several seperate apps including the following apps.
+<br>
+
+#### **Apps and associated models:**
 <ul>
 <li> </li>
 
@@ -301,12 +302,16 @@ Text
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/)
 - [Pillow](https://pypi.org/project/Pillow/)
 - [Stripe](https://stripe.com/ie)
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/#)
+- [baguetteBox](https://feimosi.github.io/baguetteBox.js/)
 ​
 ### Tools
 ​
 - [Git](https://git-scm.com/)
 - [GitHub](https://github.com/)
 - [Balsamiq](https://balsamiq.com/) - Wireframe tool
+- [3D Paint](https://apps.microsoft.com/store/detail/paint-3d/9NBLGGH5FV99)
+- [Affinity](https://affinity.serif.com/en-us/)
 
 ### Deployment
 
@@ -319,19 +324,120 @@ Text
 ​
 ## Features
 ​
-The application uses a PostgreSQL database which contains the purpose designed models.
-​
-The site uses the Django and Bootstrap 
+The application uses a PostgreSQL database which contains the purpose designed models with back-end being built on the Django Framework. The site is designed to with following base features.
+<br> 
 
-### Implemented Features
-​
-- The site has **responsive design** when viewed on a mobile, tablet, and desktop.
+​- The site has **responsive design** when viewed on a mobile, tablet, and desktop.
 
 - **Easy navigation** to external sites, such as social media accounts.
 
-- T
+- **Visually appealing** images and content.
 
-## Future Features
+### Implemented Features
+
+**Nav Bar**
+<p>The Nav Bar is standard across all pages. It contains a link to <strong>Home</strong>, <strong>Contact Us</strong>, and an <strong>Inspiration Page</strong> which is a picture gallery. </p>
+<p>There is a drop down menu for navigation to the different product categories and an Account link to allow new users register or login if already registered. Beside this there is a basket icon which will show current total of items in the basket if there are any.</p>
+<p>Positioned on the right of the nav-bar is the search function to search through products for key words. </p>
+<p>I have also incorporated the company logo into the nav bar as part of the branding.</p>
+<p>Nav bar link text will turn red on hover to further highlight the options and introduce some red into the color scheme.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/navbar.png" alt="image of navbar" width=""/>
+</p>
+
+<strong>Administrator Function:</strong>
+<p>If the user is logged in as the site administrator the 'My Account' drop will include four additional links.</p>
+<ul>
+<li>Product Management</li>
+<li>Update Site Banner</li>
+<li>Newsletter</li>
+<li>Email List</li>
+</ul>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/admin_menu.png" alt="image of navbar admin" width=""/>
+</p>
+<br>
+
+<strong>Product Management</strong>
+<p>This option allows the administrator to add and new product to the site.</p>
+<br>
+
+<strong>Update Site Banner</strong>
+<p>Update Site Banner option allows the administrator to change to text content and the header of one of the text-carousels which auto slide under the image carousel on the home page. This allows the administrator access to put a quick message directly on the home page.</p>
+<br>
+
+<strong>Newsletter</strong>
+<p>The administrator can see all products currently available as 'special offers' which would form part of the newsletter sent to subscribers.</p>
+<br>
+
+<strong>Email List</strong>
+<p>This link will show a list of all emails currently subscribed to the newsletter. From here the admin can also delete an email address from that list.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/newsletter_admin.png" alt="image of newsletter admin" width=""/>
+</p>
+<br>
+
+**Footer**
+<p>Like the nav bar the footer is standard across all pages. The footer contains links to company social media channels.</p>
+<br>
+
+**Home Page**
+<p>The home page contains a large picture carousel which auto scrolls. This is positioned just below the nav bar. The carousel contains four seperate images. Each image is overlayed with a text box and each text box contains a button. The text relates to the image and the destination for the associated button will bring to a relevant point on the site inline with image and text. The purpose of the carousel is to act as four advertments.</p>
+<p>The central content of the homepage are the product cards. These cards contain text and an image. Each card will bring you to a seperate product category page. The borders on the cards will turn red when hovered over. The images are to be visually appealing and need to represent the relevant product category.</p>
+<p>Below the product cards and over the footer there a 'supplier slider', this is another carousel which contains logo's for the companies whom supply products to the business. This is auto scrolling. At present if a user clicks on a supplier logo they are taken to that suppliers website, which opens in a new page. As a future feature I would look at returning a template of all products available relating to the particular supplier for purchase on this site.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/supplier_slider.png" alt="image of supplier slider" width=""/>
+</p>
+<br>
+
+**Contact Us**
+
+<p>Self explanatory, this page contains all the relevant contact details for the business. There is also a contact us form to allow the site user quickly send there queries and contact details to the business.</p>
+<p>I have included social media links here also. I have also included an opening hours feature which shows the current day highlighted in red.</p>
+<p>Below the contact details and contact us form there is link to subscribe to the newsletter. There is animated border around this button to attract the site users attention.</p>
+<p>This page also contains an embedded Google Map with the location of the business central on the rendered map. Just below the map there is link to allow any user subscribed to newsletter to unsubscribe, naturally if the user tries to unsubscribe from the newsletter mailing list with an email address thats not on the list they will receive a validation error message.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/unsubscribe_letter.png" alt="image of unsubscribe" width=""/>
+</p>
+<br>
+
+**Inspiration** 
+
+<p>This page would form part of the larger marketing strategy, the page is essentially and image gallery which is built using BaguetteBox which is a JavaScript library, that generates a lightbox with animated and responsive images. There are currently nine images in the gallery but this would be expanded.</p>
+<p>The images 'zoom on hover', as part of that function description text for each image is also displayed. If a user clicks on any image the image will occupy full screen. And exit control and left and right directional arrows will be shown. The user can now scroll through all the images in the gallery or exit back to grid display mode.</p>
+
+**Products Page** 
+
+<p>The product page will display a card for each product item matching the user selected category, the name of the category will be displayed at the top of the page. Below this to the left the number of products in this category will be displayed and on the right will be the 'Sort By' dropdown options box. </p>
+<p>The users can sort the displayed products in the following ways:</p>
+<ul>
+<li>Price - low to high</li>
+<li>Price - high to low</li>
+<li>Rating - low to high</li>
+<li>Rating - high to low</li>
+<li>Name - A to Z</li>
+<li>Name - Z to A</li>
+<li>Category - A to Z</li>
+<li>Category - Z to A</li>
+</ul>
+<br>
+
+<p>The border around the product card will also turn red on hovering over the particular card. Once a particular product card is selected a products detail page is displayed for that particular product. The image will be on the left of the screen and the details and price will be displayed on the right. Just below the details will be the quantity box which the user can use to alter the quantity of the product required. Clicking the 'ADD TO BASKET' button will deposit the quantity selected into the basket.</p>
+<p>The 'KEEP SHOPPING' button will return the user back to the products section.</p>
+<p>Clicking the product image will that image in a new window in a full screen size.</p>
+
+
+### Future Features
 
 
 [Back to content](#contents)
@@ -344,11 +450,18 @@ The site uses the Django and Bootstrap
 <p>In this section I deal with some of the bugs and errors encountered during the development process. If the issue was sucessfully fixed I have included details of that fix.</p>
 
 ## Bugs & Fixes
-<p>This section consists of issues I had during development which took me 60 minutes approximately to identify and sort.</p>
+<p>This section consists of issues I had during development which took me 60 minutes plus approximately to identify and sort.</p>
 
 ### Issue No.1
-<h4>Web Hooks and Stripe:</h4>
+<h4>Webhooks and Stripe:</h4>
 <p>During the setup of the Stripe webhooks I was initially not able to get 'intent' details back and printed to the terminal. After some investigation I discovered that this was because Port 8000 was set to Private and not Public as was required. Once this was created the transaction information was printed to the terminal.</p>
+
+### Issue No.2 
+<h4>Webhooks the return!:</h4>
+<p>Having successfully tested the webhooks in the development environment I moved on to other aspects of the project. I approached a point where I needed to test User Stories and so setup an email address and setup webhooks in Stripe with a new endpoint URL for the deployed site and tested.</p>
+<p>While test payments were being sucessfully recieved and processed in Stripe none of the webhooks were functioning and emails were not being sent. The Stripe dashboard returninf a 500 Error.</p>
+<p>After a period of unsucessful testing I had to create a new endpoint in Stripe with an URL of my development environment. I edited the webhook secret to matched and tested the functions in the development site with feedback in the terminal. The Error 500 was traced back to typo in the webhook_handler.py. Once the error was corrected I changed the webhook secret back to deployed site value and retested.</p>
+<p>Testing was nowing showing that webhooks were functioning correctly and emails were sent successfully.</p>
 
 
 ---
