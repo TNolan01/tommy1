@@ -435,9 +435,107 @@ The application uses a PostgreSQL database which contains the purpose designed m
 <p>The border around the product card will also turn red on hovering over the particular card. Once a particular product card is selected a products detail page is displayed for that particular product. The image will be on the left of the screen and the details and price will be displayed on the right. Just below the details will be the quantity box which the user can use to alter the quantity of the product required. Clicking the 'ADD TO BASKET' button will deposit the quantity selected into the basket.</p>
 <p>The 'KEEP SHOPPING' button will return the user back to the products section.</p>
 <p>Clicking the product image will that image in a new window in a full screen size.</p>
+<p>I a particular product is marked as being on special offer the works "This item is on special offer" will appear in <strong>flashing red text</strong> below the description. Items not marked for special offer will not have this feature.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/product_details_special_offer.png" alt="image of product details" width=""/>
+</p>
+<br>
+
+**Shopping Basket**
+
+<p>When an item is placed in the basket a success toast will display a summary. This toast is built on structure of the Boutique Ado toasts and will display the product summary and an indication of any delivery charge or how far the customer is away from getting free delivery.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/shopping_basket_toasts.png" alt="image of shopping basket toasts" width=""/>
+</p>
+<br>
+
+<p>The shopping basket has all expected functionality, update quantity of product(s) in the shopping basket or removing and item completely. Delivery charges are calculated based a percentage as set in the settings.py file.</p>
+
+```
+{
+#variables for delivery charges
+FREE_DELIVERY_THRESHOLD = 75
+STANDARD_DELIVERY_PERCENTAGE = 10
+}
+```
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/shopping_basket_twoitems.png" alt="image of shopping basket with 2 items" width=""/>
+</p>
+<br>
+
+<p>Payment processing is powered by Stripe with a webhook handler to process webhook requests. This process is largely inline with Boutique Ado.</p>
+<br>
+
+**Order Number**
+
+<p>I have created a Python method to generate an unique order number.</p>
+
+```
+  # private method - order number generator
+    def _generate_order_number(self):
+        now = datetime.now()
+        d = now.strftime("%m/%d/%Y")
+        h = date_time = now.strftime("%H")
+        random_number = str(random.randint(1000, 9999 - 1))
+        order_number =(f'{d}{h}-{random_number}')
+        order_num = order_number.translate({ord('/'): None})
+        return order_num
+```
+
+<p>Order numbers are made up of the numerical value for the MONTH, DAY, YEAR, the current hour, a hyphen and then a randomly generated four digit number. In this format it would allow the business owner tell the date and hour that the order was created with just the order number and hence help track any issues with a customers order easier than just using a completely random order number. </p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/order_number.png" alt="image of sample order number" width=""/>
+</p>
+<br>
+
+<p>I the above example we can see that the order number is <strong>0926202219-2775</strong>. This breaks down as follows....</p>
+<ol>
+<li>09 is for the month, here is the Month, September.</li>
+<li>26 is the day in the month, in this case the 26th day of the month.</li>
+<li>2022 is the four digit indicator for the year, in this case thats 2022.</li>
+<li>The four digit code that precedes the hyphen is randomly created by the Python method.</li>
+</ol>
+<br>
+
+**Newsletter**
+
+<p>There is link on the Contact Us page to allow a site visitor to register for the company newsletter, there is also an unsubscribe link at the bottom of this page. On of the picture carousels on the Home page also has a link to allow visitors subscribe. I feel it is a better marketing strategy to allow all visitors, regardless of the fact they may already have an account or if they do or dont make a purchase, to sign up with an email address.</p>
+<p>The newsletter is generated from all products that have been marked as on <strong>special offer</strong>. Any product marked in such a way is included on the newsltter. The site administrator can see these items from their dropdown menu on the nav bar (when logged in as administrator!)</p> 
+<p>By selecting any product on this list the admin can choose the edit option and 'untick' the special offer box to remove that product from the newsletter.</p> 
+<p>The <strong>Email List</strong> option the drop 'My Account' dropdown menu will show all the newsletter subscribers and by clicking the <strong>Send Newsletter</strong> button the admin will send the newsletter to all subscribers. From here the admin can also delete subscribers from the list.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/newsletter.png" alt="image of newsletter" width=""/>
+</p>
+<br>
+
+**Profile** 
+
+<p>The user profile section is split into left and right side. The users contact details and address are on the left side of the screen. The right side of the screen has a list of all that customers orders, order history. When logged in the user can edit their contact details and select a previous order to see its details.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/user_profile.png" alt="image of user profile screen" width=""/>
+</p>
+<br>
 
 
 ### Future Features
+
+- Removal of the admin features from the nav bar dropdown menu and the creation of a seperate dashboard menu for the administrator.
+- The user profile has an option to allow the user state if are a domestic of business customer. I would use this to target the different groups with different types of offers. Showing the pricing for Business customers excluding VAT.
+- Creation of section with 'how to' or 'DIY' style videos to further market the products. There would be some form of intergration with this content and the companies social media channels.
+- Look into the styling and format of the Newsletter. 
+- Collate emails of registered user to the site for the creation of a marketing email list targetted towards there previous purchases.
 
 
 [Back to content](#contents)
