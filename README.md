@@ -96,14 +96,14 @@ USER STORIES:​
 |https://github.com/TNolan01/tommy1/issues/6|	USER STORY	 | As a shopper I can review my order before completing my purchase.| Test# 7 | Passed 03-Sept-22 |		
 |https://github.com/TNolan01/tommy1/issues/7|	USER STORY	| As a shopper I will receive an email to confirm my purchase. | Test# 11 | Passed 30-Sept-22 |		
 |https://github.com/TNolan01/tommy1/issues/8|	USER STORY | As a shopper I can sign up to receive details of special offers.| Test# 8 | Passed 30-Sept-22 |		
-|https://github.com/TNolan01/tommy1/issues/9|	USER STORY |As a shopper I can browse the site of phone, tablet, and desktop screens.| General | Passed |		
+|https://github.com/TNolan01/tommy1/issues/9|	USER STORY | As a shopper I can browse the site of phone, tablet, and desktop screens.| General | Passed |		
 |https://github.com/TNolan01/tommy1/issues/10| USER STORY |	As a visitor I can view and navigate the site with ease.| General | Passed |			
-|https://github.com/TNolan01/tommy1/issues/11|	USER STORY |	As a site user I can see notification messages so I know the site is aware of the actions I have taken and these actions are confirmed.|		
-|https://github.com/TNolan01/tommy1/issues/12|	USER STORY |	As a returning user the site will remember my address for fast checkout. |		
-|https://github.com/TNolan01/tommy1/issues/13|	USER STORY |As the site owner I can edit and update the details of products and prices. |		
-|https://github.com/TNolan01/tommy1/issues/14|	USER STORY	|As the site owner I can remove a product or products which are no longer available. |		
-|https://github.com/TNolan01/tommy1/issues/15|	USER STORY	|As the site owner I can add new product(s) to the site. |
-|https://github.com/TNolan01/tommy1/issues/16| USER STORY | As a  shopper I can review my order before completing my purchase. |	
+|https://github.com/TNolan01/tommy1/issues/11|	USER STORY |	As a site user I can see notification messages so I know the site is aware of the actions I have taken and these actions are confirmed.| General | Passed |		
+|https://github.com/TNolan01/tommy1/issues/12|	USER STORY |	As a returning user the site will remember my address for fast checkout. | Test# 11 | Passed 30-Sept-22 |
+|https://github.com/TNolan01/tommy1/issues/13|	USER STORY | As the site owner I can edit and update the details of products and prices. |	Test# 16 | Passed 01-Octo-22 |	
+|https://github.com/TNolan01/tommy1/issues/14|	USER STORY	| As the site owner I can remove a product or products which are no longer available. | Test# 17 | Passed 01-Octo-22 | 		
+|https://github.com/TNolan01/tommy1/issues/15|	USER STORY	| As the site owner I can add new product(s) to the site. | Test# 4 | Passed 03-Sept-22 |
+|https://github.com/TNolan01/tommy1/issues/16| USER STORY | As a shopper I can review my order before completing my purchase. | Test# 13 | Passed 30-Sept-22 |	
 
 
 ​<br>
@@ -216,7 +216,7 @@ I used three different fonts from the Google Fonts library.
 
 [Back to content](#contents)
 
-___
+
 ​
 
 ## Marketing Strategy
@@ -259,8 +259,9 @@ ___
 <li>Fencing Boards</li> 
 <li>Wire</li>
 
-
 ---
+
+
 ## Wireframes
 ​
 ### **Site Layout**
@@ -606,9 +607,13 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 ## Testing
 ​
 ## Functional Testing
-The testing and result of same are located in a separate file​.
 
-Testing results [here](TESTING.md)
+<p>Manully testing was carried out throughout the development process. Details of specific manual are located in a separate test document.</p>
+
+<strong>Testing Results:</strong> 
+
+[Link to manual testing](readme_docs/Testing_Doc.md)
+
 <br>​
 ​
 
