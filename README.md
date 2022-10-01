@@ -66,11 +66,9 @@
     - [Image editing](#image-editing)
     - [Code ideas](#code-ideas)
   
-
 ​
 ---
 ​
-
 ## UX
 ​
 ### **Project Goals**
@@ -218,6 +216,7 @@ I used three different fonts from the Google Fonts library.
 [Back to content](#contents)
 
 
+---
 ​
 
 ## Marketing Strategy
@@ -272,8 +271,25 @@ I used three different fonts from the Google Fonts library.
 <li>Create videos of 'DIY' projects using products sold by the business.</li>
 <li>Develop a partnership with business(es) whom purchase products showing some of their work. A partnership with a landscaping business detailing before and after garden transformations.</li>
 <li>Market the business as a source of information, create and develop a Frequently Asked Question section and lean on the approchability and knowledge of the staff.</li>
-
 </ul>
+
+
+#### Facebook
+<p>The business has an active Facebook page. I would look to integrate Facebook posts into the site in some shape.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/facebook1.png" alt="sample of  Facebook page 1" width=""/>
+</p>
+
+<br>
+<p align="center" width="100%"> 
+<img src="readme_docs/images/facebook2.png" alt="sample of  Facebook page 2" width=""/>
+</p>
+
+<br>
+
+
 
 ---
 
@@ -282,13 +298,30 @@ I used three different fonts from the Google Fonts library.
 ​
 ### **Site Layout**
 
-<p>The initial layout for the site was layout with wireframes created in Balsamiq. These images can be viewed via the link below.</p>
+<p>The initial layout for the site was created with wireframes developed in Balsamiq. The wireframes can be viewed via the link below.</p>
 
 <br>
 
-<p> When the wireframes were rendered on screen with Bootstrap, HTML and CSS there were slight changes to the UX design and layout. As the development process continued further style changes were made in the screen layout. The layout was altered in line with some live testing.
+<p> When the wireframes were rendered on screen with Bootstrap, HTML and CSS there were slight changes to the UX design and layout. As the development process continued further style changes were made in the screen layout. The layout was altered in line with some live testing.</p>
 
-​[Link to Wire Frames](readme_docs/wireframes/Wire_Frames.pdf
+​[Link to Wire Frames](readme_docs/wireframes/wireframes.pdf)
+
+<p> I initial layout used logos or icons to represent the different product categories on the index.html, as sampled below. How ever I think the photo images now used are far more astellically pleasing and would be more visually appealing to customers. </p> 
+<br>
+<p align="center" width="100%"> 
+<img src="readme_docs/wireframes/sample_of_index.png" alt="image of initial index page" width=""/>
+</p>
+
+<br>
+
+<p> It was clear fom looking at the business that they had an affinity for there delivery trucks. All past and present delivery trucks are red in color. I felt that a truck image could be a digial icon for the business. I found some technical drawings online and sketch with pen and carbon paper to create a profile. I scanned this profile image in 3D Paint. I used this image for the Favicon pack. I would like to have used it as the business logo as I think its very identifiable with the business. Based on time constraints I decided to stick with the existing business logo. The re-design of the logo would be a Future Feature.</p>
+<br>
+<p align="center" width="100%"> 
+<img src="readme_docs/wireframes/truck_drawing.png" alt="image of truck sketch" width=""/>
+</p>
+
+<br>
+
 
 [Back to content](#contents)
 ​
@@ -298,39 +331,41 @@ I used three different fonts from the Google Fonts library.
 ## Information Architecture
 ​
 ### **PostgreSQL Database**
-The backend database is a PostgreSQL Database hosted via Heroku. The database is built around several seperate apps including the following apps.
+
+<p>The backend database is a PostgreSQL Database hosted via Heroku. The database is built around several seperate apps which have models as listed below.</p>
 <br>
 
 #### **Apps and associated models:**
-<ul>
-<li> </li>
 
-</ul>
-<br>
-
+<p align="center" width="100%"> 
+<img src="readme_docs/images/checkout_app.png" alt="checkout app models" width=""/>
+</p>
 
 <br>
 
+<p align="center" width="100%"> 
+<img src="readme_docs/images/home_app.png" alt="home app models" width=""/>
+</p>
 
-**Model 1**
+<br>
 
-Text 
+<p align="center" width="100%"> 
+<img src="readme_docs/images/marketing_app.png" alt="marketing app models" width=""/>
+</p>
 
-**Model 2**
+<br>
 
-Text
+<p align="center" width="100%"> 
+<img src="readme_docs/images/product_app.png" alt="product app models" width=""/>
+</p>
 
-[Future Features](#future-features).
+<br>
 
-**Model 3**
+<p align="center" width="100%"> 
+<img src="readme_docs/images/profiles_app.png" alt="profiles app models" width=""/>
+</p>
 
-Text
-
-**Model 4**
-
-Text
-
-
+<br>
 
 ​
 [Back to content](#contents)
@@ -592,6 +627,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 - Creation of section with 'how to' or 'DIY' style videos to further market the products. There would be some form of intergration with this content and the companies social media channels.
 - Look into the styling and format of the Newsletter. 
 - Collate emails of registered user to the site for the creation of a marketing email list targetted towards there previous purchases.
+- Create a new business logo in SVG format that can better promote the brand.
 
 
 [Back to content](#contents)

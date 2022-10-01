@@ -114,7 +114,7 @@ body {
 }
 
 .carousel-text p {
-  font-size: 20px !important;
+  font-size: 1.25rem;
 }
 
 /* Supplier Slider, Supplier Slider, Supplier Slider, Supplier Slider */
@@ -269,6 +269,13 @@ body {
   color: #000 !important;
   font-weight: bold;
   font-family: "Nunito", sans-serif;
+}
+
+.admin_func {
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
 }
 
 /* Shopping Basket, Shopping Basket, Shopping Basket, Shopping Basket*/
@@ -641,5 +648,18 @@ body {
   }
   .carousel-caption {
     display: block;
+  }
+}
+@media (max-width: 800px) {
+  .carousel-text p {
+    font-size: 1rem !important;
+  }
+  .carousel-text {
+    height: 150px;
+  }
+}
+@media (max-width: 360px) {
+  .carousel-caption h3 {
+    font-size: 1.75rem !important;
   }
 }/*# sourceMappingURL=base.css.map */

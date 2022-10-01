@@ -114,7 +114,7 @@ body {
 }
 
 .carousel-text p {
-    font-size: 20px !important;
+    font-size: 1.25rem;
     
 }
 
@@ -667,6 +667,22 @@ body {
     .carousel-caption {
         display: block;
     }
-
+   
 }
+
+@media (max-width: 800px) {
+    .carousel-text p {
+        font-size: 1rem !important; 
+    }
+    .carousel-text {
+        height: 150px;
+    }
+}
+
+@media (max-width: 360px) {
+    .carousel-caption h3 {
+        font-size: 1.75rem !important; 
+    }   
+}
+
 
