@@ -203,6 +203,7 @@ I used three different fonts from the Google Fonts library.
 
 <p>The design, development and testing of this application were tracked through a Kanban board in a created GitHub project. Details of the User Stories can be found in the UX section and the link to the Kanban board below.</p>
 
+
 [User Stories](#user-stories) - see details of each User Story.
 [Link to Kanban Board](https://github.com/users/TNolan01/projects/5)
 <br>
@@ -258,6 +259,21 @@ I used three different fonts from the Google Fonts library.
 <li>Timber Panels</li> 
 <li>Fencing Boards</li> 
 <li>Wire</li>
+
+#### Proposed Strategy
+
+<p>This market place is quite crowded, and having done some market research it is clear there are many competitors in this E-commerce space. I would propose that the business looks toward creating original content for release on social channels.</p>
+<p>Many Irish businesses, in the agricultural space in particular, have been releasing content on Youtube. The content is organic and primarily catalogues the goings on and happenings in their business. Some of these videos have developed connections with suppliers with benefit for both parties.</p>
+
+
+<strong>Strategy</strong>:
+<ul>
+<li>Create short videos demonstrating products.</li>
+<li>Create videos of 'DIY' projects using products sold by the business.</li>
+<li>Develop a partnership with business(es) whom purchase products showing some of their work. A partnership with a landscaping business detailing before and after garden transformations.</li>
+<li>Market the business as a source of information, create and develop a Frequently Asked Question section and lean on the approchability and knowledge of the staff.</li>
+
+</ul>
 
 ---
 
@@ -687,19 +703,8 @@ I have decided not to alter the relevant lines to fit into 79-character restrict
 <br>
 
 [Back to content](#contents)
+
 ​
-
-## User Test Information 
-
-In conjuction with creating a new 'visitor' login the following login information can be used to test the site.
-
-[Link to User Stories](readme_docs/user_stories/User%20Stories.pdf)
-
-<br>
-
-
-<br>
-
 ---
 ​
 ## Deployments
@@ -726,14 +731,14 @@ Deployment of this project is carried out with Heroku, https://www.heroku.com. T
 
 <br>
 <p align ="center">
-<img title="heroku" alt="screen shot of Heroku app menu" src="media/read_me/config_vars.png"></p>
+<img title="heroku" alt="screen shot of Heroku app menu" src="readme_docs/images/heroku.png"></p>
 <br>
 
 <li>Scroll down to the Buildpacks section. Click Add buildpack. From the menu select heroku/python and click Save Changes. </li>
 
 <br>
 <p align ="center">
-<img title="heroku" alt="screen shot of Heroku app menu" src="media/read_me/heroku_buildpack.png"></p>
+<img title="heroku" alt="screen shot of Heroku app menu" src="readme_docs/images/buildpack.png"></p>
 <br>
 
 <li>Return to menu at the top of the page and click on Deploy. Select Github as the deployment method.</li>
@@ -809,13 +814,17 @@ On the side menu find **User Groups** and click **Create Group**. Enter a name r
 
 15. From side menu select Policies and click **Create Policy**. 
 Select the Import Managed Polic. Search for **AmazonS3FullAccess** and import that policy.
+<br>
+<p align ="center">
+<img title="heroku" alt="screen shot of Heroku app menu" src="readme_docs/images/bucket_policy.png"></p>
+<br>
 
 16. To restrict access to just the new bucket you must retrieve the ARN fromt the **Bucket Policy Page** in S3.
 Copy ARN again and paste into "Resource" section. 
 Add the ARN twice with a <strong>/*</strong> on the second ARNist containint The first line is for access to the Bucket and second line is for all files and folders in that Bucket.
 <br>
 <p align ="center">
-<img title="heroku" alt="screen shot of Heroku app menu" src="readme_docs/images/bucket_policy.png"></p>
+<img title="heroku" alt="screen shot of Heroku app menu" src="readme_docs/images/AWS_setup.png"></p>
 <br>
 
 17. Select **Add Tags** click Next and on to **Review Policy**. Give the policy a name and a description.
@@ -945,14 +954,23 @@ class MediaStorage(S3Boto3Storage):
 ## Credits
 ​
 ### **Images**
-​
-I have not used any images for this application.
-​
+<br>
+<p>The images used in this project were taken from the websites of suppliers to the business and photos I took myself</p>
+<p>I have used some images of Pinterest to create some of the backgrounds.</p>
+
 ### **Image editing**
-The logo I use was created with MS Paint with Favicon used to generate a Favicon icon.
+<br>
+<p>The images were edited using the following packages.</p>
+<ul>
+<li>3D Paint Microsoft</li>
+<li>Affinity Designer</li>
+<li>Favicon - for creation of Icon Pack</li>
+</ul>
+
 ​
 ### **Programming resources**
-Aside from the Code Institute content for this section I used the following resources.
+<p>Aside from the Code Institute content for this section I used the following resources.</p>
+<p>I have used the Boutique Ado project walkthrough as the basis for the Stripe and Checkout functions in this project.</p>
 
 - [Stack Overflow](https://stackoverflow.com/)
 - [CodeMy.Com on YouTube](https://www.youtube.com/watch?v=HHx3tTQWUx0&list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy&index=2)
