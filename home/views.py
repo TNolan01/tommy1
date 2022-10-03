@@ -47,16 +47,36 @@ def contact_us(request):
         form = ContactUsForm(request.POST)
         if form.is_valid():
             form.save()
-            email_subject = f'New sales contact {form.cleaned_data["email"]}: {form.cleaned_data["contact_name"]}'
+            # email_subject = f'New sales contact {form.cleaned_data["email"]}: {form.cleaned_data["contact_name"]}'
             email_message = form.cleaned_data['message']
             email = form.cleaned_data['email']
-            recipient_list = ['settings.DEFAULT_FROM_EMAIL']
-            try:
-                send_mail(email_subject, email_message, email, ['recipient_list'], fail_silently=False)
-                messages.success(request,'We will be in contact with you shortly')
-                return redirect('/')
-            except BadHeaderError:
-                return HttpResponse('Invalid header found.')
+    #         recipient_list = ['settings.DEFAULT_FROM_EMAIL']
+    #         try:
+    #             send_mail(email_subject, email_message, email, ['settings.DEFAULT_FROM_EMAIL'], fail_silently=False)
+    #             messages.success(request,'We will be in contact with you shortly')
+    #             return redirect('/')
+    #         except BadHeaderError:
+    #             return HttpResponse('Invalid header found.')
+    # form = ContactUsForm()
+    # context = {'form': form}
+    # return render(request, 'home/contact_us.html', {'form': form})
+
+           
+            subject = f'New sales contact {form.cleaned_data["email"]}: {form.cleaned_data["contact_name"]}'
+            body = form.cleaned_data['message']
+
+            if subject and body and email:
+                try:
+                    send_mail(
+                        subject,
+                        body,
+                        settings.DEFAULT_FROM_EMAIL,
+                        [email],
+                    )
+                except BadHeaderError:
+                    return HttpResponse('Invalid header found.')
+            else:
+                return HttpResponse('Make sure all fields are entered and valid.')
     form = ContactUsForm()
     context = {'form': form}
     return render(request, 'home/contact_us.html', {'form': form})
