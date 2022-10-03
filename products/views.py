@@ -1,4 +1,5 @@
 from django.shortcuts import render, reverse, redirect, get_object_or_404
+from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.db.models import Q  # For search function
 from django.db.models.functions import Lower # For product sort via name
@@ -70,6 +71,7 @@ def product_detail(request, product_id):
 
 # Product admin search
 # Add a new product
+@login_required
 def add_product(request):
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)

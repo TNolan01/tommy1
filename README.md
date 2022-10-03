@@ -279,12 +279,12 @@ I used three different fonts from the Google Fonts library.
 <br>
 
 <p align="center" width="100%"> 
-<img src="readme_docs/images/facebook1.png" alt="sample of  Facebook page 1" width=""/>
+<img src="readme_docs/images/facebook_1.png" alt="sample of Facebook page 1" width=""/>
 </p>
 
 <br>
 <p align="center" width="100%"> 
-<img src="readme_docs/images/facebook2.png" alt="sample of  Facebook page 2" width=""/>
+<img src="readme_docs/images/facebook_2.png" alt="sample of Facebook page 2" width=""/>
 </p>
 
 <br>

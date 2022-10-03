@@ -47,6 +47,7 @@ def newsletter(request):
     }
     return render(request, 'marketing/newsletter.html', context)
 
+@login_required
 def email_list(request):
     customers = Customer.objects.all()
         
@@ -59,6 +60,7 @@ def email_list(request):
 # Code adapted from...
 # https://docs.djangoproject.com/en/3.2/topics/email/#preventing-header-injection
 # Bonsai Shop PP5 Project by Joanna Gorska https://github.com/JoGorska
+
 @login_required
 def send_newsletter(request):
     if not request.user.is_superuser:
