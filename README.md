@@ -6,7 +6,7 @@
 </p>
 
 <span style="font-weight:bold; font-size:16px">Project Brief</span>
-<p> This project is for the design and deployment of a functional E-commerce website for a business which supplies materials, hardware and tools primarily in the areas of Agriculture, Landscaping and construction.</p>
+<p> This project is for the design and deployment of a functional E-commerce website for a business which supplies materials, hardware and tools primarily in the areas of Agriculture, Landscaping and Construction. </p>
 
 
 [This is an external link to the site](https://tw-shop.herokuapp.com/)
@@ -15,10 +15,10 @@
 <br>
 
 <span style= "font-weight:bold; font-size:16px">Origins Of The Project</span>
-<p> The business has an established traditional bricks and mortar store but is looking to enter the E-commerce space to offset the potential impacts of a slow down in the construction sector related to potential recession and new enviromental rules relating to certain products that they currently sell. </p>
+<p> The business has an established traditional bricks and mortar store but is looking to enter the E-commerce space to offset the potential impacts of a slowdown in the construction sector related to a potential recession and new environmental rules relating to certain products that they currently sell. </p>
 
 <span style="font-weight:bold; font-size:16px">A Proposed Solution</span>
-<p>The proposed plan is to design an E-commerce solution and marketing strategy to attract and retain new customers with direct to customer sales and marketing.</p>
+<p>The proposed plan is to design an E-commerce solution and marketing strategy to attract and retain new customers with direct to customer sales and marketing in a Business to Customer format. </p>
 
 <br>
 
@@ -73,14 +73,14 @@
 ​
 ### **Project Goals**
 ​
-<p>Development of a fully functional E-commerce site taking into account User Stories originating from the Agile design process.</p>
+<p>Development of a fully functional E-commerce platform taking into some basic User Stories originating from the Agile design process and build on to further features. </p>
 
 ​
 ### **User Stories**
-<p>The project was designed using the concepts of the Agile approach. A project was opened on Github and linked to the repository.</p>
+<p>The project was designed using the concepts of the Agile approach. A project was opened on Github and linked to the repository. </p>
 
 USER STORIES:​
-<p>I have attached a link to the User Stories and their status.</p>
+<p>I have attached a link to the User Stories and their status. </p>
 
 [Link to Kanban Board](https://github.com/users/TNolan01/projects/5)
 
@@ -118,7 +118,7 @@ USER STORIES:​
 - Easy site navigation.
 - Content laid out in a simple and clear way on both mobile and larger screens.
 - Self-explanatory icons where text is absent.
-- Abilty to purchase products.
+- Ability to purchase products.
 ​
 #### **Expectations**
 ​
@@ -156,7 +156,7 @@ I used three different fonts from the Google Fonts library.
 <br>
 
 #### **Images**
-<p>The business has an existing logo image. I have incorporated this into the site header but ideally I would like to design a new logo.</p> 
+<p>The business has an existing logo image. I have incorporated this into the site header but ideally I would like to design a new logo. </p> 
 <br>
 
 <p align="center" width="100%"> 
@@ -164,7 +164,7 @@ I used three different fonts from the Google Fonts library.
 </p>
 
 <br>
-<p>A Favicon icon package was created using my drawing of the one of the companies delivery trucks as inspiration. The business has always used the same color scheme on its vechicles and as such they are an identifiable symbol of the business.</p> 
+<p>A Favicon icon package was created using my drawing of the one of the company's delivery trucks as inspiration. The business has always used the same color scheme on its vehicles and as such they are an identifiable symbol of the business. </p> 
 
 <br>
 
@@ -175,20 +175,20 @@ I used three different fonts from the Google Fonts library.
 <br>
 
 #### **Color Scheme**
-<p>The front-end is styled inline with an existing color scheme which they employ across company uniforms and the vechicles. My intial design process was leaning towards a palette of greens and whites to create a light, bright and natural color scheme, following a meeting with the business owner it was preferable to them that their existing color scheme was carried into the site. </p>
-<p>I worked with principal color scheme for the site of red, black and white. Having researched E-commerce platforms operating in a similar market I found that this scheme was popular and contrasted well with the products.</p>
+<p>The front-end is styled in line with an existing color scheme which they employ across company uniforms and the vehicles. My initial design process was leaning towards a palette of greens and whites to create a light, bright and natural color scheme, following a meeting with the business owner it was preferable to them that their existing color scheme was carried into the site. </p>
+<p>I worked with principal color scheme for the site of red, black and white. Having researched E-commerce platforms operating in a similar market I found that this scheme was popular and contrasted well with the products. </p>
 
 **White #FFFFFF**
-<p>White is the primary background color. I have used a collage of garden plans and garden layout sketches with a low opacity as background on some pages which helps create depth to the pages. The collage consists of images from Pinterest that I edited and altered with an image editing application.</p>
+<p>White is the primary background color. I have used a collage of garden plans and garden layout sketches with a low opacity as background on some pages which helps create depth to the pages. The collage consists of images from Pinterest that I edited and altered with an image editing application. </p>
 <p>
 
 **Black #000000**
-<p>I use black and white on the styling of the buttons and as strong bold on text elements.</p>
+<p>I have used black and white on the styling of the buttons and as strong bold on text elements. </p>
 
 **Red #CF0808 and #FF0000**
-<p>I have used two reds, I have a standard bright red, #FF0000, and flatter and darker red, #CF0808. The latter is the red which best matches the color that the business had been using in its branding and is a more toned down red and does not invoke the as much 'danger' and the #FF0000.</p>
-<p>The brighter red, #FF0000, is only used a background color on a text carousel feature on the home page. Its primary function here to attract attention.</p>
-<p>While the color red has plenty of energy and is an extremely sucessful color for many brands such as Coca Cola, McDonalds and Ferrari there are some psycological issues with it as color. Red is often the color of warnings and danger and so I have limited its use as hover activation color on the nav-bar and as a then border around the product category tiles which activates on a hover function as visual indication.</p>
+<p>I have used two reds, I have a standard bright red, #FF0000, and flatter and darker red, #CF0808. The latter is the red which best matches the color that the business had been using in its branding and is a more toned down red and does not invoke the as much 'danger' as the #FF0000. </p>
+<p>The brighter red, #FF0000, is only used a background color on a text carousel feature on the home page. Its primary function here to attract attention. </p>
+<p>While the color red has plenty of energy and is an extremely successful color for many brands such as Coca Cola, McDonalds and Ferrari there are some psychological issues with it as color. Red is often the color of warnings and danger and so I have limited its use as hover activation color on the nav-bar and as a thin border around the product category tiles which activates on a hover function as visual indication. </p>
 <br>
 
 <p align="center" width="100%"> 
@@ -199,7 +199,7 @@ I used three different fonts from the Google Fonts library.
 
 #### **Agile Methodology**
 
-<p>The design, development and testing of this application were tracked through a Kanban board in a created GitHub project. Details of the User Stories can be found in the UX section and the link to the Kanban board below.</p>
+<p>The design, development and testing of this application were tracked through a Kanban board in a created GitHub project. Details of the User Stories can be found in the UX section and the link to the Kanban board below. </p>
 
 
 [User Stories](#user-stories) - see details of each User Story.
@@ -223,17 +223,17 @@ I used three different fonts from the Google Fonts library.
 
 ### SEO - Search Engine Optimization
 
-<p>As part of the SEO for this site I have compiled a list of keywords. These keywords have been included in the site header under the meta tag 'keywords'. A '<title>' has also been included on the base.html with the text <strong>Tommy Williamson Landscape & Agri Supplies</strong>.</p>
+<p>As part of the SEO for this site I have compiled a list of keywords. These keywords have been included in the site header under the meta tag 'keywords'. A '<title>' has also been included on the base.html with the text <strong>Tommy Williamson Landscape & Agri Supplies</strong>. </p>
 <p>To further help search function I am using descriptive text on the product images, in addition where possible I have descriptive text on anchor tag elements.</p>
 
 #### Keyword Research:
-<p>List of keywords was compiled and included in the site header. In addition, a simple title elemet was add to the base.html</p> 
+<p>List of keywords was compiled and included in the site header. In addition, a simple title element was add to the base.html</p> 
 <ul>
 <li>Tommy Williamson Landscaping and Gardening Supplies</li>
 <li>Arches</li>
-<li>Pegolas</li> 
+<li>Pergolas</li> 
 <li>Bark Mulch</li> 
-<li>Composted Top Soil</li> 
+<li>Composted Topsoil</li> 
 <li>Farm Fencing Stakes</li> 
 <li>Garden Sprays</li> 
 <li>Gates</li> 
@@ -262,20 +262,21 @@ I used three different fonts from the Google Fonts library.
 #### Proposed Strategy
 
 <p>This market place is quite crowded, and having done some market research it is clear there are many competitors in this E-commerce space. I would propose that the business looks toward creating original content for release on social channels.</p>
-<p>Many Irish businesses, in the agricultural space in particular, have been releasing content on Youtube. The content is organic and primarily catalogues the goings on and happenings in their business. Some of these videos have developed connections with suppliers with benefit for both parties.</p>
+<p>A search of Youtube brought up a number of Irish channels in the Agricultrual space which have been releasing content on YouTube. The content is organic and primarily catalogues the goings on and happenings in their business. As you skip through some of this content you can see the rapid development of connections between the content creators and their suppliers with benefit for both parties. </p>
+<p>This type of content creation could work very well for this business.</p>
 
 
 <strong>Strategy</strong>:
 <ul>
-<li>Create short videos demonstrating products.</li>
+<li>Create short videos demonstrating products. </li>
 <li>Create videos of 'DIY' projects using products sold by the business.</li>
-<li>Develop a partnership with business(es) whom purchase products showing some of their work. A partnership with a landscaping business detailing before and after garden transformations.</li>
-<li>Market the business as a source of information, create and develop a Frequently Asked Question section and lean on the approchability and knowledge of the staff.</li>
+<li>Develop a partnership with suppliers and trade customers to add value for all parties. A partnership with a landscaping business detailing before and after garden transformations or demonstrations showing products in use. </li>
+<li>Market the business as a source of information, create and develop a Frequently Asked Question section and lean on the approachability and knowledge of the staff. </li>
 </ul>
 
 
 #### Facebook
-<p>The business has an active Facebook page. I would look to integrate Facebook posts into the site in some shape.</p>
+<p>The business has an active Facebook page. I would look to integrate Facebook posts into the site in some shape. </p>
 <br>
 
 <p align="center" width="100%"> 
@@ -298,7 +299,7 @@ I used three different fonts from the Google Fonts library.
 ​
 ### **Site Layout**
 
-<p>The initial layout for the site was created with wireframes developed in Balsamiq. The wireframes can be viewed via the link below.</p>
+<p>The initial front end layout for the site was created from the wireframes developed in Balsamiq. The wireframes can be viewed via the link below.</p>
 
 <br>
 
@@ -306,7 +307,7 @@ I used three different fonts from the Google Fonts library.
 
 ​[Link to Wire Frames](readme_docs/wireframes/wireframes.pdf)
 
-<p> I initial layout used logos or icons to represent the different product categories on the index.html, as sampled below. How ever I think the photo images now used are far more astellically pleasing and would be more visually appealing to customers. </p> 
+<p> I initially layout used logos or icons to represent the different product categories on the index.html, as sampled below. However, after showing the layout to some people I found the 'icon' style images were not popular. The photo images now used are far more aesthetically pleasing and would be more visually appealing to customers. </p> 
 <br>
 <p align="center" width="100%"> 
 <img src="readme_docs/wireframes/sample_of_index.png" alt="image of initial index page" width=""/>
@@ -314,7 +315,7 @@ I used three different fonts from the Google Fonts library.
 
 <br>
 
-<p> It was clear fom looking at the business that they had an affinity for there delivery trucks. All past and present delivery trucks are red in color. I felt that a truck image could be a digial icon for the business. I found some technical drawings online and sketch with pen and carbon paper to create a profile. I scanned this profile image in 3D Paint. I used this image for the Favicon pack. I would like to have used it as the business logo as I think its very identifiable with the business. Based on time constraints I decided to stick with the existing business logo. The re-design of the logo would be a Future Feature.</p>
+<p> It was clear from looking at the business that they had an affinity for there delivery trucks. All past and present delivery trucks are red in color. I felt that a truck image could be a digital icon for the business. I found some technical drawings online and sketched over them with a pen and carbon paper to create a profile. I scanned this profile image in 3D Paint. I used this image for the Favicon pack. I would like to have used it as the business logo as I think it is very identifiable with the business. Based on time constraints I decided to stick with the existing business logo. The re-design of the logo would be a Future Feature. </p>
 <br>
 <p align="center" width="100%"> 
 <img src="readme_docs/wireframes/truck_drawing.png" alt="image of truck sketch" width=""/>
@@ -332,7 +333,7 @@ I used three different fonts from the Google Fonts library.
 ​
 ### **PostgreSQL Database**
 
-<p>The backend database is a PostgreSQL Database hosted via Heroku. The database is built around several seperate apps which have models as listed below.</p>
+<p>The backend database is a PostgreSQL Database hosted via Heroku. The database is built around several separate apps which have models as listed below.</p>
 <br>
 
 #### **Apps and associated models:**
@@ -415,7 +416,7 @@ I used three different fonts from the Google Fonts library.
 ​
 ## Features
 ​
-The application uses a PostgreSQL database which contains the purpose designed models with back-end being built on the Django Framework. The site is designed to with following base features.
+<p>The application uses a PostgreSQL database which contains the purpose designed models with back-end being built on the Django Framework. The site is designed with the following base features. </p>
 <br> 
 
 ​- The site has **responsive design** when viewed on a mobile, tablet, and desktop.
@@ -427,11 +428,12 @@ The application uses a PostgreSQL database which contains the purpose designed m
 ### Implemented Features
 
 **Nav Bar**
+
 <p>The Nav Bar is standard across all pages. It contains a link to <strong>Home</strong>, <strong>Contact Us</strong>, and an <strong>Inspiration Page</strong> which is a picture gallery. </p>
-<p>There is a drop down menu for navigation to the different product categories and an Account link to allow new users register or login if already registered. Beside this there is a basket icon which will show current total of items in the basket if there are any.</p>
+<p>There is a drop-down menu for navigation to the different product categories and an Account link to allow new users register or login if already registered. Beside this there is a basket icon which will show current total of items in the basket if there are any. </p>
 <p>Positioned on the right of the nav-bar is the search function to search through products for key words. </p>
-<p>I have also incorporated the company logo into the nav bar as part of the branding.</p>
-<p>Nav bar link text will turn red on hover to further highlight the options and introduce some red into the color scheme.</p>
+<p>I have also incorporated the company logo into the nav bar as part of the branding. </p>
+<p>Nav bar link text will turn red on hover to further highlight the options and introduce some red into the color scheme. </p>
 <br>
 
 <p align="center" width="100%"> 
@@ -439,7 +441,7 @@ The application uses a PostgreSQL database which contains the purpose designed m
 </p>
 
 <strong>Administrator Function:</strong>
-<p>If the user is logged in as the site administrator the 'My Account' drop will include four additional links.</p>
+<p>If the user is logged in as the site administrator the 'My Account' drop will include four additional links. </p>
 <ul>
 <li>Product Management</li>
 <li>Update Site Banner</li>
@@ -454,19 +456,19 @@ The application uses a PostgreSQL database which contains the purpose designed m
 <br>
 
 <strong>Product Management</strong>
-<p>This option allows the administrator to add and new product to the site.</p>
+<p>This option allows the administrator to add and new product to the site. </p>
 <br>
 
 <strong>Update Site Banner</strong>
-<p>Update Site Banner option allows the administrator to change to text content and the header of one of the text-carousels which auto slide under the image carousel on the home page. This allows the administrator access to put a quick message directly on the home page.</p>
+<p>Update Site Banner option allows the administrator to quickly change the text content and the header of one of the text-carousels which auto slide under the image carousel on the home page. This allows the administrator access to put a quick message directly on the home page. </p>
 <br>
 
 <strong>Newsletter</strong>
-<p>The administrator can see all products currently available as 'special offers' which would form part of the newsletter sent to subscribers.</p>
+<p>The administrator can see all products currently available as 'special offers' which would form part of the newsletter sent to subscribers. </p>
 <br>
 
 <strong>Email List</strong>
-<p>This link will show a list of all emails currently subscribed to the newsletter. From here the admin can also delete an email address from that list.</p>
+<p>This link will show a list of all emails currently subscribed to the newsletter. From here the admin can also delete an email address from that list. </p>
 <br>
 
 <p align="center" width="100%"> 
@@ -479,9 +481,9 @@ The application uses a PostgreSQL database which contains the purpose designed m
 <br>
 
 **Home Page**
-<p>The home page contains a large picture carousel which auto scrolls. This is positioned just below the nav bar. The carousel contains four seperate images. Each image is overlayed with a text box and each text box contains a button. The text relates to the image and the destination for the associated button will bring to a relevant point on the site inline with image and text. The purpose of the carousel is to act as four advertments.</p>
-<p>The central content of the homepage are the product cards. These cards contain text and an image. Each card will bring you to a seperate product category page. The borders on the cards will turn red when hovered over. The images are to be visually appealing and need to represent the relevant product category.</p>
-<p>Below the product cards and over the footer there a 'supplier slider', this is another carousel which contains logo's for the companies whom supply products to the business. This is auto scrolling. At present if a user clicks on a supplier logo they are taken to that suppliers website, which opens in a new page. As a future feature I would look at returning a template of all products available relating to the particular supplier for purchase on this site.</p>
+<p>The home page contains a large picture carousel which auto scrolls. This is positioned just below the nav bar. The carousel contains four separate images. Each image is overlayed with a text box and each text box contains a button. The text relates to the image and the destination for the associated button will bring to a relevant point on the site inline with image and text. The purpose of the carousel is to act as four advertisements. </p>
+<p>The central content of the homepage are the product cards. These cards contain text and an image. Each card will bring you to a separate product category page. The borders on the cards will turn red when hovered over. The images are to be visually appealing and need to represent the relevant product category. </p>
+<p>Below the product cards and over the footer there a 'supplier slider', this is another carousel which contains logo's for the companies whom supply products to the business. This is auto scrolling. At present if a user clicks on a supplier logo they are taken to that suppliers website, which opens in a new page. As a future feature I would look at returning a template of all products available relating to the particular supplier for purchase on this site. </p>
 <br>
 
 <p align="center" width="100%"> 
@@ -491,10 +493,10 @@ The application uses a PostgreSQL database which contains the purpose designed m
 
 **Contact Us**
 
-<p>Self explanatory, this page contains all the relevant contact details for the business. There is also a contact us form to allow the site user quickly send there queries and contact details to the business.</p>
-<p>I have included social media links here also. I have also included an opening hours feature which shows the current day highlighted in red.</p>
-<p>Below the contact details and contact us form there is link to subscribe to the newsletter. There is animated border around this button to attract the site users attention.</p>
-<p>This page also contains an embedded Google Map with the location of the business central on the rendered map. Just below the map there is link to allow any user subscribed to newsletter to unsubscribe, naturally if the user tries to unsubscribe from the newsletter mailing list with an email address thats not on the list they will receive a validation error message.</p>
+<p>Self-explanatory, this page contains all the relevant contact details for the business. There is also a contact us form to allow the site user quickly send their queries and contact details to the business. This information is stored in a model, with a copy of the query and contact details to be emailed to a company sales email address for follow up by sales staff. </p>
+<p>I have included social media links here also. I have also included an opening hours feature which shows the current day highlighted in red. </p>
+<p>Below the contact details and contact us form there is link to subscribe to the newsletter. There is animated border around this button to attract the site users attention. </p>
+<p>This page also contains an embedded Google Map with the location of the business central on the rendered map. Just below the map there is link to allow any user subscribed to newsletter to unsubscribe, naturally if the user tries to unsubscribe from the newsletter mailing list with an email address that is not on the list they will receive a validation error message.</p>
 <br>
 
 <p align="center" width="100%"> 
@@ -504,12 +506,12 @@ The application uses a PostgreSQL database which contains the purpose designed m
 
 **Inspiration** 
 
-<p>This page would form part of the larger marketing strategy, the page is essentially and image gallery which is built using BaguetteBox which is a JavaScript library, that generates a lightbox with animated and responsive images. There are currently nine images in the gallery but this would be expanded.</p>
-<p>The images 'zoom on hover', as part of that function description text for each image is also displayed. If a user clicks on any image the image will occupy full screen. And exit control and left and right directional arrows will be shown. The user can now scroll through all the images in the gallery or exit back to grid display mode.</p>
+<p>This page would form part of the larger marketing strategy, the page is essentially and image gallery which is built using BaguetteBox which is a JavaScript library, this generates a lightbox with animated and responsive images. There are currently nine images in the gallery but this would be expanded. </p>
+<p>The images 'zoom on hover', as part of that function description text for each image is also displayed. If a user clicks on any image the image will occupy full screen and an exit control and left and right directional arrows will be shown. The user can now scroll through all the images in the gallery or exit back to grid display mode. </p>
 
 **Products Page** 
 
-<p>The product page will display a card for each product item matching the user selected category, the name of the category will be displayed at the top of the page. Below this to the left the number of products in this category will be displayed and on the right will be the 'Sort By' dropdown options box. </p>
+<p>The product page will display a card for each product item matching the user selected category, the name of the category will be displayed at the top of the page. Below this to the left the number of products in this category will be displayed and, on the right will be the 'Sort By' dropdown options box. </p>
 <p>The users can sort the displayed products in the following ways:</p>
 <ul>
 <li>Price - low to high</li>
@@ -523,7 +525,7 @@ The application uses a PostgreSQL database which contains the purpose designed m
 </ul>
 <br>
 
-<p>The border around the product card will also turn red on hovering over the particular card. Once a particular product card is selected a products detail page is displayed for that particular product. The image will be on the left of the screen and the details and price will be displayed on the right. Just below the details will be the quantity box which the user can use to alter the quantity of the product required. Clicking the 'ADD TO BASKET' button will deposit the quantity selected into the basket.</p>
+<p>The border around the product card will also turn red on hovering over the card. Once a particular product card is selected a products detail page is displayed for that particular product. The image will be on the left of the screen and the details and price will be displayed on the right. Just below the details will be the quantity box which the user can use to alter the quantity of the product required. Clicking the 'ADD TO BASKET' button will deposit the quantity selected into the basket.</p>
 <p>The 'KEEP SHOPPING' button will return the user back to the products section.</p>
 <p>Clicking the product image will that image in a new window in a full screen size.</p>
 <p>I a particular product is marked as being on special offer the works "This item is on special offer" will appear in <strong>flashing red text</strong> below the description. Items not marked for special offer will not have this feature.</p>
@@ -536,7 +538,7 @@ The application uses a PostgreSQL database which contains the purpose designed m
 
 **Shopping Basket**
 
-<p>When an item is placed in the basket a success toast will display a summary. This toast is built on structure of the Boutique Ado toasts and will display the product summary and an indication of any delivery charge or how far the customer is away from getting free delivery.</p>
+<p>When an item is added to the basket a success toast will display a summary. This toast is built on structure of the Boutique Ado toasts and will display the product summary and an indication of any delivery charge or how far the customer is away from getting free delivery.</p>
 <br>
 
 <p align="center" width="100%"> 
@@ -544,7 +546,7 @@ The application uses a PostgreSQL database which contains the purpose designed m
 </p>
 <br>
 
-<p>The shopping basket has all expected functionality, update quantity of product(s) in the shopping basket or removing and item completely. Delivery charges are calculated based a percentage as set in the settings.py file.</p>
+<p>The shopping basket has all expected functionality, update quantity of product(s) in the shopping basket or removing and item completely. Delivery charges are calculated based a percentage as set in the settings.py file. </p>
 
 ```
 {
@@ -560,7 +562,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 </p>
 <br>
 
-<p>Payment processing is powered by Stripe with a webhook handler to process webhook requests. This process is largely inline with Boutique Ado.</p>
+<p>Payment processing is powered by Stripe with a webhook handler to process webhook requests. This process is largely in line with Boutique Ado.</p>
 <br>
 
 **Order Number**
@@ -579,7 +581,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
         return order_num
 ```
 
-<p>Order numbers are made up of the numerical value for the MONTH, DAY, YEAR, the current hour, a hyphen and then a randomly generated four digit number. In this format it would allow the business owner tell the date and hour that the order was created with just the order number and hence help track any issues with a customers order easier than just using a completely random order number. </p>
+<p>Order numbers are made up of the numerical value for the MONTH, DAY, YEAR, the current hour, a hyphen and then a randomly generated four-digit number. In this format it would allow the business owner to tell the date and hour that the order was created with just the order number and hence help track any issues with a customer's order easier than just using a completely random order number. </p>
 <br>
 
 <p align="center" width="100%"> 
@@ -591,17 +593,17 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 <ol>
 <li>09 is for the month, here is the Month, September.</li>
 <li>26 is the day in the month, in this case the 26th day of the month.</li>
-<li>2022 is the four digit indicator for the year, in this case thats 2022.</li>
+<li>2022 is the four digit indicator for the year, in this case that is 2022.</li>
 <li>The four digit code that precedes the hyphen is randomly created by the Python method.</li>
 </ol>
 <br>
 
 **Newsletter**
 
-<p>There is link on the Contact Us page to allow a site visitor to register for the company newsletter, there is also an unsubscribe link at the bottom of this page. On of the picture carousels on the Home page also has a link to allow visitors subscribe. I feel it is a better marketing strategy to allow all visitors, regardless of the fact they may already have an account or if they do or dont make a purchase, to sign up with an email address.</p>
-<p>The newsletter is generated from all products that have been marked as on <strong>special offer</strong>. Any product marked in such a way is included on the newsltter. The site administrator can see these items from their dropdown menu on the nav bar (when logged in as administrator!)</p> 
-<p>By selecting any product on this list the admin can choose the edit option and 'untick' the special offer box to remove that product from the newsletter.</p> 
-<p>The <strong>Email List</strong> option the drop 'My Account' dropdown menu will show all the newsletter subscribers and by clicking the <strong>Send Newsletter</strong> button the admin will send the newsletter to all subscribers. From here the admin can also delete subscribers from the list.</p>
+<p>There is link on the Contact Us page to allow a site visitor to register for the company newsletter, there is also an unsubscribe link at the bottom of this page. On of the picture carousels on the Home page also has a link to allow visitors subscribe. I feel it is a better marketing strategy to allow all visitors, regardless of the fact they may already have an account or if they do or dont make a purchase, to sign up with an email address. </p>
+<p>The newsletter is generated from all products that have been marked as on <strong>special offer</strong>. Any product marked in such a way is included on the newsletter automatically. The site administrator can see these items from their dropdown menu on the nav bar (when logged in as administrator!) </p> 
+<p>By selecting any product on this list the admin can choose the edit option and 'untick' the special offer box to remove that product from the newsletter. </p> 
+<p>The <strong>Email List</strong> option the drop 'My Account' dropdown menu will show all the newsletter subscribers and by clicking the <strong>Send Newsletter</strong> button the admin will send the newsletter to all subscribers. From here the admin can also delete subscribers from the list. </p>
 <br>
 
 <p align="center" width="100%"> 
@@ -622,12 +624,13 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 
 ### Future Features
 
-- Removal of the admin features from the nav bar dropdown menu and the creation of a seperate dashboard menu for the administrator.
+- Removal of the admin features from the nav bar dropdown menu and the creation of a separate dashboard menu for the administrator.
 - The user profile has an option to allow the user state if are a domestic of business customer. I would use this to target the different groups with different types of offers. Showing the pricing for Business customers excluding VAT.
-- Creation of section with 'how to' or 'DIY' style videos to further market the products. There would be some form of intergration with this content and the companies social media channels.
+- Creation of section with 'how to' or 'DIY' style videos to further market the products. There would be some form of integration with this content and the companies social media channels.
 - Look into the styling and format of the Newsletter. 
-- Collate emails of registered user to the site for the creation of a marketing email list targetted towards there previous purchases.
+- Collate emails of registered user to the site for the creation of a marketing email list targeted towards their previous purchases.
 - Create a new business logo in SVG format that can better promote the brand.
+- Change supplier carousel logos to display all products availible on the site for that particular supplier.
 
 
 [Back to content](#contents)
@@ -637,21 +640,21 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 ​
 ## Development
 
-<p>In this section I deal with some of the bugs and errors encountered during the development process. If the issue was sucessfully fixed I have included details of that fix.</p>
+<p>In this section I deal with some of the bugs and errors encountered during the development process. If the issue was successfully fixed I have included details of that fix. </p>
 
 ## Bugs & Fixes
-<p>This section consists of issues I had during development which took me 60 minutes plus approximately to identify and sort.</p>
+<p>This section consists of issues I had during development which took me 60 minutes plus approximately to identify and sort. </p>
 
 ### Issue No.1
 <h4>Webhooks and Stripe:</h4>
-<p>During the setup of the Stripe webhooks I was initially not able to get 'intent' details back and printed to the terminal. After some investigation I discovered that this was because Port 8000 was set to Private and not Public as was required. Once this was created the transaction information was printed to the terminal.</p>
+<p>During the setup of the Stripe webhooks I was initially not able to get 'intent' details back and printed to the terminal. After some investigation I discovered that this was because Port 8000 was set to Private and not Public as was required. Once this was created the transaction information was printed to the terminal. </p>
 
 ### Issue No.2 
 <h4>Webhooks the return!:</h4>
-<p>Having successfully tested the webhooks in the development environment I moved on to other aspects of the project. I approached a point where I needed to test User Stories and so setup an email address and setup webhooks in Stripe with a new endpoint URL for the deployed site and tested.</p>
-<p>While test payments were being sucessfully recieved and processed in Stripe none of the webhooks were functioning and emails were not being sent. The Stripe dashboard returninf a 500 Error.</p>
-<p>After a period of unsucessful testing I had to create a new endpoint in Stripe with an URL of my development environment. I edited the webhook secret to matched and tested the functions in the development site with feedback in the terminal. The Error 500 was traced back to typo in the webhook_handler.py. Once the error was corrected I changed the webhook secret back to deployed site value and retested.</p>
-<p>Testing was nowing showing that webhooks were functioning correctly and emails were sent successfully.</p>
+<p>Having successfully tested the webhooks in the development environment I moved on to other aspects of the project. I approached a point where I needed to test User Stories and so setup an email address and setup webhooks in Stripe with a new endpoint URL for the deployed site and tested. </p>
+<p>While test payments were being successfully received and processed in Stripe none of the webhooks were functioning and emails were not being sent. The Stripe dashboard returning a 500 Error. </p>
+<p>After a period of unsuccessful testing I had to create a new endpoint in Stripe with an URL of my development environment. I edited the webhook secret to matched and tested the functions in the development site with feedback in the terminal. The Error 500 was traced back to typo in the webhook_handler.py. Once the error was corrected I changed the webhook secret back to deployed site value and retested. </p>
+<p>Testing was now showing that webhooks were functioning correctly and emails were sent successfully. </p>
 
 
 ---
@@ -660,7 +663,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 ​
 ## Functional Testing
 
-<p>Manully testing was carried out throughout the development process. Details of specific manual are located in a separate test document.</p>
+<p>Manually testing was carried out throughout the development process. Details of specific manual are located in a separate test document.</p>
 
 <strong>Testing Results:</strong> 
 
@@ -749,7 +752,7 @@ I have decided not to alter the relevant lines to fit into 79-character restrict
 
 <br>
 
-Deployment of this project is carried out with Heroku, https://www.heroku.com. The deployment procedure is a follows.  
+Deployment of this project was carried out with Heroku, https://www.heroku.com. The deployment procedure is a follows.  
 <ol>
 <li>Log in to Heroku, creating a new account if you are not a current user.</li>
 <li>Click on the 'New' button in the top right corner and from the drop-down menu select 'Create new app'.</li>
@@ -789,9 +792,9 @@ Deployment of this project is carried out with Heroku, https://www.heroku.com. T
 
 1. Create an account AWS [Amazon Web Services](https://aws.amazon.com/) or login to an existing account (Credit Card required to register an account.)
 
-2. Navigate to the AWS Managment Console and search for S3 Service.
+2. Navigate to the AWS Management Console and search for S3 Service.
 
-3. Create a S3 Bucket using **Create Bucket** button in top right hand corner
+3. Create a S3 Bucket using **Create Bucket** button in top right-hand corner
 
 4. Name the Bucket, in this instance we match the Heroku App name for simplicity.
 
@@ -799,7 +802,7 @@ Deployment of this project is carried out with Heroku, https://www.heroku.com. T
 
 6. Setup the **Object Ownership**.
 - Select - **ACLs Enabled** 
-- Select - **Bucket Owner Preffered**
+- Select - **Bucket Owner Prefered**
 
 7. Select **Allow Public Access**. Confirm that this setup will make the objects within the bucket viewable by the public.
 
@@ -831,7 +834,7 @@ Fill out this page as follows:
 **Select Type of Policy** : S3 Bucket policy
 **Principal** : * (this allows all)
 **Actions**: Get object
-**Amazon Resource Name (ARN)** : Copy ARN foom the Edit Bucket Policy page in the permissions section and paste it in here
+**Amazon Resource Name (ARN)** : Copy ARN from the Edit Bucket Policy page in the permissions section and paste it in here
 
 Select **Add Statement** button. 
 <br>
@@ -849,13 +852,13 @@ Save the policy.
 On the side menu find **User Groups** and click **Create Group**. Enter a name relevant to the groups purpose ie, "manage--app-name". Create the group.
 
 15. From side menu select Policies and click **Create Policy**. 
-Select the Import Managed Polic. Search for **AmazonS3FullAccess** and import that policy.
+Select the Import Managed Policy. Search for **AmazonS3FullAccess** and import that policy.
 <br>
 <p align ="center">
 <img title="heroku" alt="screen shot of Heroku app menu" src="readme_docs/images/bucket_policy.png"></p>
 <br>
 
-16. To restrict access to just the new bucket you must retrieve the ARN fromt the **Bucket Policy Page** in S3.
+16. To restrict access to just the new bucket you must retrieve the ARN from the **Bucket Policy Page** in S3.
 Copy ARN again and paste into "Resource" section. 
 Add the ARN twice with a <strong>/*</strong> on the second ARNist containint The first line is for access to the Bucket and second line is for all files and folders in that Bucket.
 <br>
@@ -944,7 +947,7 @@ class MediaStorage(S3Boto3Storage):
 
 ```
 
-5. The easist way to upload the media files to AWS S3 Bucket is to open the Bucket in AWS dashboard, create a new folder called **media**. From here you can select **Upload** and select the file or files you want to upload.
+5. The easiest way to upload the media files to AWS S3 Bucket is to open the Bucket in AWS dashboard, create a new folder called **media**. From here you can select **Upload** and select the file or files you want to upload.
 
 
 
@@ -991,7 +994,7 @@ class MediaStorage(S3Boto3Storage):
 ​
 ### **Images**
 <br>
-<p>The images used in this project were taken from the websites of suppliers to the business and photos I took myself</p>
+<p>The images used in this project are taken from the websites of suppliers to the business and photos I took myself</p>
 <p>I have used some images of Pinterest to create some of the backgrounds.</p>
 
 ### **Image editing**

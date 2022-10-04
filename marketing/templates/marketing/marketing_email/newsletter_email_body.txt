@@ -3,7 +3,8 @@ Hello {{ customer.name }}!
 Please visit our site to get the latest on our special offers.
 {% for item in newsletter %}
 
-{{ item.product_name}} {{ item.simple_description }} {{ item.price }}
+{{ item.product_name}} {{ item.simple_description }} {{ item.price }} {{ item.image }}
+
 
 {% endfor %}
 
