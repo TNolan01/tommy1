@@ -175,6 +175,9 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY_ID = os.environ.get('AWS_SECRET_ACCESS_KEY')
     # AWS_SECRET_ACCESS_KEY_ID = os.environ.get('AWS_SECRET_ACCESS_KEY').strip("\n")
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
+    S3_USE_SIGV4 = True
+    AWS_S3_SIGNATURE_VERSION = "s3v4" 
+
     
     #Storage of Static and Media Files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
