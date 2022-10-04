@@ -17,5 +17,8 @@ class ContactUs(models.Model):
     def __str__(self):
         return self.contact_name
 
+    class Meta:
+        verbose_name_plural = "contact us"
+
 
 

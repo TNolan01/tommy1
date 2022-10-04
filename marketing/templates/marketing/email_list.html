@@ -3,37 +3,36 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<!--Unsubsribe Email Page -->
 
+<!--Unsubsribe Email Page -->
 <div class="container mt-4 mb-4">
     <h3>Newsletter mailing list</h3>
     <hr>
     
     <table class="table">
         <thead class="thead-dark">
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Email</th>
-            <th scope="col">Date Joined</th>
-            <th scope="col">Remove?</th>
-          </tr>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Date Joined</th>
+              <th scope="col">Remove?</th>
+            </tr>
         </thead>
         <tbody>
         {% for customer in customers %}
-          <tr>
-            <th scope="row">{{ customer.id }}</th>
-            <td>{{ customer.name }}</td>
-            <td>{{ customer.email }}</td>
-            <td>{{ customer.subscribed_date }}</td>
-            <td><a href="{% url 'remove_subscriber' customer.id %}">Delete</a></td>
+            <tr>
+              <th scope="row">{{ customer.id }}</th>
+              <td>{{ customer.name }}</td>
+              <td>{{ customer.email }}</td>
+              <td>{{ customer.subscribed_date }}</td>
+              <td><a href="{% url 'remove_subscriber' customer.id %}">Delete</a></td>
         {% endfor %}
-        
-        </tr>
+            </tr>
         </tbody>
-      </table>
+    </table>
       <div>
-        <a class="btn btn-outline-black rounded-0" href="{% url 'send_newsletter' %}">Send Newsletter</a>
+          <a class="btn btn-outline-black rounded-0" href="{% url 'send_newsletter' %}">Send Newsletter</a>
       </div>
         
 </div>
