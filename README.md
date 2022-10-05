@@ -56,7 +56,7 @@
     - [Implemented Features](#implemented-features)
     - [Future Features](#future-features)
   - [Development](#development)
-    - [bUg5 & (F)ixes](#bugs--fixes)
+    - [bUg5 & (F)ixe5](#bugs--fixes)
   - [Testing](#testing)
     - [User Test Information](#user-test-information)
   - [Deployment](#deployment)
@@ -225,6 +225,7 @@ I used three different fonts from the Google Fonts library.
 
 <p>As part of the SEO for this site I have compiled a list of keywords. These keywords have been included in the site header under the meta tag 'keywords'. A '<title>' has also been included on the base.html with the text <strong>Tommy Williamson Landscape & Agri Supplies</strong>. </p>
 <p>To further help search function I am using descriptive text on the product images, in addition where possible I have descriptive text on anchor tag elements.</p>
+<p>The products and items on all have alt tags created from the product name. I will use Brand names in the name of certain products. </p>
 
 #### Keyword Research:
 <p>List of keywords was compiled and included in the site header. In addition, a simple title element was add to the base.html</p> 
@@ -656,6 +657,25 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 <p>After a period of unsuccessful testing I had to create a new endpoint in Stripe with an URL of my development environment. I edited the webhook secret to matched and tested the functions in the development site with feedback in the terminal. The Error 500 was traced back to typo in the webhook_handler.py. Once the error was corrected I changed the webhook secret back to deployed site value and retested. </p>
 <p>Testing was now showing that webhooks were functioning correctly and emails were sent successfully. </p>
 
+### Issue No.3
+<h4>AWS, S3 Bucket and 'SignatureDoesNotMatch'</h4>
+<p>I was going to upload some stock/product to the site late on 4th of October, as a test I decided to carry out this process on the deployed site to test the process as it would be for the site owner. After logging in with admin creds and completing the 'New Product' form I attached an image and clicked 'Submit'. </p>
+<p>I was met with my first error message, <strong>Ibotocore.exceptions.HTTPClientError: An HTTP Client raised and unhandled exception: Invalid header value b'AWS4-HMAC-SHA256 Credential=-n ACCESS_KEY\n/00000000/eu-west-1/xxx/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=XXXXXXXXXX'. </strong> With searching I discovered the problem may have been caused by white space or new line being generated around the AWS ACCESS_KEY and AWS Secret_KEY values. The suggested fix was to use .strip command to remove the white space around the KEY values. </p>
+
+```
+AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID").strip("\n")
+AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY").strip("\n")
+
+```
+<br>
+<p>Once I had altered the settings.py and pushed the changes I tried to add a new product. This time the error changed to 'SignatureDoesNotMatch'. I tried to add a product from the Django Admin Interface but the fault was still the same. With testin I found I could upload all details of new product *except* an image and so the fault appeared to be the upload process of an image to the S3 storage on AWS.</p> 
+
+<p>Another search suggested the issue could be the result of several problems but the most common suggestion was that there was an issue with the AWS key values. The values were either completely wrong or prehaps entered incorrectly. A further potential fix suggested that the error could be to do with the possible presence of a special character, such as a / or a +, forming part of the AWS_SECRET_ACCESS_KEY.  </p>
+<p>There were reports that Heroku did not like the special characters in the Access Key. The fix was simple, login to AWS Dashboard and request a new Access Key from the Security Credentials option. The best option was to keep requesting new Access Keys until I receive a key which contained no special characters. With suitable access keys created I downloaded the CSV file and copied the Access Keys in Config Vars in the Heroku dash. </p>
+<p>With new security keys I again tried to add a product - the fault was still present. I checked through the error report, looked and potental issues with the content-type and header information. I checked what information I was sending to AWS and checked the Bucket Policy, IAM and S3 settings in AWS Dashboard. I deleted the old inactive AWS access keys from IAM dashboard and ensured that the ACCESS KEY I was using the active and correct. </p>
+<p>I was very confident that the issue was the AWS access keys, I checked them again in the Heroku dashboard, both matched. I double checked against the downloaded CSV, match. I decided to delete both key values and enter them manually as oppose to copying and pasting them from the CSV file. With both values entered and Heroku build updated I re-tried the 'Add Product' process. The result was successful with the new product and image uploaded to the site straight away.</p>
+<p>I tested the 'Add Product' process on a mobile device and found in worked correctly also.</p>
+<p>It might have been that white spaces were added add as part of the copy and paste process (?)</p>
 
 ---
 
@@ -916,6 +936,8 @@ Add the following to your Config Vars.
 **AWS_SECRET_ACCESS_KEY** and enter key value from downloaded CSV file.
 **USE_AWS** and enter a value of True.
 You can now remove **DISABLE_COLLECTSTATIC** from the Config Vars section.
+
+** Note : as per my Bugs & Fixes section it is best to manually enter the AWS Key values into Heroku Config Vars, copy and paste may result in connection errors.**
 
 3. Create a new file in root directory called **custom_storages.py**
 

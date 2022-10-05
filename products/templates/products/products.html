@@ -60,8 +60,8 @@
                 </a>
                 {% endif %}
                 <div class="card-body pb-0">
-                    <p class="mb-0 des-header">{{ product.product_name }}</p>
-                    <p class="mb-0 des-text">{{ product.simple_description }}</p>
+                    <p class="mb-0 des_header">{{ product.product_name }}</p>
+                    <p class="mb-0 des_text">{{ product.simple_description }}</p>
                 </div>
                 <div class="card-footer bg-white pt-0 border-0 text-left">
                     <div class="row">
@@ -95,6 +95,11 @@
                     </div>
                 </div>
             </div>
+        {% empty%}
+        <div class="container my-4" style="text-align:center;">
+            <h5 class="text-black">No products found matching the search criteria.</h5> <!--Message for empty search-->
+            <hr class="mb-4">
+        </div>
                   
         {% endfor %}
        
