@@ -284,6 +284,12 @@ body {
   font-size: 0.9rem !important;
 }
 
+/* Product Management, Product Management, Product Management, Product Management*/
+.product_manage label {
+  text-transform: uppercase !important;
+  font-weight: bold !important;
+}
+
 /* Shopping Basket, Shopping Basket, Shopping Basket, Shopping Basket*/
 .btn-outline-black {
   background: white;
