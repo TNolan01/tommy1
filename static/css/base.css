@@ -10797,6 +10797,11 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+.all_auth_form label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 /* Contact Us Page, Contact Us Page, Contact Us Page, Contact Us Page   */
 .spacer-bar {
   height: 32px;

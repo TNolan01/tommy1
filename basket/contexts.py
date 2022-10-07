@@ -1,4 +1,4 @@
-# this holds a dictionary of shopping baskets contents for availability across all app's
+# this holds a dictionary of baskets contents for availability across all app's
 # reference - basket_items
 from decimal import Decimal
 from django.conf import settings
@@ -6,12 +6,12 @@ from django.shortcuts import get_object_or_404
 from products.models import Product
 
 
-def basket_contents (request):
+def basket_contents(request):
     basket_items = []
     total = 0
     item_count = 0
-    basket = request.session.get('basket',{})
-    
+    basket = request.session.get('basket', {})
+
     for item_id, quantity in basket.items():
         product = get_object_or_404(Product, pk=item_id)
         total += quantity * product.price
@@ -21,25 +21,24 @@ def basket_contents (request):
             'quantity': quantity,
             'product': product,
         })
-    
-    
+
     if total < settings.FREE_DELIVERY_THRESHOLD:
-        delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE/100)
+        delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         delivery = 0
         free_delivery_delta = 0
-        
+
     invoice_total = delivery + total
-    
+
     context = {
-        'basket_items' : basket_items,
-        'total' : total,
-        'item_count' : item_count,
-        'delivery' : delivery,
-        'free_delivery_delta' : free_delivery_delta,
-        'free_delivery_threshold' : settings.FREE_DELIVERY_THRESHOLD,
-        'invoice_total' : invoice_total,
+        'basket_items': basket_items,
+        'total': total,
+        'item_count': item_count,
+        'delivery': delivery,
+        'free_delivery_delta': free_delivery_delta,
+        'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
+        'invoice_total': invoice_total,
     }
-    
+
     return context

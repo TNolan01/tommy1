@@ -14,7 +14,7 @@
 
 <div class="container mx-10 mb-4" style="text-align:center;">
   <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-    <div class="container">
+    <div class="container all_auth_form">
       {% csrf_token %}
       {{ form|crispy }}
       {% if redirect_field_value %}

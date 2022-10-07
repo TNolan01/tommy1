@@ -7,7 +7,6 @@ from django.views.decorators.csrf import csrf_exempt
 from checkout.webhook_handler import StripeWH_Handler
 
 
-
 @require_POST
 @csrf_exempt
 def webhook(request):
@@ -24,7 +23,7 @@ def webhook(request):
     try:
         event = stripe.Webhook.construct_event(
             payload, sig_header, wh_secret
-            )
+        )
     except ValueError as e:
         # Invalid payload
         return HttpResponse(status=400)

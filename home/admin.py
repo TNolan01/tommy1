@@ -9,6 +9,6 @@ class ContactAdmin(admin.ModelAdmin):
         'contact_number',
     )
 
+
 admin.site.register(TextSlider)
 admin.site.register(ContactUs, ContactAdmin)
-

@@ -4,6 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 from .views import handler404
 
+handler404 = 'tommy1.views.handler404'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
@@ -14,5 +16,3 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('marketing/', include('marketing.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-
-handler404 = 'tommy1.views.handler404'

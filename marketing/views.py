@@ -1,13 +1,13 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from .forms import CustomerForm, UnsubscribeForm
-from .models import Customer 
+from .models import Customer
 from products.models import Product
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.models import User
 from django.core.mail import BadHeaderError, send_mail
 from django.template.loader import render_to_string
 from django.conf import settings
+
 
 def marketing_signup(request):
     form = CustomerForm(request.POST or None)
@@ -17,12 +17,13 @@ def marketing_signup(request):
             messages.info(request, 'Email is already on our newsletter list')
         else:
             instance.save()
-            messages.success(request, 'Thank you for signing up!') 
+            messages.success(request, 'Thank you for signing up!')
             return redirect('/')
     context = {
         'form': form,
     }
     return render(request, 'marketing/subscribe_email.html', context)
+
 
 def marketing_unsubscribe(request):
     form = UnsubscribeForm(request.POST or None)
@@ -30,7 +31,8 @@ def marketing_unsubscribe(request):
         instance = form.save(commit=False)
         if Customer.objects.filter(email=instance.email).exists():
             Customer.objects.filter(email=instance.email).delete()
-            messages.success(request, 'Email address has been deleted from newsletter')
+            messages.success(
+                request, 'Email address has been deleted from newsletter')
             return redirect('/')
         else:
             messages.error(request, 'Email not found on our newsletter list')
@@ -39,18 +41,20 @@ def marketing_unsubscribe(request):
     }
     return render(request, 'marketing/unsubscribe_email.html', context)
 
+
 def newsletter(request):
     products = Product.objects.filter(special_offer=True)
-        
+
     context = {
         'products': products,
     }
     return render(request, 'marketing/newsletter.html', context)
 
+
 @login_required
 def email_list(request):
     customers = Customer.objects.all()
-        
+
     context = {
         'customers': customers,
     }
@@ -60,6 +64,7 @@ def email_list(request):
 # Code adapted from...
 # https://docs.djangoproject.com/en/3.2/topics/email/#preventing-header-injection
 # Bonsai Shop PP5 Project by Joanna Gorska https://github.com/JoGorska
+
 
 @login_required
 def send_newsletter(request):
@@ -73,9 +78,9 @@ def send_newsletter(request):
     for customer in customers:
         email = customer.email
         subject = render_to_string(
-                'marketing/marketing_email/newsletter_email_subject.txt',
-                {'newsletter': newsletter,
-                 'customers': customers})
+            'marketing/marketing_email/newsletter_email_subject.txt',
+            {'newsletter': newsletter,
+             'customers': customers})
 
         body = render_to_string(
             'marketing/marketing_email/newsletter_email_body.txt',
@@ -97,7 +102,7 @@ def send_newsletter(request):
             return HttpResponse('Make sure all fields are entered and valid.')
 
     messages.info(request,
-                     f'Newsletter sent to {customers.count()}\
+                  f'Newsletter sent to {customers.count()}\
                        subscribers')
     return HttpResponseRedirect('/')
 

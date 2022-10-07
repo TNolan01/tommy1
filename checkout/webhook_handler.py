@@ -11,8 +11,9 @@ import time
 
 """ For Stripe Webhooks"""
 
+
 class StripeWH_Handler:
-   
+
     def __init__(self, request):
         self.request = request
 
@@ -24,15 +25,13 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )   
-
-    
+        )
 
     def handle_event(self, event):
         return HttpResponse(
@@ -41,22 +40,22 @@ class StripeWH_Handler:
 
     def handle_payment_intent_succeeded(self, event):
         intent = event.data.object
-        pid = intent.id 
-        basket = intent.metadata.basket  
-        save_info = intent.metadata.save_info  
-        
+        pid = intent.id
+        basket = intent.metadata.basket
+        save_info = intent.metadata.save_info
+
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
-        invoice_total = round(intent.charges.data[0].amount/100, 2)
-        
-        #handle empty field values on address
+        invoice_total = round(intent.charges.data[0].amount / 100, 2)
+
+        # handle empty field values on address
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
 
-        #update user profile
+        # update user profile
         profile = None
-        username = intent.metadata.username        
+        username = intent.metadata.username
         if username != 'AnonymousUser':
             profile = UserProfile.objects.get(user__username=username)
             if save_info:
@@ -123,20 +122,20 @@ class StripeWH_Handler:
                             quantity=item_data,
                         )
                         order_line_item.save()
-                    
+
             except Exception as e:
                 if order:
                     order.delete()
                 return HttpResponse(
                     content=f'Webhook received: {event["type"]} | ERROR: {e}',
                     status=500)
-        self._send_confirmation_email(order)          
+        self._send_confirmation_email(order)
         return HttpResponse(
             content=f'Webhook received: {event["type"]} | SUCCESS: Created order in webhook',
             status=200)
 
     def handle_payment_intent_payment_failed(self, event):
-        
+
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)

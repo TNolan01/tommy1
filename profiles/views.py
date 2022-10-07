@@ -4,6 +4,7 @@ from .forms import UserProfileForm
 from django.contrib import messages
 from checkout.models import Order
 
+
 def profile(request):
     profile = get_object_or_404(UserProfile, user=request.user)
     if request.method == 'POST':
@@ -18,13 +19,13 @@ def profile(request):
 
     orders = profile.orders.all()
     template = 'profiles/profile.html'
-    context ={
-        'profile' : profile,
+    context = {
+        'profile': profile,
         'form': form,
         'orders': orders,
         'on_profile_page': True
     }
-    return render(request,template,context)
+    return render(request, template, context)
 
 
 def order_history(request, order_number):

@@ -1,18 +1,18 @@
 from django.shortcuts import render, redirect
-from marketing.forms import CustomerForm
 from django.contrib import messages
 from django.conf import settings
 from django.core.mail import send_mail, BadHeaderError
-from django.template.loader import render_to_string
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse
+from django.views.generic.edit import UpdateView
 from .forms import ContactUsForm, TextSliderForm
 from .models import TextSlider
-from django.views.generic.edit import CreateView, DeleteView, UpdateView
+
 from django.urls import reverse_lazy
 
 # Renders home page
+
+
 def index(request):
     slider = TextSlider.objects.filter()[0]
     context = {
@@ -39,12 +39,14 @@ def contact_us(request):
                         settings.DEFAULT_FROM_EMAIL,
                         [settings.DEFAULT_FROM_EMAIL],
                     )
-                    messages.success(request,'We will be in contact with you shortly')
+                    messages.success(
+                        request, 'We will be in contact with you shortly')
                     return redirect('home')
                 except BadHeaderError:
                     return HttpResponse('Invalid header found.')
             else:
-                return HttpResponse('Make sure all fields are entered and valid.')
+                return HttpResponse(
+                    'Make sure all fields are entered and valid.')
     form = ContactUsForm()
     context = {'form': form}
     return render(request, 'home/contact_us.html', {'form': form})
@@ -52,7 +54,7 @@ def contact_us(request):
 
 # Renders gallery - inspiration page
 def gallery(request):
-    
+
     return render(request, 'home/gallery.html')
 
 
@@ -68,7 +70,7 @@ class SliderCreateView(LoginRequiredMixin, UpdateView):
         return obj
 
 
-# Render the Privacy Policy page 
+# Render the Privacy Policy page
 def privacy_policy(request):
-    
+
     return render(request, 'home/privacy_policy.html')

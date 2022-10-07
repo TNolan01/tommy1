@@ -2,7 +2,7 @@ from django import forms
 from django.forms import ModelForm
 from .models import TextSlider, ContactUs
 
-#Contact form for contact_us.html
+# Contact form for contact_us.html
 # class ContactForm(forms.Form):
 #     contact_name = forms.CharField()
 #     email = forms.EmailField()
@@ -10,7 +10,7 @@ from .models import TextSlider, ContactUs
 #     message = forms.CharField(widget=forms.Textarea())
 
 
-#Form to allow authenticated user update info in text carousel on index.html
+# Form to allow authenticated user update info in text carousel on index.html
 class TextSliderForm(ModelForm):
     class Meta:
         model = TextSlider
