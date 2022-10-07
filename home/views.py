@@ -66,3 +66,9 @@ class SliderCreateView(LoginRequiredMixin, UpdateView):
     def get_object(self, queryset=None):
         obj = TextSlider.objects.filter()[0]
         return obj
+
+
+# Render the Privacy Policy page 
+def privacy_policy(request):
+    
+    return render(request, 'home/privacy_policy.html')
