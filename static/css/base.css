@@ -10449,7 +10449,8 @@ body {
 }
 
 .border-red {
-  border: 2px solid rgb(207, 8, 8) !important;
+  border: solid rgb(207, 8, 8) !important;
+  border-width: 2px !important;
 }
 
 .text-white {
@@ -10534,7 +10535,8 @@ body {
 
 .slick-slide img {
   width: 100%;
-  border: 2px solid #fff;
+  border: solid #fff;
+  border-width: 2px;
 }
 
 .brand-img {
@@ -10600,7 +10602,8 @@ body {
   margin-right: auto;
   margin-bottom: 2rem;
   border-color: black !important;
-  border-style: 2px, solid !important;
+  border-style: solid !important;
+  border-width: 2px !important;
   width: 250px;
 }
 
@@ -10642,7 +10645,8 @@ body {
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-color: black !important;
-  border-style: 2px, solid !important;
+  border-style: solid !important;
+  border-width: 2px;
   max-width: 20rem !important;
   margin-left: auto;
   margin-right: auto;
@@ -10808,7 +10812,8 @@ body {
 }
 
 .map-section {
-  border: 2px solid black;
+  border: solid black;
+  border-width: 2px;
 }
 
 .today {

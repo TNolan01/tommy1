@@ -698,29 +698,41 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY").strip("\n")
 ## Validator Testing
 
 ​
-### <span style="color:#56a832; font-weight:bold; font-size:20px">CSS</span>
+### <span style="font-weight:bold; font-size:20px">CSS</span>
 ​
-CSS was tested using [W3C CSS Validation Tool](https://jigsaw.w3.org/css-validator/)
+<p>The CSS file was directly input into https://jigsaw.w3.org/css-validator/#validate_by_input. The validation returned one error for a transform property, this is part of an animation feature on the 'Subscribe' button and has been left in place to allow that function.  </p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/testing_images/CSS_validation.png" alt="CSS test image" width=""/>
+</p>
+<br>
+
+
 ​​<br>
 
 
 ​
-### <span style="color:#ebd80c; font-weight:bold; font-size:16px">JavaScript</span>
+### <span style="font-weight:bold; font-size:16px">JavaScript</span>
 
-The script.js file was tested with [JSHint](https://jshint.com/) and showed no errors or warnings. 
+<p>The script.js file was tested with [JSHint](https://jshint.com/), any errors found were corrected. A link to a PDF of the JSHINT screen shoots can be found below.</p>
 ​<br>
 
+[Link to JSHint Report](readme_docs/testing_images/jshint_validation.pdf)
+<br>
 
-### <span style="color:#56a832; font-weight:bold; font-size:20px">HTML</span>
+### <span style="font-weight:bold; font-size:20px">HTML</span>
 ​
 HTML files associated with this project were tested individually with [W3C Validator](https://validator.w3.org/) and showed no errors or warnings. 
 <br>
 
 
-### <span style="color:#edb80c; font-weight:bold; font-size:20px">Python</span>
+### <span style="font-weight:bold; font-size:20px">Python</span>
 ​
 <p>Python code was validated by running the following command:<strong>python3 -m flake8</strong>. This produces a list of errors and warnings. I then ran 
-<strong>autopep8 --in-place --aggressive --aggressive <file name></strong> on each .py file to format the code to the correct syntax. </p>
+<strong>autopep8 --in-place --aggressive --aggressive <file name></strong> on each .py file to format the code to the correct syntax automatically. </p>
+
+<p>It was also necessary to manually correct some errors which involved split long lines.</p>
 
 ​<br>
 
