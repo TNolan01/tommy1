@@ -480,6 +480,8 @@ I used three different fonts from the Google Fonts library.
 
 **Footer**
 <p>Like the nav bar the footer is standard across all pages. The footer contains links to company social media channels.</p>
+<p>The footer also contains a link to the company's privacy policy. This opens in seperate window.</p>
+
 <br>
 
 **Home Page**

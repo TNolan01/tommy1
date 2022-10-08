@@ -46,7 +46,7 @@ class Order(models.Model):
     def _generate_order_number(self):
         now = datetime.now()
         d = now.strftime("%m/%d/%Y")
-        h = date_time = now.strftime("%H")
+        h = now.strftime("%H")
         random_number = str(random.randint(1000, 9999 - 1))
         order_number = (f'{d}{h}-{random_number}')
         order_num = order_number.translate({ord('/'): None})

@@ -1,7 +1,9 @@
 from django.db import models
 
+
 class TextSlider(models.Model):
-    slider_header = models.CharField(max_length=20, null=True, default='Shop Online')
+    slider_header = models.CharField(
+        max_length=20, null=True, default='Shop Online')
     slider_info = models.TextField(max_length=120, null=True,)
 
     def __str__(self):
@@ -19,6 +21,3 @@ class ContactUs(models.Model):
 
     class Meta:
         verbose_name_plural = "contact us"
-
-
-
