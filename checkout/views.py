@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse
+from django.shortcuts import get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.conf import settings
 from django.views.decorators.http import require_POST
@@ -66,7 +67,8 @@ def checkout(request):
                         order_line_item.save()
                 except Product.DoesNotExist:
                     messages.error(
-                        request, ("One of the products in your basket wasn't found in our database. "
+                        request, ("An item in your basket is not \n"
+                                  "in our database. \n"
                                   "Please call us for assistance!"))
                     order.delete()
                     return redirect(reverse('view_basket'))

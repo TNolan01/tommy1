@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse, HttpResponseRedirect
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib import messages
 from .forms import CustomerForm, UnsubscribeForm
 from .models import Customer

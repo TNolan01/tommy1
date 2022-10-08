@@ -45,7 +45,7 @@ def adjust_basket(request, item_id):
         basket[item_id] = quantity
         messages.info(
             request,
-            f"Quantity for {product.product_name} updated to {basket[item_id]}.",
+            f"Quantity of {product.product_name} updated to {basket[item_id]}."
         )
     else:
         basket.pop[item_id]

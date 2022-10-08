@@ -27,9 +27,9 @@ def contact_us(request):
         form = ContactUsForm(request.POST)
         if form.is_valid():
             form.save()
-            email_message = form.cleaned_data['message']
             email = form.cleaned_data['email']
-            subject = f'New sales contact {form.cleaned_data["email"]}: {form.cleaned_data["contact_name"]}'
+            subject = (f'New sales contact {form.cleaned_data["email"]}: \
+                        {form.cleaned_data["contact_name"]}')
             body = form.cleaned_data['message']
             if subject and body and email:
                 try:
@@ -48,7 +48,6 @@ def contact_us(request):
                 return HttpResponse(
                     'Make sure all fields are entered and valid.')
     form = ContactUsForm()
-    context = {'form': form}
     return render(request, 'home/contact_us.html', {'form': form})
 
 

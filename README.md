@@ -2,7 +2,7 @@
 
 ​
 <p align="center" width="100%"> 
-<img src="readme_docs/images/ecommerce_image.png" alt="project image" width=""/>
+<img src="readme_docs/images/am_i_responsive.png" alt="project image" width=""/>
 </p>
 
 <span style="font-weight:bold; font-size:16px">Project Brief</span>
@@ -719,17 +719,26 @@ HTML files associated with this project were tested individually with [W3C Valid
 
 ### <span style="color:#edb80c; font-weight:bold; font-size:20px">Python</span>
 ​
-I have tested Python code in this project with [PEP8](http://pep8online.com/). The only error located in some of the Python files are a number of <span style="color:#FF0000; font-weight:bold">E501</span> errors which are <span style="color:#FF0000; font-weight:bold">line too long (a line greater than 79 characters)</span>.
-
-I have decided not to alter the relevant lines to fit into 79-character restriction. 
-- Having researched the options there is some mention of the effects on Django.
-- I believe it would reduce of the readability of the code to chop lines.
+<p>Python code was validated by running the following command:<strong>python3 -m flake8</strong>. This produces a list of errors and warnings. I then ran 
+<strong>autopep8 --in-place --aggressive --aggressive <file name></strong> on each .py file to format the code to the correct syntax. </p>
 
 ​<br>
+
+### Flake8 Report ###
+
+<p> I have attached a link of the results from intitial run of flake8</p>
+
+[Link to Flake8 Report](readme_docs/testing_images/python_validation.pdf)
+
+<p>After refactoring of the Python code I created, I was left with the following list. </p>
+
 <p align="center" width="100%"> 
-<img src="media/testing/views_PEP8.png" alt="PEP8 test image" width=""/>
+<img src="readme_docs/testing_images/python_errors.png" alt="Python test image" width=""/>
 </p>
 <br>
+
+<p>I have not alter the E501 errors in the env.py as these lines are Access Keys and I dont want to split them and introduce an error.</p>
+<p>The <strong>checkout app</strong> errors are left as they are part of a functioning webhook process.</p>
 
 
 
