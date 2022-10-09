@@ -390,13 +390,17 @@ body {
 
 
 /* 404 Page, 404 Page, 404 Page, 404 Page, 404 Page, 404 Page */
-.error-container {
+.error-header-container {
     color: white;
     background-color: #000;
     text-align: center;
-    border: 3px;
-    border-color: rgb(207, 8, 8) !important;
 }
+
+.error-container {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
 
 .error-font {
     font-size: 6em;
