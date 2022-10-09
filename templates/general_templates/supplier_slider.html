@@ -125,6 +125,7 @@
     $(document).ready(function(){
         $('.supplier-slider').slick({
         slidesToShow: 6,
+        speed: 800,
         centerMode: true,
         autoplay: true,
         arrows: false,
@@ -139,17 +140,25 @@
       
           }, {
       
-            breakpoint: 600,
+            breakpoint: 650,
             settings: {
               slidesToShow: 3,
             }
       
           }, {
       
-            breakpoint: 500,
+            breakpoint: 450,
             settings: {
               slidesToShow: 2,
             }
+      
+          }, {
+      
+            breakpoint: 350,
+            settings: {
+              slidesToShow: 1,
+            }
+            
       
           }]
         });
