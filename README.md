@@ -635,6 +635,7 @@ STANDARD_DELIVERY_PERCENTAGE = 10
 - Collate emails of registered user to the site for the creation of a marketing email list targeted towards their previous purchases.
 - Create a new business logo in SVG format that can better promote the brand.
 - Change supplier carousel logos to display all products availible on the site for that particular supplier.
+- Standardize the pictures sizes used on the site and the convert to WebP format. 
 
 
 [Back to content](#contents)
@@ -691,6 +692,11 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY").strip("\n")
 <strong>Testing Results:</strong> 
 
 [Link to manual testing](readme_docs/Testing_Doc.md)
+
+<strong>Test of Purchase and Payment</strong>
+
+[Link to manual testing](readme_docs/Testing_Doc2.md)
+
 
 <br>​
 ​
