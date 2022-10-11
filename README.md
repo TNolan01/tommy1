@@ -560,6 +560,9 @@ FREE_DELIVERY_THRESHOLD = 75
 STANDARD_DELIVERY_PERCENTAGE = 10
 }
 ```
+
+<p>I adapted some code from https://css-tricks.com/responsive-data-tables/ to adjust the table in the shopping basket template to vertical scroll on mobile devices.</p>
+
 <br>
 
 <p align="center" width="100%"> 
@@ -1068,6 +1071,7 @@ class MediaStorage(S3Boto3Storage):
 - [CodeMy.Com on YouTube](https://www.youtube.com/watch?v=HHx3tTQWUx0&list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy&index=2)
 - [Dennis Ivy](https://www.youtube.com/watch?v=tUqUdu0Sjyc&t=1469s)
 - [Ben Goddard(Codepen)](https://codepen.io/bengoddard)
+- [CSS Tricks](https://css-tricks.com/responsive-data-tables/)
 
 <br>
 
