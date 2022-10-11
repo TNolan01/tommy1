@@ -414,6 +414,11 @@ td, th {
     height: 100%;
 }
 
+.checkout-form label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 
 /* 404 Page, 404 Page, 404 Page, 404 Page, 404 Page, 404 Page */
 .error-header-container {
@@ -823,6 +828,7 @@ only screen and (max-width: 760px),
 
     .basket-buttons {
         padding-left: 0 !important;
+        padding-right: 0 !important;
     }
     
 }

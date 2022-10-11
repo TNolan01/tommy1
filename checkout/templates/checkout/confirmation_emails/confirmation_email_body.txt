@@ -6,20 +6,20 @@ Order Information:
 
 Order Number: {{ order.order_number }}
 Order Date: {{ order.date }}
-
+_____________________________________
 {% for item in order.lineitems.all %}
 
 Product:                 
 {{ item.product.product_name }}
-Quantity:                                           Total:
-{{ item.quantity }}no. @ €{{ item.product.price }} {{ item.product.sell_quantity }}</p>
+Details:                                           
+{{ item.quantity }}no. @ €{{ item.product.price }} {{ item.product.sell_quantity }}
                       
 {% endfor %}
-
+_____________________________________
 Order Total: €{{ order.order_total }}
 Delivery: €{{ order.delivery_cost }}
 Grand Total: €{{ order.invoice_total }}
-
+_____________________________________
 Delivery Information:
 Your order will be shipped to 
 {{ order.street_address1 }} 

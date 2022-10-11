@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 checkout-form">
             <p class="text-muted">Please fill out the form below to complete your order</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
