@@ -10723,6 +10723,10 @@ td, th {
   text-align: left;
 }
 
+.basket-buttons {
+  padding-left: 0;
+}
+
 /* Stripe Payment Stylings, Stripe Payment Stylings, Stripe Payment Stylings, */
 .StripeElement,
 .stripe-style-input {
@@ -11109,7 +11113,7 @@ Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
 and also iPads specifically.
 */
-@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 998px) {
   /* Force table to not be like tables anymore */
   .basket-table {
     /* Hide table headers (but not display: none;, for accessibility) */
@@ -11131,6 +11135,15 @@ and also iPads specifically.
     border-bottom: 1px solid #eee;
     position: relative;
     padding-left: 50%;
+    padding-top: 0 !important;
+    padding-bottom: 1em !important;
+    font-size: 0.75em;
+  }
+  .basket-table td h4 {
+    font-size: 1.5em;
+  }
+  .basket-table td h6 {
+    font-size: 1.25em;
   }
   .basket-table td:before {
     /* Now like a table header */
@@ -11170,5 +11183,8 @@ and also iPads specifically.
   .basket-buttons::before {
     content: none !important;
     color: white;
+  }
+  .basket-buttons {
+    padding-left: 0 !important;
   }
 }/*# sourceMappingURL=base.css.map */
