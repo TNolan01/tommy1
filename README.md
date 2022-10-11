@@ -262,9 +262,13 @@ I used three different fonts from the Google Fonts library.
 
 #### Proposed Strategy
 
-<p>This market place is quite crowded, and having done some market research it is clear there are many competitors in this E-commerce space. I would propose that the business looks toward creating original content for release on social channels.</p>
-<p>A search of Youtube brought up a number of Irish channels in the Agricultrual space which have been releasing content on YouTube. The content is organic and primarily catalogues the goings on and happenings in their business. As you skip through some of this content you can see the rapid development of connections between the content creators and their suppliers with benefit for both parties. </p>
-<p>This type of content creation could work very well for this business.</p>
+<p>The business supplies a wide range of agricultural, landscaping and construction products. This market place is quite crowded, having done some market research it is clear there are many competitors in this E-commerce space. I would propose that the business looks toward creating original content for release on their social channels.</p>
+<p>A search of Youtube brought up a number of Irish channels in the Agricultrual space which have been releasing content on YouTube. The content is organic and primarily catalogues the goings on and happenings in their business. As you skip through some of this content you can see the rapid development of connections between the content creators and their suppliers with benefit for both parties. 
+
+This type of content creation could work very well for this business. </p>
+<p>Visual media intends to inspire. For years media companies have created a steady supply a home and garden renovation programs. Many of this content is sponsered by business or products which related to these sectors. The content is hugely popular with most of daytime tv channels carry some form of such programming and several satellite channels dedicated entirely to home and garden programming. </p>
+<p>This business offer products to the 'Trade' sector, a Business to Business (B2B) relationship, and it sells products direct to the Customer in a Business to Customer (B2C) Relationship.The purpose of this new E-commerce platform is to target and expand the B2C portion of the companies business. That being said, once the the new site is deployed it would serve as a resource for the B2B customers. </p> 
+<p>It would be beneficial to develop a marketing relationship between both parties in the B2B relationship. The contractor party could supply the e-commerce site with content, images and or video clips of work doing using product(s) supplied by the business. The site could use this content for marketing purpose and reference, acknowledge and advertise the contractor whom did the work.</p>  
 
 
 <strong>Strategy</strong>:
