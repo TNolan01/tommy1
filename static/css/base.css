@@ -10725,6 +10725,7 @@ td, th {
 
 .basket-buttons {
   padding-left: 0;
+  padding-right: 0;
 }
 
 /* Stripe Payment Stylings, Stripe Payment Stylings, Stripe Payment Stylings, */
@@ -10791,6 +10792,12 @@ td, th {
   justify-content: center;
   margin: 0;
   height: 100%;
+}
+
+.checkout-form label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75em;
 }
 
 /* 404 Page, 404 Page, 404 Page, 404 Page, 404 Page, 404 Page */
@@ -11186,5 +11193,6 @@ and also iPads specifically.
   }
   .basket-buttons {
     padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }/*# sourceMappingURL=base.css.map */
