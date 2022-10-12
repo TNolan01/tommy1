@@ -23,7 +23,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tw-shop.herokuapp.com/products/?category=Fencing%20Products</loc>
+  <loc>https://tw-shop.herokuapp.com/products/?category=Fencing</loc>
   <lastmod>2022-10-06T19:57:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -58,7 +58,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tw-shop.herokuapp.com/products/?category=Outdoor%20Furniture</loc>
+  <loc>https://tw-shop.herokuapp.com/products/?category=Furniture</loc>
   <lastmod>2022-10-06T19:57:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>
@@ -68,7 +68,7 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://tw-shop.herokuapp.com/products/?category=Power%20Tools</loc>
+  <loc>https://tw-shop.herokuapp.com/products/?category=Tools</loc>
   <lastmod>2022-10-06T19:57:19+00:00</lastmod>
   <priority>0.80</priority>
 </url>

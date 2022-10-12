@@ -41,8 +41,8 @@
         <!--BaguetteBox-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
         <!--Slick Carousel-->
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-        <link rel="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
     {% endblock %}
 
@@ -70,7 +70,7 @@
   <body>
     <header class="container-fluid ">
         <div id="site-header" class="row bg-white pt-lg-2 d-lg-flex">
-            <div class="col-8 col-lg-4 my-auto py-1 py-lg-0 text-center" id="topnav-header"></div>
+            <div class="col-12 my-auto py-1 py-lg-0 text-center" id="topnav-header">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="logo-font text-black my-0">Tommy Williamson Landscape & Agri Supplies</h2>
                 </a>
@@ -108,7 +108,7 @@
 
     {% block postloadjs %}
 
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
     </script>
 

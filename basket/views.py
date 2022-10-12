@@ -22,8 +22,8 @@ def add_to_basket(request, item_id):
         basket[item_id] = quantity
         messages.success(
             request,
-            f"Quantity for {product.product_name} \n"
-            " updated to {basket[item_id]}.",
+            f"Quantity for {product.product_name} \
+            updated to {basket[item_id]}.",
         )
     else:
         basket[item_id] = quantity

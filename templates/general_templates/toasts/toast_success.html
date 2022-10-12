@@ -1,10 +1,10 @@
 <!--Success Toast-->
 <div class="toast p-3 border-success" style="position: absolute; top: 0; right: 0; border-width: 2px; z-index:10" data-delay="6000">
         <div class="header success">
-        <strong class="mr-auto">Success</strong>
-        <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="false">&times;</span>
-        </button>
+            <strong class="mr-auto">Success</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="false">&times;</span>
+            </button>
         </div>
         <div class="-body">
             {{ message }}
@@ -28,10 +28,11 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <strong><p class="mt-3 mb-1 text-black">
-                        Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
-                        <span class="float-right">€{{ total|floatformat:2 }}</span>
-                    </p></strong>
+                    <div class="mt-3 mb-1 text-black">
+                        <strong> Total{% if free_delivery_delta > 0 %} (Exc. delivery){% endif %}: 
+                            <span class="float-right">€{{ total|floatformat:2 }}</span>
+                        </strong>
+                    </div>
                     {% if free_delivery_delta > 0 %}
                         <p class="mb-0 p-2 bg-warning shadow-sm text-black text-center">
                             Spend <strong>€{{ free_delivery_delta }}</strong> more to get free next day delivery!
@@ -45,6 +46,6 @@
                     </a>
                 </div>
             </div>
-        {% endif %}
-    </div>
+    {% endif %}
+    
 </div>

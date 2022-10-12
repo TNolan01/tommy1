@@ -23,28 +23,28 @@
                     Products
                 </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{% url 'products' %}?category=Fencing Products">Fencing</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=Fencing">Fencing</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=Paving">Paving & Kerbing</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=Agri">Agri</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=Timber">Timber</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=Paints">Paints</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=Gates">Gates</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=Stone">Decorative Stone</a>
-                <a class="dropdown-item" href="{% url 'products' %}?category=Outdoor Furniture">Outdoor Furniture</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=Furniture">Outdoor Furniture</a>
                 <a class="dropdown-item" href="{% url 'products' %}?category=Hardware">Hardware</a>
-                <a class="dropdown-item" href="{% url 'products' %}?category=Power Tools">Tools</a>
+                <a class="dropdown-item" href="{% url 'products' %}?category=Tools">Tools</a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{% url 'special_offers' %}">Special Offers</a>
             </div>
             </li>
             <!--Account section-->
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle removecaret" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle removecaret" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <div  >
                         <p><i class="fas fa-user fa-lg nav-icon"></i>My Account</p>
                     </div>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                     {% if request.user.is_authenticated %}
                         {% if request.user.is_superuser %}
                             <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>

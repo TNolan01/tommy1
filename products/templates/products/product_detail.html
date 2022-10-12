@@ -37,11 +37,11 @@
                     <h4 class="text-attention">Best Price Promise.</h4>
                 {% endif %}
                 {% if product.category %}
-                <p class="small mt-3 mb-0">
+                <div class="small mt-3 mb-0">
                     <a class="text-red" href="{% url 'products' %}?category={{ product.category.name }}">
-                    <h5 class="category_link_text">Back to {{ product.category.name }} </h5>
+                        <h5 class="category_link_text">Back to {{ product.category.name }} </h5>
                     </a>
-                </p>
+                </div>
                 {% endif %}
                 <!--Shopping basket form-->
                 <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
