@@ -11195,4 +11195,61 @@ and also iPads specifically.
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+}
+@media (max-width: 590px) {
+  .email_table {
+    /* Hide table headers (but not display: none;, for accessibility) */
+  }
+  .email_table table, .email_table thead, .email_table tbody, .email_table th, .email_table td, .email_table tr {
+    display: block;
+  }
+  .email_table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .email_table tr {
+    border: 1px solid #ccc;
+  }
+  .email_table td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 30%;
+    padding-top: 0 !important;
+    padding-bottom: 1em !important;
+    font-size: 0.6em;
+  }
+  .email_table td h4 {
+    font-size: 1.5em;
+  }
+  .email_table td h6 {
+    font-size: 1.25em;
+  }
+  .email_table td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+  .email_table h3 {
+    font-size: 1em !important;
+  }
+  .email_table td:nth-of-type(1):before {
+    content: "Name";
+  }
+  .email_table td:nth-of-type(2):before {
+    content: "Email";
+  }
+  .email_table td:nth-of-type(3):before {
+    content: "Date Joined";
+  }
+  .email_table td:nth-of-type(4):before {
+    content: "Remove?";
+  }
 }/*# sourceMappingURL=base.css.map */
