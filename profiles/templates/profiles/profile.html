@@ -56,7 +56,6 @@
                         <tr>
                             <th>OrderNumber</th>
                             <th>OrderDate</th>
-                            <th>Items</th>
                             <th>Total</th>
                         </tr>
                     </thead>
@@ -70,13 +69,6 @@
                                         </a>
                                     </td>
                                     <td>{{ order.date }}</td>
-                                    <td>
-                                        <ul class="list-unstyled">
-                                            {% for item in order.lineitems.all %}
-                                                <li class="small"></li>
-                                            {% endfor %}
-                                        </ul>
-                                    </td>
                                     <td>€{{ order.invoice_total }}</td>
                                 </tr>
                             {% endfor %}

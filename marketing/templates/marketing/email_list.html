@@ -4,12 +4,12 @@
 
 {% block content %}
 
-<!--Unsubsribe Email Page -->
+<!--Unsubsribe/ Email List Page -->
 <div class="container mt-4 mb-4">
-    <h3>Newsletter mailing list</h3>
+    <h3 class="email-list">Newsletter mailing list</h3>
     <hr>
     
-    <table class="table">
+    <table class="basket-table mb-4">
         <thead class="thead-dark">
             <tr>
               <th scope="col">ID</th>
@@ -19,7 +19,7 @@
               <th scope="col">Remove?</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="email-table">
         {% for customer in customers %}
             <tr>
               <th scope="row">{{ customer.id }}</th>
