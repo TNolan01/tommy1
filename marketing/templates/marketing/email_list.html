@@ -9,7 +9,7 @@
     <h3 class="email-list">Newsletter mailing list</h3>
     <hr>
     
-    <table class="basket-table mb-4">
+    <table class="email_table mb-4">
         <thead class="thead-dark">
             <tr>
               <th scope="col">ID</th>
@@ -19,7 +19,7 @@
               <th scope="col">Remove?</th>
             </tr>
         </thead>
-        <tbody class="email-table">
+        <tbody>
         {% for customer in customers %}
             <tr>
               <th scope="row">{{ customer.id }}</th>

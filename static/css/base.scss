@@ -833,21 +833,64 @@ only screen and (max-width: 760px),
         padding-right: 0 !important;
     }
 
-    .email-table td {
-        padding-left: 30% !important;
-        font-size: 0.6em !important;
+}
+
+@media (max-width: 590px) {
+    
+    .email_table {
+        table, thead, tbody, th, td, tr { 
+            display: block; 
+        }
+        
+        /* Hide table headers (but not display: none;, for accessibility) */
+        thead tr { 
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        
+        tr { border: 1px solid #ccc; }
+        
+        td { 
+            /* Behave  like a "row" */
+            border: none;
+            border-bottom: 1px solid #eee; 
+            position: relative;
+            padding-left: 30%;
+            padding-top: 0 !important;
+            padding-bottom: 1em !important; 
+            font-size: .6em;
+        }
+
+        td h4 {
+            font-size: 1.5em;
+        }
+
+        td h6 {
+            font-size: 1.25em;
+        }
+        
+        td:before { 
+            /* Now like a table header */
+            position: absolute;
+            /* Top/left values mimic padding */
+            top: 6px;
+            left: 6px;
+            width: 45%; 
+            padding-right: 10px; 
+            white-space: nowrap;
+        }
+
+        h3 {
+            font-size: 1em !important;
+        }
+
     }
 
-    .email-list h3 {
-        font-size: 1em !important;
-    }
-    
-    .basket-table {
+    .email_table {
         td:nth-of-type(1):before { content: "Name"; }
         td:nth-of-type(2):before { content: "Email"; }
         td:nth-of-type(3):before { content: "Date Joined"; }
         td:nth-of-type(4):before { content: "Remove?"; }
     }
-
-
 }
