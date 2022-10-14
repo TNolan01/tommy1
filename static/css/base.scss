@@ -121,15 +121,20 @@ body {
     text-align: center;
 }
 
-.carousel-text h4 {
-    font-family: 'Nunito', sans-serif;
+.carousel-text h3 {
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 2rem;
 }
 
 .carousel-text p {
-    font-size: 1.25rem;
-    
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 1.2rem;
 }
 
+.carousel-text a{
+    font-size: 2rem; 
+    color:white;
+}
 
 /* Supplier Slider, Supplier Slider, Supplier Slider, Supplier Slider */
 .supplier-wrapper {
@@ -892,5 +897,32 @@ only screen and (max-width: 760px),
         td:nth-of-type(2):before { content: "Email"; }
         td:nth-of-type(3):before { content: "Date Joined"; }
         td:nth-of-type(4):before { content: "Remove?"; }
+    }
+}
+
+@media (max-width: 590px) {
+    .carousel-text {
+        margin-top: 1em !important; 
+        background-color: red !important;
+        height: 100px !important;
+        width: 100% !important;
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .carousel-text h3 {
+        font-size: 1.25rem;
+    }
+
+    .carousel-text p {
+        font-size: 0.75rem;
+        
+    }
+
+    .carousel-text a{
+        font-size: 1.1rem; 
+        color:white;
     }
 }
