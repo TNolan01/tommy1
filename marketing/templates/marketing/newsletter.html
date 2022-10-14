@@ -9,49 +9,52 @@
     <h2 class="logo-font text-black">Newsletter</h2>
     <h5 class="text-black">All our special offers in one place!</h5>
     <hr>
+</div>
 
-    {% for product in products %}
-    <div class="product-card card text-black">
-        {% if product.image %}
-        <a href="{% url 'product_detail' product.id %}">
-            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.product_name }}">
-        </a>
-        {% else %}
-        <a href="{% url 'product_detail' product.id %}">
-            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.product_name }}">
-        </a>
-        {% endif %}
-        <div class="card-body pb-0">
-            <p class="mb-0 des-header">{{ product.product_name }}</p>
-            <p class="mb-0 des-text">{{ product.simple_description }}</p>
-        </div>
-        <div class="card-footer bg-white pt-0 border-0 text-left">
-            <div class="row">
-                <div class="col">
-                    <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
-                    {% if product.rating %}
-                        <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.star_rating }} / 5</small>
-                    {% else %}
-                        <small class="text-muted">No Rating</small>
-                    {% endif %}
-                </div>
-                <div class="col">
-                    {% if product.category %}
-                    <p class="small mt-1 mb-0">
-                        <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                        {{ product.category.name }}
-                        </a>
-                    </p>
-                    {% endif %}
-                </div>
-                <div class="col">
-                    <p>{{ product.sell_quantity }}</p>
+<div class="product-container container-fluid">
+    <div class"row">
+        {% for product in products %}
+        <div class="product-card card text-black">
+            {% if product.image %}
+            <a href="{% url 'product_detail' product.id %}">
+                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.product_name }}">
+            </a>
+            {% else %}
+            <a href="{% url 'product_detail' product.id %}">
+                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.product_name }}">
+            </a>
+            {% endif %}
+            <div class="card-body pb-0">
+                <p class="mb-0 des-header">{{ product.product_name }}</p>
+                <p class="mb-0 des-text">{{ product.simple_description }}</p>
+            </div>
+            <div class="card-footer bg-white pt-0 border-0 text-left">
+                <div class="row">
+                    <div class="col">
+                        <p class="lead mb-0 text-left font-weight-bold">€{{ product.price }}</p>
+                        {% if product.rating %}
+                            <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.star_rating }} / 5</small>
+                        {% else %}
+                            <small class="text-muted">No Rating</small>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                        {% if product.category %}
+                        <p class="small mt-1 mb-0">
+                            <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                            {{ product.category.name }}
+                            </a>
+                        </p>
+                        {% endif %}
+                    </div>
+                    <div class="col">
+                        <p>{{ product.sell_quantity }}</p>
+                    </div>
                 </div>
             </div>
         </div>
+        {% endfor %}
     </div>
-          
-    {% endfor %}
 </div>
         
     
