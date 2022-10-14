@@ -213,8 +213,7 @@ body {
     bottom: 0;
     margin-top: 2rem;
     clear: both;
-    position: relative;
-    margin-top: -10px;    
+    position: relative;      
 }
 
 .footer a {
@@ -493,6 +492,15 @@ td, th {
     overflow: hidden;
     display: inline-block;
 }
+
+iframe {
+    height: 300px; 
+    border: 0px; 
+    width: 100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
+}
+
 
 /* Subscribe button effect */
 *, *::before, *::after {
