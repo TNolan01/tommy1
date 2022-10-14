@@ -3,10 +3,11 @@ Hello {{ customer.name }}!
 Please visit our site to get the latest on our special offers.
 {% for item in newsletter %}
 
-{{ item.product_name}} {{ item.simple_description }} {{ item.price }} {{ item.image }}
+{{ item.product_name}} {{ item.simple_description }} at only €{{ item.price }} !!!!
 
 
 {% endfor %}
+
 
 
 If you have any questions, feel free to contact us at {{ contact_email }}.
