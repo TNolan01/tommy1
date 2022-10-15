@@ -1122,6 +1122,7 @@ class MediaStorage(S3Boto3Storage):
 <p>I have used the Boutique Ado project walkthrough as the basis for the Stripe and Checkout functions in this project. </p>
 <p>I adapted a piece of code I found at https://codepen.io/bengoddard which I used on the content_us.html to create the 'Opening Hours' table on that page. </p>
 <p>In the Marketing App Views.py I used a piece of code for the 'Newsletter email sending function'. I found this on an old PP5 Project by Joanna Goska, https://github.com/JoGorska, it originated from https://docs.djangoproject.com/en/3.2/topics/email/#preventing-header-injection. </p>
+<p>When converting some of the tables, such as the Basket, to a vertically displaying table on smaller screens I adapted some code I found at https://css-tricks.com/responsive-data-tables/ </p>
 
 - [Stack Overflow](https://stackoverflow.com/)
 - [CodeMy.Com on YouTube](https://www.youtube.com/watch?v=HHx3tTQWUx0&list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy&index=2)
