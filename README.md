@@ -5,7 +5,8 @@
 <img src="readme_docs/images/am_i_responsive.png" alt="project image" width=""/>
 </p>
 
-<span style="font-weight:bold; font-size:16px">Project Brief</span>
+**Project Brief**
+
 <p> This project is for the design and deployment of a functional E-commerce website for a business which supplies materials, hardware and tools primarily in the areas of Agriculture, Landscaping and Construction. </p>
 
 
@@ -14,10 +15,11 @@
 
 <br>
 
-<span style= "font-weight:bold; font-size:16px">Origins Of The Project</span>
+**Origins Of The Project**
+
 <p> The business has an established traditional bricks and mortar store but is looking to enter the E-commerce space to offset the potential impacts of a slowdown in the construction sector related to a potential recession and new environmental rules relating to certain products that they currently sell. </p>
 
-<span style="font-weight:bold; font-size:16px">A Proposed Solution</span>
+**A Proposed Solution**
 <p>The proposed plan is to design an E-commerce solution and marketing strategy to attract and retain new customers with direct to customer sales and marketing in a Business to Customer format. </p>
 
 <br>
@@ -79,7 +81,8 @@
 ### **User Stories**
 <p>The project was designed using the concepts of the Agile approach. A project was opened on Github and linked to the repository. </p>
 
-USER STORIES:​
+**USER STORIES:​**
+
 <p>I have attached a link to the User Stories and their status. </p>
 
 [Link to Kanban Board](https://github.com/users/TNolan01/projects/5)
@@ -1115,8 +1118,10 @@ class MediaStorage(S3Boto3Storage):
 
 ​
 ### **Programming resources**
-<p>Aside from the Code Institute content for this section I used the following resources.</p>
-<p>I have used the Boutique Ado project walkthrough as the basis for the Stripe and Checkout functions in this project.</p>
+<p>Aside from the Code Institute content for this section I used the following resources. </p>
+<p>I have used the Boutique Ado project walkthrough as the basis for the Stripe and Checkout functions in this project. </p>
+<p>I adapted a piece of code I found at https://codepen.io/bengoddard which I used on the content_us.html to create the 'Opening Hours' table on that page. </p>
+<p>In the Marketing App Views.py I used a piece of code for the 'Newsletter email sending function'. I found this on an old PP5 Project by Joanna Goska, https://github.com/JoGorska, it originated from https://docs.djangoproject.com/en/3.2/topics/email/#preventing-header-injection. </p>
 
 - [Stack Overflow](https://stackoverflow.com/)
 - [CodeMy.Com on YouTube](https://www.youtube.com/watch?v=HHx3tTQWUx0&list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy&index=2)
