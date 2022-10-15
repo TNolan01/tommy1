@@ -260,6 +260,15 @@ I used three different fonts from the Google Fonts library.
 <li>Fencing Boards</li> 
 <li>Wire</li>
 
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/seo_image.png" alt="sample of seo rating from lighthouse" width=""/>
+</p>
+
+<br>
+
+
 #### Proposed Strategy
 
 <p>The business supplies a wide range of agricultural, landscaping and construction products. This market place is quite crowded, having done some market research it is clear there are many competitors in this E-commerce space. I would propose that the business looks toward creating original content for release on their social channels.</p>
@@ -500,6 +509,12 @@ This type of content creation could work very well for this business. </p>
 </p>
 <br>
 
+<p align="center" width="100%"> 
+<img src="readme_docs/images/mobile_index.png" alt="image of index screen on mobile" width=""/>
+</p>
+<br>
+
+
 **Contact Us**
 
 <p>Self-explanatory, this page contains all the relevant contact details for the business. There is also a contact us form to allow the site user quickly send their queries and contact details to the business. This information is stored in a model, with a copy of the query and contact details to be emailed to a company sales email address for follow up by sales staff. </p>
@@ -513,10 +528,31 @@ This type of content creation could work very well for this business. </p>
 </p>
 <br>
 
+<p align="center" width="100%"> 
+<img src="readme_docs/images/mobile_contact_us.png" alt="image contact us page on mobile" width=""/>
+</p>
+<br>
+
+
+
 **Inspiration** 
 
 <p>This page would form part of the larger marketing strategy, the page is essentially and image gallery which is built using BaguetteBox which is a JavaScript library, this generates a lightbox with animated and responsive images. There are currently nine images in the gallery but this would be expanded. </p>
 <p>The images 'zoom on hover', as part of that function description text for each image is also displayed. If a user clicks on any image the image will occupy full screen and an exit control and left and right directional arrows will be shown. The user can now scroll through all the images in the gallery or exit back to grid display mode. </p>
+
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/mobile_gallery.png" alt="image gallery page on mobile" width=""/>
+</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/gallery_page.png" alt="image gallery page on large screen" width=""/>
+</p>
+<br>
+
+
 
 **Products Page** 
 
@@ -545,6 +581,16 @@ This type of content creation could work very well for this business. </p>
 </p>
 <br>
 
+<p align="center" width="100%"> 
+<img src="readme_docs/images/tablet_products.png" alt="image of product details page on tablet" width=""/>
+</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/mobile_products.png" alt="image of product details page on mobile" width=""/>
+</p>
+<br>
+
 **Shopping Basket**
 
 <p>When an item is added to the basket a success toast will display a summary. This toast is built on structure of the Boutique Ado toasts and will display the product summary and an indication of any delivery charge or how far the customer is away from getting free delivery.</p>
@@ -552,6 +598,19 @@ This type of content creation could work very well for this business. </p>
 
 <p align="center" width="100%"> 
 <img src="readme_docs/images/shopping_basket_toasts.png" alt="image of shopping basket toasts" width=""/>
+</p>
+<br>
+
+<p>The table which displays the shopping basket contents turns into a vertically stacked table on smaller screens. I think this better displays contents on the smaller screens. </p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/mobile_basket.png" alt="image of shopping basket on mobile device" width=""/>
+</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/images/tablet_basket.png" alt="image of shopping basket on tablet" width=""/>
 </p>
 <br>
 
@@ -722,11 +781,6 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY").strip("\n")
 </p>
 <br>
 
-
-​​<br>
-
-
-​
 ### <span style="font-weight:bold; font-size:16px">JavaScript</span>
 
 <p>The script.js file was tested with [JSHint](https://jshint.com/), any errors found were corrected. A link to a PDF of the JSHINT screen shoots can be found below.</p>
@@ -737,7 +791,12 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY").strip("\n")
 
 ### <span style="font-weight:bold; font-size:20px">HTML</span>
 ​
-HTML files associated with this project were tested individually with [W3C Validator](https://validator.w3.org/) and showed no errors or warnings. 
+<p>The HTML files associated with this project were tested individually with [W3C Validator](https://validator.w3.org/) and showed no errors or warnings.</p>
+<br>
+
+<p align="center" width="100%"> 
+<img src="readme_docs/testing_images/html_validation.png" alt="HTML test image" width=""/>
+</p>
 <br>
 
 
@@ -772,30 +831,14 @@ HTML files associated with this project were tested individually with [W3C Valid
 
 ### <span style="color:#ebd80c; font-weight:bold; font-size:16px">Light House Performance Testing</span>
 
-### Desktop Performance :
-<br>
-<p align="center" width="100%"> 
-<img src="media/testing/performance_desktop.png" alt="desktop test" width=""/>
-</p>
+### Lighthouse Performance :
 <br>
 
-
-### Mobile Performance :
-<br>
-<p align="center" width="100%"> 
-<img src="media/testing/performance_mobile.png" alt="mobile test" width=""/>
-</p>
-<br>
+<p> To improve the performance of the site, particularly on mobile devices it is necessary to introduce some compression to text and images, with images change to webp format. </p>
 
 <br>
 <p align="center" width="100%"> 
-<img src="media/testing/performance_mobile.png" alt="mobile test" width=""/>
-</p>
-<br>
-
-<br>
-<p align="center" width="100%"> 
-<img src="media/read_me/mobile_phone.png" alt="mobile phone image" width=""/>
+<img src="readme_docs/images/lighthouse.png" alt="lighthouse image" width=""/>
 </p>
 <br>
 
