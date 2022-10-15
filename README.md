@@ -799,6 +799,10 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY").strip("\n")
 </p>
 <br>
 
+<p align="center" width="100%"> 
+<img src="readme_docs/images/html_template_list.png" alt="HTML test image" width=""/>
+</p>
+<br>
 
 ### <span style="font-weight:bold; font-size:20px">Python</span>
 ​
